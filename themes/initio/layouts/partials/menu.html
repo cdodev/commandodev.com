@@ -1,0 +1,17 @@
+<div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <img src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="Commando Development"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right navbar-cdodev">
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{end}}
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--container-->
+</div>

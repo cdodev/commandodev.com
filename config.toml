@@ -43,7 +43,7 @@ footerEnableFormWidget = false
   name = "Commando Development"
   description  = "Elite software development"
   favicon = "cdodev.ico"
-  avatar = "img/cdodev-logo.png"
+  avatar = "img/logo.png"
   # description = "Commando development"
 
   DateForm = "2000-01-01"

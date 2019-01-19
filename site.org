@@ -1,0 +1,49 @@
+#+STARTUP: content
+#+AUTHOR: Ben Ford
+#+HUGO_BASE_DIR: .
+#+HUGO_AUTO_SET_LASTMOD: t
+* Home
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION:
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+
+** A heading I guess
+My super home page
+* About
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION: about
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+The about page
+** About Ben
+Ben is cool
+* Blog
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: blog
+:END:
+** Blog
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_HUGO_SECTION: blog
+:END:
+** Ethos
+:PROPERTIES:
+:EXPORT_FILE_NAME: ethos
+:END:
+First blog post about ethos and stuff
+
+** Mission
+:PROPERTIES:
+:EXPORT_FILE_NAME: mission
+:END:
+Mission really is everything
+* Footnotes
+* COMMENT Local Variables                                           :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# eval: (auto-fill-mode 1)
+# End:

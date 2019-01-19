@@ -14,11 +14,11 @@ My super home page
 * About Section
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: about
+:EXPORT_HUGO_MENU: :menu "main"
 :END:
 ** About
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_MENU: :menu "main"
 :END:
 The about page
 Ben is cool
@@ -30,17 +30,21 @@ Ben is cool
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_MENU: :menu "main"
-:EXPORT_HUGO_SECTION: blog
 :END:
+
+My Blog
+
 ** Ethos
 :PROPERTIES:
 :EXPORT_FILE_NAME: ethos
+:EXPORT_HUGO_MENU: :menu "main" :parent blog
 :END:
 First blog post about ethos and stuff
 
 ** Mission
 :PROPERTIES:
 :EXPORT_FILE_NAME: mission
+:EXPORT_HUGO_MENU: :menu "main" :parent blog
 :END:
 Mission really is everything
 * Footnotes

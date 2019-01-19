@@ -5,9 +5,12 @@
     </div>
     <div class="navbar-collapse collapse justify-content-end">
         <ul class="nav navbar-nav navbar-cdodev">
+            {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
             <li class="nav-item">
-                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                <a class='nav-link {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}'
+                   href="{{ .URL }}">{{ .Name }}
+                </a>
             </li>
             {{end}}
         </ul>

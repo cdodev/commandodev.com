@@ -2,11 +2,27 @@
 	<div class="container">
 		<div class="row">
 			{{ if .Site.Params.footerEnableContact }}
-			<div class="col-md-3 widget">
-				<h3 class="widget-title">Contact</h3>
+			<div class="col-md-4">
+				<h3>Contact</h3>
+        <ul class="list-unstyled contact">
+            <li><p><strong>
+                <i class="fa fa-map-marker"></i></strong>London, England
+            </p></li>
+            {{ if .Site.Params.email }}
+            <li><p><strong>
+                <i class="fa fa-envelope"></i></strong><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+            </p></li>
+            {{ end }}
+            {{ if .Site.Params.phone }}
+            <li> <p><strong>
+                <i class="fa fa-phone"></i></strong>{{ .Site.Params.phone }}
+            </p></li>
+            {{ end }}
+
+        </ul>
 				<div class="widget-body">
-					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
-					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
+					<p>{{ if .Site.Params.phone }}<br>{{ end }}
+					{{ if .Site.Params.email }}<a href=""></a><br>{{ end }}
 						<br>
 						{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }}
 					</p>
@@ -15,68 +31,50 @@
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableFollowme }}
-			<div class="col-md-3 widget">
-				<h3 class="widget-title">Follow me</h3>
-				<div class="widget-body">
-					<p class="follow-me-icons">
-                        {{ range .Site.Params.social }}
-                            {{ if .footer }}
-                                <a href="{{ .url }}" target="_blank"><i class="fa {{ .icon }} fa-2"></i></a>
-                            {{ end }}
-                        {{ end }}
-					</p>
-				</div>
+			<div class="col-md-4">
+				<h3>Keep up to Date</h3>
+        <ul class="list-inline footer-social">
+        {{ range .Site.Params.social }}
+            {{ if .footer }}
+            <li>
+            <a href="{{ .url }}" class="social-icon si-dark si-colored-{{ .icon }}" target="_blank">
+                <i class="fa fa-{{ .icon }}"></i>
+                <i class="fa fa-{{ .icon }}"></i>
+            </a>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
 			</div>
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableTextWidget }}
-			<div class="col-md-3 widget">
-				<h3 class="widget-title">Text widget</h3>
+			<div class="col-md-4">
+				<h3>Operational Excellence</h3>
 				<div class="widget-body">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 				</div>
 			</div>
 			{{ end }}
 
-			{{ if .Site.Params.footerEnableFormWidget }}
-			<div class="col-md-3 widget">
-				<h3 class="widget-title">Form widget</h3>
-				<div class="widget-body">
-					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
-					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
-						<br>
-						{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }}
-					</p>
-				</div>
-			</div>
-			{{ end }}
 
-		</div> <!-- /row of widgets -->
+		</div> <!-- /row ofs -->
+		<div class="row">
+			  <div class="col-md-6 offset-md-3">
+				    <div class="widget-body">
+					      <p class="text-right">
+						        Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}
+						        <!-- Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - -->
+                    Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
+                </p>
+				    </div>
+			  </div>
+
+		</div> <!-- /row of copyright -->
 	</div>
 </footer>
 
 <footer id="underfooter">
 	<div class="container">
-		<div class="row">
-
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p>{{ if .Site.Params.address}}{{ .Site.Params.address }}{{ end }}</p>
-				</div>
-			</div>
-
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> -
-                        Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
-                    </p>
-				</div>
-			</div>
-
-		</div> <!-- /row of widgets -->
 	</div>
 </footer>
 

@@ -11,14 +11,16 @@
 
 ** A heading I guess
 My super home page
-* About
+* About Section
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: about
+:END:
+** About
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_SECTION: about
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
 The about page
-** About Ben
 Ben is cool
 * Blog
 :PROPERTIES:

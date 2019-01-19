@@ -4,7 +4,7 @@ title = "Commando Development"
 
 contentdir = "content"
 layoutdir = "layouts"
-publishdir = "public"
+publishDir = "public"
 
 theme = ["initio"]
 
@@ -44,9 +44,12 @@ footerEnableFormWidget = false
   description  = "Elite software development"
   favicon = "cdodev.ico"
   avatar = "img/logo.png"
+  phone = "+447540722690"
+  email = "ben@commandodev.com"
+  year = "2019"
   # description = "Commando development"
 
-  DateForm = "2000-01-01"
+  DateForm = "2006-01-02"
 
   showSubheader = true
   showServices = true
@@ -63,34 +66,34 @@ footerEnableFormWidget = false
 [[params.social]]
 	title = "facebook"
 	url = "https://www.facebook.com/boothead"
-    icon = "fa-facebook-square"
-    footer = true
-    sharethis = true
-    network = "facebook"
+  icon = "facebook"
+  footer = true
+  sharethis = true
+  network = "facebook"
 [[params.social]]
 	title = "twitter"
 	url = "https://twitter.com/boothead"
-    icon = "fa-twitter-square"
-    footer = true
-    sharethis = true
-    network = "twitter"
+  icon = "twitter"
+  footer = true
+  sharethis = true
+  network = "twitter"
 [[params.social]]
 	title = "linkedin"
 	url = "https://www.linkedin.com/in/boothead"
-    icon = "fa-linkedin-square"
-    footer = false
-    sharethis = true
-    network = "linkedin"
+  icon = "linkedin"
+  footer = true
+  sharethis = true
+  network = "linkedin"
 [[params.social]]
 	title = "github"
 	url = "https://github.com/boothead"
-    icon = "fa-github"
+    icon = "github"
     footer = true
     sharethis = false
     network = ""
 [[params.social]]
 	title = "email"
 	url = "mailto:ben@commandodev.com"
-    icon = "fa-envelope"
-    footer = false
-    sharethis = true
+  icon = "fa-envelope"
+  footer = false
+  sharethis = true

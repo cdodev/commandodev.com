@@ -7,7 +7,7 @@
         <ul class="nav navbar-nav navbar-cdodev">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li class="nav-item">
+            <li class="nav-item text-uppercase">
                 <a class='nav-link {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}'
                    href="{{ .URL }}">{{ .Name }}
                 </a>

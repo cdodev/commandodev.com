@@ -35,3 +35,7 @@ div > pre.sourceCode {
     border-bottom: none !important;
     background: none !important;
 }
+
+.nav .active {
+    border-bottom: 2px solid lightblue;
+}

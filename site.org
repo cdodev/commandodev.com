@@ -20,8 +20,68 @@ My super home page
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
 :END:
-The about page
-Ben is cool
+I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
+a bouncer, a barman, a refuse collector (for one day), an itinerant marquee
+fabricator, a telecoms engineer and a programmer.
+
+All of these experiences have given me a rather unusual mix of perspectives from which
+to reflect on life.
+
+*** My Story
+My father is an engineer and we spent much of my early childhood in Africa
+(Malawi and Lesotho) and the Caribbean (Jamaica). While these experiences were
+undoubtedly foundational in shaping the person I've become, to 9 year old me
+moving back to a small Essex town with a broad Jamaican accent, this didn't
+really seem to be the case.
+
+As a child I struggled to fit in, with the benefit of hindsight I've put this
+down to about 50% personality and the rest due to moving around and not really
+forming stable friendship groups. It's tough to be a kid who doesn't have many
+friends, and even tougher to be the kid who ends up as one of the class victims
+as I did at senior school. However being somewhat isolated did strengthen my
+intense curiosity. It also served to direct that curiosity away from just
+figuring out physical objects (I loved to pull things apart and put them back
+together) and towards trying to figure out people. This obsession has lasted
+ever since.
+
+Partly I'm sure due to the bullying I suffered, when I was about 13 or 14 I
+decided that I would one day join the Royal Marine Commandos. This to my young
+eyes epitomised toughness and fitting in to a close nit social structure that
+had eluded me at school. This didn't happen as soon as it could though
+(procrastination turned out to be a strong component of my character sitting
+beside curiosity).
+**** The Royal Marines
+Between deciding I would join the Marines and actually doing it were A-level, 2
+years of University engineering, a course I dropped out of and many of the jobs
+I listed above. I didn't actually join until I was just shy of my 23rd birthday
+putting me towards the older end of the intake (although thankfully not as old
+as "grandad" the ancient 25 year old).
+
+Commando training was a monumental challenge, as it's designed to be. I remain
+incredibly proud of earning my green beret, but it was really the lessons I
+learned about communicating with people (mainly taught through the medium of
+doing it incredibly poorly) that I feel were the most important benefit from
+that extremely intense period of my life. After I completed commando training in
+December 2000 I went on to do signals training. The kit we were using was about
+40 years old by then: in early 2001 we were still using analog radios and
+batteries that weighed as much as a small house!
+
+I went on to do operational tours of Sierra Leone shortly after a brutal civil
+war, the bandit country of South Armagh in the closing years of the troubles in
+Northern Ireland, and finally Op Telic 1: the invasion of Iraq in 2003.
+
+**** Teaching myself programming
+When Iraq kicked off I was already thinking about moving on from the corps. The
+Royal Marines is a special kind of unit with its own ethos, but ultimately, like
+almost all military units, it's a very rigid and hierarchical that you either
+fit into or you don't. I decided that I wasn't going to make it a career until I
+had a pension, and I was also sceptical that the way the war against terror was
+going was the right course so was faced with the conclusion that I should start
+thinking about what comes next.
+
+In 2003 I was in my second unit: Commando Helicopter Force, and the way you get
+helicopters to a war is on board a ship. So in early 2003 we set sail from
+Plymouth, bound for the middle east.
 * Blog
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog

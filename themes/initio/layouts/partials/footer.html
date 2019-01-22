@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer" class="fixed-bottom">
 	<div class="container">
 		<div class="row">
 			{{ if .Site.Params.footerEnableContact }}
@@ -61,7 +61,7 @@
 		<div class="row">
 			  <div class="col-md-6 offset-md-3">
 				    <div class="widget-body">
-					      <p class="text-right">
+					      <p class="text-center">
 						        Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}
 						        <!-- Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - -->
                     Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
@@ -72,13 +72,6 @@
 		</div> <!-- /row of copyright -->
 	</div>
 </footer>
-
-<footer id="underfooter">
-	<div class="container">
-	</div>
-</footer>
-
-
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <!-- <script src="{{ .Site.BaseURL }}js/template.js"></script> -->

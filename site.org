@@ -11,6 +11,24 @@
 
 ** A heading I guess
 My super home page
+
+* Mission Section
+:PROPERTIES:
+:EXPORT_HUGO_SECTION:
+:EXPORT_HUGO_BUNDLE: mission
+:END:
+** Mission
+:PROPERTIES:
+:EXPORT_FILE_NAME: index
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+Mission index
+
+** Another mission section
+:PROPERTIES:
+:EXPORT_FILE_NAME: mission-sec-1
+:END:
+Mission section
 * About Section
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: about
@@ -52,7 +70,7 @@ had eluded me at school. This didn't happen as soon as it could though
 beside curiosity).
 **** The Royal Marines
 Between deciding I would join the Marines and actually doing it were A-level, 2
-years of University engineering, a course I dropped out of and many of the jobs
+years of University engineering (a course I dropped out of), and many of the jobs
 I listed above. I didn't actually join until I was just shy of my 23rd birthday
 putting me towards the older end of the intake (although thankfully not as old
 as "grandad" the ancient 25 year old).
@@ -97,16 +115,16 @@ My Blog
 ** Ethos
 :PROPERTIES:
 :EXPORT_FILE_NAME: ethos
-:EXPORT_HUGO_MENU: :menu "main" :parent blog
+:EXPORT_HUGO_MENU: :parent blog
 :END:
 First blog post about ethos and stuff
 
 ** Mission
 :PROPERTIES:
 :EXPORT_FILE_NAME: mission
-:EXPORT_HUGO_MENU: :menu "main" :parent blog
+:EXPORT_HUGO_MENU: :parent blog
 :END:
-Mission really is everything
+Mission really is everyt
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

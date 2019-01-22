@@ -53,9 +53,9 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.transparent-header').css("background", "#252525");
+            $('.transparent-header').addClass("scrolling");
         } else {
-            $('.transparent-header').css("background", "transparent");
+            $('.transparent-header').removeClass("scrolling");
         }
     });
 });

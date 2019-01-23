@@ -47,16 +47,16 @@ body {
 }
 .navbar-collapse .navbar-nav {
   float: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
 }
 .navbar-collapse .navbar-nav > li {
   float: none;
   display: inline-block;
 }
-.navbar-collapse .navbar-nav > li > a {
-  padding: 20px 30px;
-}
+/* .navbar-collapse .navbar-nav > li > a { */
+/*   padding: 20px 30px; */
+/* } */
 .dropdown ul.dropdown-menu {
   top: 85%;
   text-align: left;

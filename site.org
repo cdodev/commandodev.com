@@ -16,13 +16,15 @@ My super home page
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
 :EXPORT_HUGO_BUNDLE: mission
+:EXPORT_HUGO_TYPE: mission
 :END:
 ** Mission
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
-Mission index
+My mission is to teach growing tech based companies how to achieve and maintain
+operational excellence as they scale
 
 ** Another mission section
 :PROPERTIES:
@@ -31,21 +33,27 @@ Mission index
 Mission section
 * About Section
 :PROPERTIES:
-:EXPORT_HUGO_SECTION: about
-:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_HUGO_SECTION:
+:EXPORT_HUGO_BUNDLE: about
+:EXPORT_HUGO_TYPE: about
 :END:
 ** About
 :PROPERTIES:
-:EXPORT_FILE_NAME: _index
+:EXPORT_FILE_NAME: index
+:EXPORT_HUGO_MENU: :menu "main"
 :END:
 I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
 a bouncer, a barman, a refuse collector (for one day), an itinerant marquee
 fabricator, a telecoms engineer and a programmer.
 
-All of these experiences have given me a rather unusual mix of perspectives from which
-to reflect on life.
+Throughout all those experiences, I've also always remained a dedicated student
+of the human condition. How we interact with and process the experiences we have
+completely fascinates me.
 
-*** My Story
+** My Story
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-story
+:END:
 My father is an engineer and we spent much of my early childhood in Africa
 (Malawi and Lesotho) and the Caribbean (Jamaica). While these experiences were
 undoubtedly foundational in shaping the person I've become, to 9 year old me
@@ -68,7 +76,11 @@ eyes epitomised toughness and fitting in to a close nit social structure that
 had eluded me at school. This didn't happen as soon as it could though
 (procrastination turned out to be a strong component of my character sitting
 beside curiosity).
-**** The Royal Marines
+** The Royal Marines
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-rm
+:END:
+
 Between deciding I would join the Marines and actually doing it were A-level, 2
 years of University engineering (a course I dropped out of), and many of the jobs
 I listed above. I didn't actually join until I was just shy of my 23rd birthday
@@ -88,7 +100,11 @@ I went on to do operational tours of Sierra Leone shortly after a brutal civil
 war, the bandit country of South Armagh in the closing years of the troubles in
 Northern Ireland, and finally Op Telic 1: the invasion of Iraq in 2003.
 
-**** Teaching myself programming
+** Teaching myself programming
+:PROPERTIES:
+:EXPORT_FILE_NAME: teaching-myself
+:END:
+
 When Iraq kicked off I was already thinking about moving on from the corps. The
 Royal Marines is a special kind of unit with its own ethos, but ultimately, like
 almost all military units, it's a very rigid and hierarchical that you either

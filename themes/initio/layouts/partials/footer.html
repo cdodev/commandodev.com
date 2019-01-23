@@ -3,7 +3,7 @@
 		<div class="row">
 			{{ if .Site.Params.footerEnableContact }}
 			<div class="col-md-4">
-				  <h3 class="">Contact</h3>
+				  <h3 class="widget-title">Contact</h3>
           <ul class="list-unstyled contact">
             <li><p><strong>
                 <i class="fa fa-fw fa-map-marker mr-2"></i></strong>London, England
@@ -32,13 +32,13 @@
 
 			{{ if .Site.Params.footerEnableFollowme }}
 			<div class="col-md-4">
-				<h3 class="text-center">Follow</h3>
-        <ul class="list-inline footer-social d-flex justify-content-center">
+				<h3 class="widget-title text-center">Follow</h3>
+        <ul class="list-inline footer-social d-flex justify-content-center follow-me-icons">
         {{ range .Site.Params.social }}
             {{ if .footer }}
             <li class="list-inline-item">
             <a href="{{ .url }}" class="social-icon si-dark si-colored-{{ .icon }}" target="_blank">
-                <i class="fa fa-fw fa-{{ .icon }}"></i>
+                <i class="fa fa-fw fa-{{ .icon }}-square"></i>
                 <!-- <i class="fa fa-fw fa-{{ .icon }}"></i> -->
             </a>
             </li>
@@ -50,7 +50,7 @@
 
 			{{ if .Site.Params.footerEnableTextWidget }}
 			<div class="col-md-4">
-				  <h3 class="text-center">Operational Excellence</h3>
+				  <h3 class="widget-title text-center">Operational Excellence</h3>
 				<div class="widget-body">
 				</div>
 			</div>

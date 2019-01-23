@@ -2,7 +2,7 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-6 offset-lg-3 center-heading">
+            <div class="col-sm-12 col-lg-8 offset-lg-2 center-heading">
                 <h2>To show tech driven businesses how to achieve operational excellence</h2>
                 <p>It's a state of mind</p>
             </div>
@@ -11,20 +11,35 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-6">
             {{ .Content }}
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
 
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-6 offset-lg-3">
+        <div class="col-lg-6 offset-lg-6">
             {{ with .Resources.GetMatch "my-story.md" }}
             {{ .Content }}
             {{ end }}
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-6">
+            {{ with .Resources.GetMatch "the-rm.md" }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-6">
+            {{ with .Resources.GetMatch "teaching-myself.md" }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
+
 </div>
 {{ partial "footer.html" . }}

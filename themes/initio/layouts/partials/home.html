@@ -1,26 +1,42 @@
 {{ if .Site.Params.showSubheader }}
 {{ partial "subheader.html" . }}
 {{ end }}
-{{ if .Site.Params.showServices }}
 <div class="container">
-    {{ partial "services.html" . }}
-</div>	<!-- /container -->
-{{ end }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ if .Site.Params.showServices }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            {{ partial "services.html" . }}
+        </div>
+    </div>	<!-- /row -->
+    {{ end }}
 
-{{ if .Site.Params.showRecentWorks }}
-<div class="container">
-    {{ partial "recentworks.html" . }}
-</div>	<!-- /container -->
-{{ end }}
+    {{ if .Site.Params.showRecentWorks }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            {{ partial "recentworks.html" . }}
+        </div>
+    </div>	<!-- /row -->
+    {{ end }}
 
-{{ if .Site.Params.showDownload }}
-<div class="container">
-    {{ partial "download.html" . }}
-</div>	<!-- /container -->
-{{ end }}
+    {{ if .Site.Params.showDownload }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            {{ partial "download.html" . }}
+        </div>
+    </div>	<!-- /row -->
+    {{ end }}
 
-{{ if .Site.Params.showClients }}
-<div class="container">
-    {{ partial "clients.html" . }}
-</div>	<!-- /container -->
-{{ end }}
+    {{ if .Site.Params.showClients }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            {{ partial "clients.html" . }}
+        </div>
+    </div>	<!-- /container -->
+    {{ end }}
+
+</div>

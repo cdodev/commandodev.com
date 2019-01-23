@@ -4,7 +4,7 @@ html {
 body {
   font-size: 15px;
   font-size: 0.9375rem;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Open sans", Helvetica, Arial, sans-serif;
   color: #666666;
   padding: 0;
 }
@@ -41,7 +41,7 @@ body {
   -moz-background-clip: padding;
   border-radius: 0;
   background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  /* font-family: "Open sans", Helvetica, Arial, sans-serif; */
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -163,7 +163,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  /* font-family: "Open sans", Helvetica, Arial, sans-serif; */
   font-weight: 400;
   color: #333333;
 }

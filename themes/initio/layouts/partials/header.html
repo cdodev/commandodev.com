@@ -8,26 +8,26 @@
 
 	<title>{{ .Title }}</title>
 
-	<link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
+	<link rel="shortcut icon" href="/{{ .Site.Params.favicon }}">
 
 	<!-- Bootstrap -->
-  <link href="{{ .Site.BaseURL }}css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap.css" rel="stylesheet">
 	<!-- Icons -->
-  <link href="{{ .Site.BaseURL }}css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
-  <link href="{{ .Site.BaseURL }}css/yamm.css" rel="stylesheet" type="text/css">
+  <link href="/css/yamm.css" rel="stylesheet" type="text/css">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/cdodev.css">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/cdodev.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
     {{ if .Site.Params.customsharethis }}
-        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ end }}
 
 </head>

@@ -60,62 +60,65 @@ undoubtedly foundational in shaping the person I've become, to 9 year old me
 moving back to a small Essex town with a broad Jamaican accent, this didn't
 really seem to be the case.
 
-As a child I struggled to fit in, with the benefit of hindsight I've put this
-down to about 50% personality and the rest due to moving around and not really
-forming stable friendship groups. It's tough to be a kid who doesn't have many
-friends, and even tougher to be the kid who ends up as one of the class victims
-as I did at senior school. However being somewhat isolated did strengthen my
-intense curiosity. It also served to direct that curiosity away from just
-figuring out physical objects (I loved to pull things apart and put them back
-together) and towards trying to figure out people. This obsession has lasted
-ever since.
+Having grown up in so many different cultures meant that fitting back into a
+homogeneous environment was a bit of a challenge and strengthened my naturally
+introspective nature. Being somewhat isolated during my school years did however
+strengthen my intense curiosity. It also served to direct that curiosity away
+from just figuring out physical objects (I loved to pull things apart and put
+them back together) and towards trying to figure out people. This obsession has
+lasted ever since.
 
-Partly I'm sure due to the bullying I suffered, when I was about 13 or 14 I
-decided that I would one day join the Royal Marine Commandos. This to my young
-eyes epitomised toughness and fitting in to a close nit social structure that
-had eluded me at school. This didn't happen as soon as it could though
-(procrastination turned out to be a strong component of my character sitting
-beside curiosity).
+Like many people of my generation, bullying was a feature of growing up. I'm
+sure that was a major driver that lead me at about 13 or 14 to decide that I
+would one day join the Royal Marine Commandos. This to my young eyes epitomised
+toughness and fitting in to a close nit social structure that had eluded me at
+school.
 ** The Royal Marines
 :PROPERTIES:
 :EXPORT_FILE_NAME: the-rm
 :END:
 
-Between deciding I would join the Marines and actually doing it were A-level, 2
-years of University engineering (a course I dropped out of), and many of the jobs
-I listed above. I didn't actually join until I was just shy of my 23rd birthday
-putting me towards the older end of the intake (although thankfully not as old
-as "grandad" the ancient 25 year old).
+Having decided on the Royal Marines in my teens, I didn't actually end up
+joining until I was just shy of my 23rd birthday. This put me towards the older
+end of the intake (although thankfully not as old as "grandad" the ancient 25
+year old).
 
 Commando training was a monumental challenge, as it's designed to be. I remain
 incredibly proud of earning my green beret, but it was really the lessons I
 learned about communicating with people (mainly taught through the medium of
 doing it incredibly poorly) that I feel were the most important benefit from
-that extremely intense period of my life. After I completed commando training in
-December 2000 I went on to do signals training. The kit we were using was about
-40 years old by then: in early 2001 we were still using analog radios and
-batteries that weighed as much as a small house!
+that extremely intense period of my life.
 
-I went on to do operational tours of Sierra Leone shortly after a brutal civil
-war, the bandit country of South Armagh in the closing years of the troubles in
-Northern Ireland, and finally Op Telic 1: the invasion of Iraq in 2003.
+During my 4 years in the corps I completed operational tours of Sierra Leone
+shortly after the brutal civil war, the bandit country of South Armagh in the
+closing years of the troubles in Northern Ireland, and finally Op Telic 1: the
+second gulf war in 2003.
+
+The Royal Marines is a special kind of unit with its own ethos, but ultimately,
+like almost all military units, it's a very rigid and hierarchical. You either
+fit into that structure or you don't. I decided that I wasn't going to make it a
+career until I had a pension, and I was also sceptical that the way the war
+against terror was escalating was the right course so in about 2003 I began
+thinking about what would come next.
 
 ** Teaching myself programming
 :PROPERTIES:
 :EXPORT_FILE_NAME: teaching-myself
 :END:
 
-When Iraq kicked off I was already thinking about moving on from the corps. The
-Royal Marines is a special kind of unit with its own ethos, but ultimately, like
-almost all military units, it's a very rigid and hierarchical that you either
-fit into or you don't. I decided that I wasn't going to make it a career until I
-had a pension, and I was also sceptical that the way the war against terror was
-going was the right course so was faced with the conclusion that I should start
-thinking about what comes next.
+In 2003 the unit I was part of, Commando Helicopter Force, was tasked with
+supporting the invasion of Iraq. We were embarked aboard HMS Ocean, and in early
+2003 we set sail from Plymouth, bound for the middle east.
 
-In 2003 I was in my second unit: Commando Helicopter Force, and the way you get
-helicopters to a war is on board a ship. So in early 2003 we set sail from
-Plymouth, bound for the middle east.
+There was a lot of time on board ship and I had a shiny new laptop with me that
+a friend had convinced me to put Linux on. In the process of installing Red Hat
+(and bricking the laptop) I had come across the seminal [[http://www.catb.org/esr/faqs/hacker-howto.html][How to Become a Hacker]]
+faq by Eric S Raymond, so after we got underway I begged some internet access in
+the ships communications centre and bought a book on python from amazon. Over
+the next few weeks in my down time below desks, with no internet access I banged
+my head against it until I had roughly figured out how to write a computer
+program.
+
 * Blog
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog

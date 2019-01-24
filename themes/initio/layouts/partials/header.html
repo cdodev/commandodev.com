@@ -20,8 +20,6 @@
 
   <link href="/css/yamm.css" rel="stylesheet" type="text/css">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="/css/styles.css">
-	<link rel="stylesheet" href="/css/cdodev.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
@@ -29,11 +27,12 @@
     {{ if .Site.Params.customsharethis }}
         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ end }}
-    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
+    {{ $options := (dict "targetPath" "cdodev.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
    {{ $sass := resources.Get "scss/unify.scss" }}
-   {{ $style := $sass | resources.ToCSS }}
+   {{ $style := $sass | resources.ToCSS $options }}
 
    <link href="{{ $style.Permalink }}" rel="stylesheet">
+	 <link rel="stylesheet" href="/css/cdodev.css">
 
 </head>
 <body>

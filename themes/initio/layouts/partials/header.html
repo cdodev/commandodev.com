@@ -32,7 +32,7 @@
    {{ $sass := resources.Get "scss/unify.scss" }}
    {{ $style := $sass | resources.ToCSS $options }}
 
-   <link href="{{ $style.Permalink }}" rel="stylesheet">
+   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 	 <!-- <link rel="stylesheet" href="/css/cdodev.css"> -->
 
 

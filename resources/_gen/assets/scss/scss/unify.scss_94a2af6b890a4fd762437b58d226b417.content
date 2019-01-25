@@ -19273,9 +19273,6 @@ pre[class*="language-"] {
   outline: none; }
 
 /* Add here all your css styles (customizations) */
-body {
-  padding-bottom: 215px; }
-
 footer#footer {
   min-height: 170px;
   padding-bottom: 0; }

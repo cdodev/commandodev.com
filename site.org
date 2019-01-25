@@ -159,7 +159,6 @@ when you have an intellectual or spiritual breakthrough you realise that you
 haven't got somewhere new, but that you have returned to the beginning with a
 mindset for new understanding
 
-
 * Blog
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog

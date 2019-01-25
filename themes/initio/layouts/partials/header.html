@@ -27,12 +27,14 @@
     {{ if .Site.Params.customsharethis }}
         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ end }}
-    {{ $options := (dict "targetPath" "cdodev.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
+        <!-- "outputStyle" "compressed"  -->
+    {{ $options := (dict "targetPath" "cdodev.css" "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
    {{ $sass := resources.Get "scss/unify.scss" }}
    {{ $style := $sass | resources.ToCSS $options }}
 
    <link href="{{ $style.Permalink }}" rel="stylesheet">
-	 <link rel="stylesheet" href="/css/cdodev.css">
+	 <!-- <link rel="stylesheet" href="/css/cdodev.css"> -->
+
 
 </head>
 <body>

@@ -119,6 +119,47 @@ the next few weeks in my down time below desks, with no internet access I banged
 my head against it until I had roughly figured out how to write a computer
 program.
 
+** Progression
+:PROPERTIES:
+:EXPORT_FILE_NAME: progression
+:END:
+
+I left the Royal Marines in 2004 and went into telecoms operations. The
+difference in technology in a modern 3G network compared to what I was working
+with in the corps (40 year old analog tech) was stark, and I was also able to
+work parts of my embryonic programming skills into my roles. A script to ping
+hosts here, a reporting tool there. Finally I was up to the point of making
+django web apps by about 2006 which took me to Indonesia and my first foray into
+entrepreneurship. I also met the love of my life and got married!
+
+In 2008 we moved back to the UK and I moved into a career as a full time
+programmer. At this point in my life I mostly looked at my time in the Royal
+Marines as something that was a great challenge and great fun, but as something
+separate from my new career. I was wrong.
+
+** Full circle
+:PROPERTIES:
+:EXPORT_FILE_NAME: full-circle
+:END:
+
+Fast forward a few years, having gone through a few programming languages to
+settle on Haskell and a few jobs in finance and start ups and I started to
+realise that the experiences I was exposed to in the Royal Marines were
+absolutely foundational to understanding performance and how people work
+together. I have always been an avid reader and as my technical skills matured I
+started to refocus on my fascination with leadership and people. Eventually I
+read and experienced enough to start making connections between different
+fields. I began to see commonalities across learning and leadership in the
+forces and technical projects. I began to see how lessons from my martial arts
+practice apply to learning a new programming language or operational skill.
+
+There's a concept from Japanese zen which captures this process perfectly.
+*Ensō* symbolises enlightenment and the void, which I think is fitting. Often
+when you have an intellectual or spiritual breakthrough you realise that you
+haven't got somewhere new, but that you have returned to the beginning with a
+mindset for new understanding
+
+
 * Blog
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog

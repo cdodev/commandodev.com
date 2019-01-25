@@ -30,6 +30,25 @@
             {{ end }}
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-6">
+            {{ with .Resources.GetMatch "progression.md" }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-6">
+            {{ with .Resources.GetMatch "full-circle.md" }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="mx-auto g-my-30">
+            <img alt="enso" src="/img/Enso.svg"/>
+        </div>
+    </div>
 </div>
 {{ partial "footer.html" . }}

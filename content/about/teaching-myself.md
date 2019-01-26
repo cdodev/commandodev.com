@@ -1,7 +1,7 @@
 +++
 title = "Teaching myself programming"
 author = ["Ben Ford"]
-lastmod = 2019-01-23T15:08:09+00:00
+lastmod = 2019-01-26T10:49:49+00:00
 type = "about"
 draft = false
 +++

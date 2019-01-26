@@ -26,11 +26,32 @@ My super home page
 My mission is to teach growing tech based companies how to achieve and maintain
 operational excellence as they scale
 
-** Another mission section
+** The problem
 :PROPERTIES:
-:EXPORT_FILE_NAME: mission-sec-1
+:EXPORT_FILE_NAME: the-problem
 :END:
-Mission section
+Starting something is hard. You sweat, struggle and persist and you're off and
+running, you start to gain momentum. You build a team around you of dedicated
+*commandos* - the ones who take risks, get shit done and make things happen - the
+starters. The company is small, communications overhead is minimal and you're
+focused on becoming sustainable and proving your viability.
+
+But then what?
+** Scaling
+:PROPERTIES:
+:EXPORT_FILE_NAME: scaling
+:END:
+
+Then you start to scale up. You get more revenue, or you take on some funding.
+There's more to do, so you add more people. You need to lift your eyes from the
+road in front and look to the horizon, so you add structure and start making
+plans.
+
+Suddenly you can't move as fast as you did before. Your commandos find structure
+constrictive and start to leave. A hierarchy begins to form, which slows
+communications down and introduces noise into the system. The mission becomes
+blurry and people aren't sure how what they are doing contributes to the purpose
+of this grand enterprise that you've put in motion.
 * About Section
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
@@ -45,10 +66,6 @@ Mission section
 I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
 a bouncer, a barman, a refuse collector (for one day), an itinerant marquee
 fabricator, a telecoms engineer and a programmer.
-
-Throughout all those experiences, I've also always remained a dedicated student
-of the human condition. How we interact with and process the experiences we have
-completely fascinates me.
 
 ** My Story
 :PROPERTIES:

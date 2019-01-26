@@ -1,14 +1,6 @@
 {{ partial "header.html" . }}
-<div class="container">
-    <div class="row jumbotron">
-        <div class="col-lg-6">
-            {{ .Content }}
-        </div>
-        <div class="col-lg-6">
-
-        </div>
-    </div>
-
+<div class="container g-py-150">
+    {{ partial "page-heading.html" . }}
     <div class="row">
         <div class="col-lg-6 offset-lg-6">
             {{ with .Resources.GetMatch "my-story.md" }}

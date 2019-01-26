@@ -1,7 +1,7 @@
 +++
 title = "Full circle"
 author = ["Ben Ford"]
-lastmod = 2019-01-25T07:57:17+00:00
+lastmod = 2019-01-26T10:49:49+00:00
 type = "about"
 draft = false
 +++

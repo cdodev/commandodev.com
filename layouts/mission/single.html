@@ -1,18 +1,16 @@
 {{ partial "header.html" . }}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3">
- 						<h1 class="entry-title text-center">My Mission</h1>
+<div class="container g-py-150">
+    {{ partial "page-heading.html" . }}
+    <div class="row g-py-30">
+        <div class="col-lg-6">
+            {{ with .Resources.GetMatch "the-problem.md" }}
+            {{ .Content }}
+            {{ end }}
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <h2>{{ .Content }}</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-            {{ with .Resources.GetMatch "mission-sec-1.md" }}
+    <div class="row g-py-30">
+        <div class="col-lg-6 offset-lg-6">
+            {{ with .Resources.GetMatch "scaling.md" }}
             {{ .Content }}
             {{ end }}
         </div>

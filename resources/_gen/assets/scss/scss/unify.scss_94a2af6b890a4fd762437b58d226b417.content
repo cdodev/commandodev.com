@@ -19277,6 +19277,9 @@ footer#footer {
   min-height: 170px;
   padding-bottom: 0; }
 
+.navbar-brand img {
+  height: 87px; }
+
 /*------------------------------------
   Globals
 ------------------------------------*/

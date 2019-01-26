@@ -1,19 +1,27 @@
-<nav class="navbar navbar-expand sticky-top transparent-header" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-            <img src="/{{ .Site.Params.avatar }}" alt="Commando Development"></a>
+<header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance">
+    <div class="u-header__section u-header__section--light g-bg-white-opacity-0_7 g-transition-0_3 g-py-10">
+        <nav class="navbar navbar-expand-lg" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img src="/{{ .Site.Params.avatar }}" alt="Commando Development"></a>
+                </div>
+                <!-- file:///home/ben/dev/assan/html/unify-main/shortcodes/headers/classic-header--nav-5.html -->
+                <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10">
+                    <ul class="navbar-cdodev navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.main }}
+                        <li class="nav-item g-mx-20--lg g-mb-5 g-mb-0--lg  {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}">
+                            <a class='nav-link'
+                               href="{{ .URL }}">{{ .Name }}
+                            </a>
+                        </li>
+                        {{end}}
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+            <!--container-->
+        </nav>
     </div>
-    <div class="navbar-collapse collapse justify-content-end">
-        <ul class="nav navbar-nav navbar-cdodev">
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <li class="nav-item text-uppercase">
-                <a class='nav-link {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}'
-                   href="{{ .URL }}">{{ .Name }}
-                </a>
-            </li>
-            {{end}}
-        </ul>
-    </div><!--/.nav-collapse -->
-    <!--container-->
-</nav>
+</header>

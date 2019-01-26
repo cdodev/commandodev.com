@@ -19277,8 +19277,12 @@ footer#footer {
   min-height: 170px;
   padding-bottom: 0; }
 
-.navbar-brand img {
-  height: 87px; }
+.navbar {
+  padding: 0; }
+  .navbar .navbar-brand {
+    padding: 0; }
+    .navbar .navbar-brand img {
+      height: 87px; }
 
 /*------------------------------------
   Globals

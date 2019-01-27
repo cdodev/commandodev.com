@@ -1,76 +1,84 @@
 <footer id="footer" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-pt-30">
-	<div class="container">
-		<div class="row">
-			{{ if .Site.Params.footerEnableContact }}
-			<div class="col-md-4">
-				  <h3 class="widget-title">Contact</h3>
-          <ul class="list-unstyled contact">
-            <li><p><strong>
-                <i class="fa fa-fw fa-map-marker mr-2"></i></strong>London, England
-            </p></li>
-            {{ if .Site.Params.email }}
-            <li><p><strong>
-                <i class="fa fa-fw fa-envelope mr-2"></i></strong><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
-            </p></li>
-            {{ end }}
-            {{ if .Site.Params.phone }}
-            <li> <p><strong>
-                <i class="fa fa-fw fa-phone mr-2"></i></strong>{{ .Site.Params.phone }}
-            </p></li>
-            {{ end }}
+	  <div class="container">
+		    <div class="row">
+			      {{ if .Site.Params.footerEnableContact }}
+			      <div class="col-md-4">
+				        <h3 class="widget-title">Contact</h3>
+                <ul class="list-unstyled contact">
+                    <li>
+                        <span  class="u-icon-v1 u-icon-size--sm g-color-primary--hover align-middle">
+                            <i class="fa fa-fw fa-map-marker"></i>
+                        </span>London, England
+                    </li>
+                    {{ if .Site.Params.email }}
+                    <li>
+                        <span  class="u-icon-v1 u-icon-size--sm g-color-primary--hover align-middle">
+                            <i class="fa fa-fw fa-envelope"></i>
+                        </span><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+                    </li>
+                    {{ end }}
+                    {{ if .Site.Params.phone }}
+                    <li>
+                        <span  class="u-icon-v1 u-icon-size--sm g-color-primary--hover align-middle">
+                            <i class="fa fa-fw fa-phone"></i>
+                        </span>{{ .Site.Params.phone }}
+                    </li>
+                    {{ end }}
 
-        </ul>
-				<!-- <div class="widget-body"> -->
-				<!-- <p>{{ if .Site.Params.phone }}<br>{{ end }} -->
-				<!-- {{ if .Site.Params.email }}<a href=""></a><br>{{ end }} -->
-				<!-- <br> -->
-				<!-- {{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }} -->
-				<!-- </p> -->
-				<!-- </div> -->
-			</div>
-			{{ end }}
+                </ul>
+				        <!-- <div class="widget-body"> -->
+				        <!-- <p>{{ if .Site.Params.phone }}<br>{{ end }} -->
+				        <!-- {{ if .Site.Params.email }}<a href=""></a><br>{{ end }} -->
+				        <!-- <br> -->
+				        <!-- {{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }} -->
+				        <!-- </p> -->
+				        <!-- </div> -->
+			      </div>
+			      {{ end }}
 
-			{{ if .Site.Params.footerEnableFollowme }}
-			<div class="col-md-4">
-				<h3 class="widget-title text-center">Follow</h3>
-        <ul class="list-inline footer-social d-flex justify-content-center follow-me-icons">
-        {{ range .Site.Params.social }}
-            {{ if .footer }}
-            <li class="list-inline-item">
-            <a href="{{ .url }}" class="social-icon si-dark si-colored-{{ .icon }}" target="_blank">
-                <i class="fa fa-fw fa-{{ .icon }}-square"></i>
-                <!-- <i class="fa fa-fw fa-{{ .icon }}"></i> -->
-            </a>
-            </li>
-            {{ end }}
-            {{ end }}
-        </ul>
-			</div>
-			{{ end }}
-
-			{{ if .Site.Params.footerEnableTextWidget }}
-			<div class="col-md-4">
-				  <h3 class="widget-title text-center">Operational Excellence</h3>
-				<div class="widget-body">
-				</div>
-			</div>
-			{{ end }}
+			      {{ if .Site.Params.footerEnableFollowme }}
+			      <div class="col-md-4">
+				        <h3 class="text-center">Follow</h3>
+                <ul class="list-inline d-flex justify-content-center">
+                    {{ range .Site.Params.social }}
+                    {{ if .footer }}
+                    <li class="list-inline-item m-0">
+                        <a href="{{ .url }}"
+                           class="u-icon-v3 g-rounded-10 g-color-white--hover g-bg-{{ .icon }}--hover u-icon-size--sm g-mr-15 g-mb-20"
+                           target="_blank">
+                            <i class="fa fa-{{ .icon }}"></i>
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+			      </div>
+			      {{ end }}
 
 
-		</div> <!-- /row ofs -->
-		<div class="row">
-			  <div class="col-md-6 offset-md-3">
-				    <div class="widget-body">
-					      <p class="text-center">
-						        Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}
-						        <!-- Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - -->
-                    Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
-                </p>
-				    </div>
-			  </div>
+			      {{ if .Site.Params.footerEnableTextWidget }}
+			      <div class="col-md-4">
+				        <h3 class="widget-title text-center">Operational Excellence</h3>
+				        <div class="widget-body">
+				        </div>
+			      </div>
+			      {{ end }}
 
-		</div> <!-- /row of copyright -->
-	</div>
+
+		    </div> <!-- /row ofs -->
+		    <div class="row">
+			      <div class="col-md-6 offset-md-3">
+				        <div class="widget-body">
+					          <p class="text-center">
+						            Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}
+						            <!-- Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - -->
+                        Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
+                    </p>
+				        </div>
+			      </div>
+
+		    </div> <!-- /row of copyright -->
+	  </div>
 </footer>
 
 </main>
@@ -107,7 +115,7 @@
 <!-- <script src="/js/custom.js" type="text/javascript"></script> -->
 
 <script type="text/javascript">
-  $(window).on('load', function () {
+    $(window).on('load', function () {
     // initialization of header
     $.HSCore.components.HSHeader.init($('#js-header'));
     // $.HSCore.helpers.HSHamburgers.init('.hamburger');

@@ -144,6 +144,19 @@
   background: $g-color-instagram;
 }
 
+// Hover Color (github)
+.u-icon-block-hover:hover .g-color-github--hover {
+    color: $g-color-github;
+}
+// Hover Border Color (github)
+.u-icon-block-hover:hover .g-brd-github--hover {
+    border-color: $g-color-github;
+}
+
+// Hover BG (github)
+.u-icon-block-hover:hover .g-bg-github--hover {
+    background: $g-color-github;
+}
 // Hover Color (pinterest)
 .u-icon-block-hover:hover .g-color-pinterest--hover {
   color: $g-color-pinterest;

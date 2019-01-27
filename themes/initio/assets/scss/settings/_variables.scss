@@ -228,3 +228,9 @@ $g-color-instagram: #3f729b !default;
 $g-color-instagram-dark-v1: darken($g-color-instagram, 5%) !default;
 $g-color-instagram-dark-v2: darken($g-color-instagram, 10%) !default;
 $g-color-instagram-light-v1: lighten($g-color-instagram, 5%) !default;
+
+// Github Color
+$g-color-github: #333 !default;
+$g-color-github-dark-v1: darken($g-color-github, 5%) !default;
+$g-color-github-dark-v2: darken($g-color-github, 10%) !default;
+$g-color-github-light-v1: lighten($g-color-github, 5%) !default;

@@ -99,3 +99,12 @@
     border-color: $g-color-instagram !important;
   }
 }
+
+/* Github */
+.g-brd-github {
+    border-color: $g-color-github;
+
+    &--hover:hover {
+        border-color: $g-color-github !important;
+    }
+}

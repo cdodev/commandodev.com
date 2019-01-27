@@ -56,6 +56,15 @@
     }
   }
 
+  // Github
+  &-bg-github {
+      border-color: $g-color-github;
+
+      .u-icon-v4-inner {
+          background-color: $g-color-github;
+      }
+  }
+
   // Pinterest
   &-bg-pinterest {
     border-color: $g-color-pinterest;
@@ -165,6 +174,16 @@
     & .u-icon-v4-inner {
       background: $g-color-instagram;
     }
+  }
+
+  // Github
+  &-bg-github--hover:hover,
+  .u-icon-block--hover:hover &-bg-github--hover {
+      border-color: $g-color-github;
+
+      & .u-icon-v4-inner {
+          background: $g-color-github;
+      }
   }
 
   // Pinterest

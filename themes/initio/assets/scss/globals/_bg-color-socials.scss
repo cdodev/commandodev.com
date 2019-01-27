@@ -110,3 +110,13 @@
     background-color: $g-color-instagram-dark-v1 !important;
   }
 }
+
+/* Github */
+.g-bg-github {
+    background-color: $g-color-github;
+
+    .u-block-hover:hover &--hover,
+    &--hover:hover {
+        background-color: $g-color-github-dark-v1 !important;
+    }
+}

@@ -233,6 +233,11 @@
   @include u-button-flat ($g-color-instagram, $g-color-white, $g-color-white);
 }
 
+/* Button Github */
+.u-btn-github {
+    @include u-button-flat ($g-color-github, $g-color-white, $g-color-white);
+}
+
 /* Button VK */
 .u-btn-vk {
   @include u-button-flat ($g-color-vk, $g-color-white, $g-color-white);

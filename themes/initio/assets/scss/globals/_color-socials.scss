@@ -143,3 +143,16 @@
     color: $g-color-instagram !important;
   }
 }
+
+/* Github */
+.g-color-github {
+    color: $g-color-github;
+
+    &:hover {
+        color: $g-color-github-dark-v1;
+    }
+
+    &--hover:hover {
+        color: $g-color-github !important;
+    }
+}

@@ -1,19 +1,27 @@
 {{ partial "header.html" . }}
 <div class="container g-py-150">
     {{ partial "page-heading.html" . }}
+
+    {{ with .Resources.GetMatch "the-problem.md" }}
     <div class="row g-py-30">
         <div class="col-lg-6">
-            {{ with .Resources.GetMatch "the-problem.md" }}
             {{ .Content }}
-            {{ end }}
         </div>
     </div>
-    <div class="row g-py-30">
+    {{ end }}
+    {{ with .Resources.GetMatch "scaling.md" }}
+    <div class="row g-pb-30">
         <div class="col-lg-6 offset-lg-6">
-            {{ with .Resources.GetMatch "scaling.md" }}
             {{ .Content }}
-            {{ end }}
         </div>
     </div>
+    {{ end }}
+    {{ with .Resources.GetMatch "performing.md" }}
+    <div class="row g-py-30">
+        <div class="col-lg-6">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
 </div>
 {{ partial "footer.html" . }}

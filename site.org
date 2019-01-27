@@ -52,6 +52,27 @@ constrictive and start to leave. A hierarchy begins to form, which slows
 communications down and introduces noise into the system. The mission becomes
 blurry and people aren't sure how what they are doing contributes to the purpose
 of this grand enterprise that you've put in motion.
+
+** Performing
+:PROPERTIES:
+:EXPORT_FILE_NAME: performing
+:END:
+
+There are organisations that have figured out how to move fast, while remaining
+oriented on their goals and grounded in who they are. They get the best out of
+people in insanely challenging circumstances, often under ludicrous constraints.
+They operate by consistently holding themselves to standards that are
+universally understood and shared.
+
+One such organisation which has been learning an honing these lessons for over
+350 years is the Royal Marines.
+
+All elite military units have high performance figured out. They are able to
+mould recruits into exceptional soldiers who can be part of a complex social
+structure in a matter of months. The Royal Marines have evolved from a regiment
+of maritime foot soldiers formed in 1664 through many evolutions to today's role
+as an elite, commando trained, rapid reaction force.
+
 * About Section
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:

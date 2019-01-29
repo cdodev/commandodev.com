@@ -4,22 +4,29 @@
 
     {{ with .Resources.GetMatch "the-problem.md" }}
     <div class="row g-py-30">
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "scaling.md" }}
     <div class="row g-pb-30">
-        <div class="col-lg-6 offset-lg-6">
+        <div class="col-lg-6 offset-lg-6 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "performing.md" }}
     <div class="row g-py-30">
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-justify">
             {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+    {{ with .Resources.GetMatch "why-im-here.md" }}
+    <div class="row g-py-30">
+        <div class="col-lg-6 offset-lg-3 text-center">
+            <h4>{{ .Content }}</h4>
         </div>
     </div>
     {{ end }}

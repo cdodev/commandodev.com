@@ -24,7 +24,7 @@ My super home page
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
 My mission is to teach growing tech based companies how to achieve and maintain
-operational excellence as they scale
+*operational excellence* as they scale
 
 ** The problem
 :PROPERTIES:
@@ -44,13 +44,13 @@ But then what?
 
 Then you start to scale up. You get more revenue, or you take on some funding.
 There's more to do, so you add more people. You need to lift your eyes from the
-road in front and look to the horizon, so you add structure and start making
+road in front and look to the horizon, so you add *structure* and start making
 plans.
 
 Suddenly you can't move as fast as you did before. Your commandos find structure
 constrictive and start to leave. A hierarchy begins to form, which slows
-communications down and introduces noise into the system. The mission becomes
-blurry and people aren't sure how what they are doing contributes to the purpose
+*communications* down and introduces noise into the system. The mission becomes
+blurry and people aren't sure how what they are doing contributes to the *purpose*
 of this grand enterprise that you've put in motion.
 
 ** Performing
@@ -60,18 +60,42 @@ of this grand enterprise that you've put in motion.
 
 There are organisations that have figured out how to move fast, while remaining
 oriented on their goals and grounded in who they are. They get the best out of
-people in insanely challenging circumstances, often under ludicrous constraints.
+people in insanely challenging circumstances, often under ludicrous *constraints*.
 They operate by consistently holding themselves to standards that are
-universally understood and shared.
+universally understood and shared. The foundations of this ability are
+*operational excellence*, which enables *continuous improvement* and evolution.
 
 One such organisation which has been learning an honing these lessons for over
-350 years is the Royal Marines.
+350 years is the *Royal Marines*. Way before I was a software developer I served
+in the corps, in fact I [[/about/][taught myself how to code]] en route to the second Iraq
+war on board a ship. When I began my second career in software development I
+looked up my time in the corps as something fun and challenging that had
+certainly shaped me personally, but that didn't have much bearing on my new
+direction.
 
-All elite military units have high performance figured out. They are able to
-mould recruits into exceptional soldiers who can be part of a complex social
-structure in a matter of months. The Royal Marines have evolved from a regiment
-of maritime foot soldiers formed in 1664 through many evolutions to today's role
-as an elite, commando trained, rapid reaction force.
+*I was wrong.*
+
+The Royal Marines have evolved from a regiment of maritime foot soldiers formed
+in 1664 through constant evolution to today's role as an elite, commando trained,
+rapid reaction force. They have *high performance* figured out, and can teach it
+with a repeatable process that's been forged in the fire of *consistent improvement*
+since the time we've had armies.
+
+When I started to realise just what fundamental lessons I'd been exposed to in
+the corps I spent all my spare time working out how to distil those lessons down
+to the *fundamental principles* which could be used in any domain. While the
+principles are universal - the implementation of teaching them in the corps
+involves lots of cold water and certainly wouldn't suit everyone.
+
+** Why I'm here
+:PROPERTIES:
+:EXPORT_FILE_NAME: why-im-here
+:END:
+
+So that's why I'm here.
+
+I want to show you how to apply the foundational principles that underpin elite
+performance to your tech business so that you can make your difference in the world.
 
 * About Section
 :PROPERTIES:
@@ -93,20 +117,17 @@ fabricator, a telecoms engineer and a programmer.
 :EXPORT_FILE_NAME: my-story
 :END:
 My father is an engineer and we spent much of my early childhood in Africa
-(Malawi and Lesotho) and the Caribbean (Jamaica). While these experiences were
-undoubtedly foundational in shaping the person I've become, to 9 year old me
-moving back to a small Essex town with a broad Jamaican accent, this didn't
-really seem to be the case.
+(Malawi and Lesotho) and the Caribbean (Jamaica).
 
-Having grown up in so many different cultures meant that fitting back into a
-homogeneous environment was a bit of a challenge and strengthened my naturally
-introspective nature. Being somewhat isolated during my school years did however
-strengthen my intense curiosity. It also served to direct that curiosity away
-from just figuring out physical objects (I loved to pull things apart and put
-them back together) and towards trying to figure out people. This obsession has
-lasted ever since.
+Having grown up in so many different cultures meant that moving back to the UK
+and fitting into a homogeneous environment was a bit of a challenge and
+strengthened my naturally *introspective* nature. Being somewhat isolated during
+my school years did however strengthen my intense *curiosity*. It also served to
+direct that curiosity away from just figuring out physical objects (I loved to
+pull things apart and put them back together) and towards trying to figure out
+people. This obsession has lasted ever since.
 
-Like many people of my generation, bullying was a feature of growing up. I'm
+Like many people of my generation, *bullying* was a feature of growing up. I'm
 sure that was a major driver that lead me at about 13 or 14 to decide that I
 would one day join the Royal Marine Commandos. This to my young eyes epitomised
 toughness and fitting in to a close nit social structure that had eluded me at
@@ -121,20 +142,20 @@ joining until I was just shy of my 23rd birthday. This put me towards the older
 end of the intake (although thankfully not as old as "grandad" the ancient 25
 year old).
 
-Commando training was a monumental challenge, as it's designed to be. I remain
-incredibly proud of earning my green beret, but it was really the lessons I
+*Commando training* was a monumental challenge, as it's designed to be. I remain
+incredibly proud of earning my *green beret*, but it was really the lessons I
 learned about communicating with people (mainly taught through the medium of
 doing it incredibly poorly) that I feel were the most important benefit from
 that extremely intense period of my life.
 
-During my 4 years in the corps I completed operational tours of Sierra Leone
-shortly after the brutal civil war, the bandit country of South Armagh in the
-closing years of the troubles in Northern Ireland, and finally Op Telic 1: the
-second gulf war in 2003.
+During my 4 years in the corps I completed operational tours of *Sierra Leone*
+shortly after the brutal civil war, the bandit country of *South Armagh* in the
+closing years of the troubles in Northern Ireland, and finally *Op Telic 1: the
+second gulf war* in 2003.
 
 The Royal Marines is a special kind of unit with its own ethos, but ultimately,
 like almost all military units, it's a very rigid and hierarchical. You either
-fit into that structure or you don't. I decided that I wasn't going to make it a
+fit into that *structure* or you don't. I decided that I wasn't going to make it a
 career until I had a pension, and I was also sceptical that the way the war
 against terror was escalating was the right course so in about 2003 I began
 thinking about what would come next.
@@ -145,14 +166,14 @@ thinking about what would come next.
 :END:
 
 In 2003 the unit I was part of, Commando Helicopter Force, was tasked with
-supporting the invasion of Iraq. We were embarked aboard HMS Ocean, and in early
+supporting the invasion of *Iraq*. We were embarked aboard HMS Ocean, and in early
 2003 we set sail from Plymouth, bound for the middle east.
 
 There was a lot of time on board ship and I had a shiny new laptop with me that
-a friend had convinced me to put Linux on. In the process of installing Red Hat
+a friend had convinced me to put *Linux* on. In the process of installing Red Hat
 (and bricking the laptop) I had come across the seminal [[http://www.catb.org/esr/faqs/hacker-howto.html][How to Become a Hacker]]
 faq by Eric S Raymond, so after we got underway I begged some internet access in
-the ships communications centre and bought a book on python from amazon. Over
+the ships communications centre and bought a book on *python* from amazon. Over
 the next few weeks in my down time below desks, with no internet access I banged
 my head against it until I had roughly figured out how to write a computer
 program.
@@ -162,18 +183,20 @@ program.
 :EXPORT_FILE_NAME: progression
 :END:
 
-I left the Royal Marines in 2004 and went into telecoms operations. The
+I left the Royal Marines in 2004 and went into *telecoms* operations. The
 difference in technology in a modern 3G network compared to what I was working
 with in the corps (40 year old analog tech) was stark, and I was also able to
 work parts of my embryonic programming skills into my roles. A script to ping
 hosts here, a reporting tool there. Finally I was up to the point of making
 django web apps by about 2006 which took me to Indonesia and my first foray into
-entrepreneurship. I also met the love of my life and got married!
+*entrepreneurship*. I also met the *love of my life* and got married!
 
 In 2008 we moved back to the UK and I moved into a career as a full time
 programmer. At this point in my life I mostly looked at my time in the Royal
-Marines as something that was a great challenge and great fun, but as something
-separate from my new career. I was wrong.
+Marines as something that was a great *challenge* and great fun, but as something
+separate from my new career.
+
+*I was so wrong.*
 
 ** Full circle
 :PROPERTIES:
@@ -181,11 +204,11 @@ separate from my new career. I was wrong.
 :END:
 
 Fast forward a few years, having gone through a few programming languages to
-settle on Haskell and a few jobs in finance and start ups and I started to
+settle on *Haskell* and a few jobs in finance and start ups and I started to
 realise that the experiences I was exposed to in the Royal Marines were
 absolutely foundational to understanding performance and how people work
 together. I have always been an avid reader and as my technical skills matured I
-started to refocus on my fascination with leadership and people. Eventually I
+started to refocus on my fascination with *leadership* and people. Eventually I
 read and experienced enough to start making connections between different
 fields. I began to see commonalities across learning and leadership in the
 forces and technical projects. I began to see how lessons from my martial arts

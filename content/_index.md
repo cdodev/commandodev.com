@@ -1,13 +1,9 @@
 +++
 title = "Home"
 author = ["Ben Ford"]
-lastmod = 2019-01-29T07:29:46+00:00
+lastmod = 2019-02-03T19:31:45+00:00
 draft = false
 [menu.main]
   weight = 1001
   identifier = "home"
 +++
-
-## A heading I guess {#a-heading-i-guess}
-
-My super home page

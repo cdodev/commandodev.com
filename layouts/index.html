@@ -1,0 +1,79 @@
+{{ partial "header.html" . }}
+<div class="container g-py-110">
+{{ with .Site.GetPage "/home" }}
+    {{ with .GetPage "elite-development.md" }}
+    {{ partial "page-heading.html" . }}
+    {{ end }}
+    {{ with .GetPage "who-am-i.md" }}
+    <div class="row">
+        <div class="col-lg-6 text-justify">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+    {{ with .GetPage "principle.md" }}
+    <div class="row">
+
+        <blockquote class="blockquote g-bg-primary g-color-white g-brd-left-none g-font-size-16 g-pa-20 g-mb-30 g-pl-40">
+            <h4 class="h3 u-heading-v1__title">Principle</h4>
+            <div class="">
+                <p><em>ˈprɪnsɪp(ə)l</em> noun</p>
+                <ol>
+                    <li>a fundamental truth or proposition that serves as the foundation for a system
+                        of belief or behaviour or for a chain of reasoning. “the basic principles of
+                        justice”</li>
+                    <li>a general scientific theorem or law that has numerous special applications
+                        across a wide field.</li>
+                </ol>
+
+                <p>synonyms:   truth, proposition, concept, idea, theory, postulate; More</p>
+            </div>
+            <footer class="blockquote-footer g-color-white g-ml-30">
+                <cite title="Source Title">Google Dictionary</cite>
+            </footer>
+        </blockquote>
+        <div class="col-lg-8 offset-lg-2">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+    {{ with .GetPage "purpose.md" }}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="u-heading-v1-4 text-left g-bg-main g-brd-primary g-mb-20">
+ 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
+            </div>
+        </div>
+        <div class="col-lg-6 text-justify">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+    {{ with .GetPage "people.md" }}
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="u-heading-v1-4 text-right g-bg-main g-brd-primary g-mb-20">
+ 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-6 text-justify">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+    {{ with .GetPage "practices.md" }}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="u-heading-v1-4 text-left g-bg-main g-brd-primary g-mb-20">
+ 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
+            </div>
+        </div>
+        <div class="col-lg-6 text-justify">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
+</div>
+{{ partial "footer.html" . }}

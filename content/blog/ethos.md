@@ -1,7 +1,7 @@
 +++
 title = "Ethos"
 author = ["Ben Ford"]
-lastmod = 2019-01-29T07:29:47+00:00
+lastmod = 2019-02-03T19:31:48+00:00
 draft = false
 +++
 

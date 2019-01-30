@@ -1,18 +1,26 @@
 <header id="js-header"
-        class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance"
-        data-header-fix-moment="500"
+        class="u-header u-header--abs-top u-header--show-hide u-header--toggle-section u-header--change-appearance"
+        data-header-fix-moment="300"
         data-header-fix-effect="slide">
 
-    <div class="u-header__section u-header__section--light g-bg-white-opacity-0_7 g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-py-10" data-header-fix-moment-classes="u-shadow-v18 g-py-0">
-        <nav class="navbar navbar-expand-lg" role="navigation">
+    <div class="u-header__section u-header__section--light g-bg-white-opacity-0_1 g-transition-0_2 g-py-10" data-header-fix-moment-exclude="g-py-10" data-header-fix-moment-classes="u-shadow-v18 g-py-0 g-bg-white-opacity-0_8">
+        <nav class="navbar navbar-expand-lg container-fluid" role="navigation">
 
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                <span class="hamburger hamburger--slider">
 
-            <div class="navbar-header">
+                    <span class="hamburger-box">
+
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </span>
+            </button>
+            <div class="navbar-header offset-lg-1">
                 <a class="navbar-brand" href="/">
                     <img src="/{{ .Site.Params.avatar }}" alt="Commando Development"></a>
             </div>
             <!-- file:///home/ben/dev/assan/html/unify-main/shortcodes/headers/classic-header--nav-5.html -->
-            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10">
+            <div id="navBar" class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10">
                 <ul class="navbar-cdodev navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}

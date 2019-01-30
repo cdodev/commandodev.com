@@ -1,0 +1,17 @@
+<section class="dzsparallaxer auto-init  height-is-based-on-content use-loading"
+         data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '10'}"
+         data-responsive-optimal-height="600">
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_5--after"
+         style="height: 140%; background-image: url({{ .Get "imgurl" }})"></div>
+    <!-- End Parallax Image -->
+
+    <div class="container text-center g-color-white g-py-200--md g-py-150">
+        <div class="row">
+            <div class="col-md-8 ml-md-auto mr-md-auto">
+                <div class="u-heading-v7-2 g-mb-30">
+                    <h2>{{ .Inner }}</h2>
+            </div>
+        </div>
+    </div>
+</section>

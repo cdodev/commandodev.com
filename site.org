@@ -4,14 +4,132 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 * Home
 :PROPERTIES:
-:EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_SECTION:
 :EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_FILE_NAME: _index
 :END:
 
-** A heading I guess
-My super home page
+* Home Section
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: home
+:EXPORT_HUGO_HEADLESS: t
+:END:
+** Elite software development
+:PROPERTIES:
+:EXPORT_FILE_NAME: elite-development
+:EXPORT_HUGO_HEADLESS: t
+:END:
+In the Royal Marines we used
+to say elite performance is a state of mind. I can show you what that means for
+software development.
+# {{< header imgurl="/img/cdo-memorial-crop.jpg" >}}
+# {{< /header >}}
 
+** TODO Who am I?
+:PROPERTIES:
+:EXPORT_FILE_NAME: who-am-i
+:EXPORT_HUGO_HEADLESS: t
+:END:
+You know that feeling of spinning your wheels, that you just can't find
+*traction*? I've been there, in companies large and small, as a programmer and a
+technical leader. About 4 years ago my brain basically short circuited itself
+and banned me from learning more tech stuff until I figured people out. I found
+*answers*, lots of them. The most surprising thing about this process of self
+education was just how many of the answers were actually reminders.
+
+They were things I had already learned when I was a *Royal Marine* in the early 2000s.
+
+I dug more, read more, and the many answers I thought I had found started to
+coalesce. The disparate lessons started to merge into *principles*. As I began
+to apply these principles to other parts of my life, like my *martial arts*
+practice, it also became clear that I'd been looking at many parts of the same
+puzzle. There was actually *ONE PRINCIPLE* at the centre of many human
+endeavours.
+
+Before I make such a bold claim, let's just take a quick look at the definition
+of principle
+
+** TODO Principle
+:PROPERTIES:
+:EXPORT_FILE_NAME: principle
+:EXPORT_HUGO_HEADLESS: t
+:END:
+
+# {{% blockquote title="Principle" source="Google Dictionary" %}}
+# /ˈprɪnsɪp(ə)l/
+# noun
+# 1. a fundamental truth or proposition that serves as the foundation for a system
+#    of belief or behaviour or for a chain of reasoning. "the basic principles of
+#    justice"
+# 2. a general scientific theorem or law that has numerous special applications
+#    across a wide field.
+
+# synonyms:	truth, proposition, concept, idea, theory, postulate; More
+# {{% /blockquote %}}
+
+This is what I want to show you.
+
+The single principle that's you must understand to achieve the *operational
+excellence* that every business needs to *thrive* and *scale*.
+
+The single principle that unites the 3 pillars of
+
+[[purpose][*PURPOSE*]]
+
+[[purpose][*PEOPLE*]]
+
+*PRACTICES*
+
+<<purpose>>
+** TODO Purpose and Mission
+:PROPERTIES:
+:EXPORT_FILE_NAME: purpose
+:EXPORT_HUGO_HEADLESS: t
+:END:
+
+What is your company's reason for being? What's its purpose? What's the one
+HA that gets your people fired up for work in the morning?
+# {{< header imgurl="/img/40-cdo-afghanistan.jpg" >}}
+# {{< /header >}}
+
+<<people>>
+** TODO People and Culture
+:PROPERTIES:
+:EXPORT_FILE_NAME: people
+:EXPORT_HUGO_HEADLESS: t
+:END:
+
+Companies always say that "their people are their greatest asset". But how do you
+ensure that's really true? How do you build a cohesive team who support and push
+each other to greatness?
+# {{< header imgurl="/img/training.jpg" >}}
+# {{< /header >}}
+
+<<pract>>
+** TODO Practices and Process
+:PROPERTIES:
+:EXPORT_FILE_NAME: practices
+:EXPORT_HUGO_HEADLESS: t
+:END:
+
+When you know you do something well, when you've really nailed it, is it
+repeatable? Can you teach anyone to achieve the same level of excellence you
+have reached?
+
+** TODO What people say
+:PROPERTIES:
+:EXPORT_FILE_NAME: what-people-say
+:EXPORT_HUGO_HEADLESS: t
+:END:
+People say Ben is great
+
+** TODO The Process
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: home
+:EXPORT_FILE_NAME: the-process
+:EXPORT_HUGO_HEADLESS: t
+:END:
+Working with me
 * Mission Section
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:

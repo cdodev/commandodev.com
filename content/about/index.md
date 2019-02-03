@@ -1,7 +1,7 @@
 +++
 title = "About"
 author = ["Ben Ford"]
-lastmod = 2019-02-03T19:31:47+00:00
+lastmod = 2019-02-03T19:33:42+00:00
 type = "about"
 draft = false
 [menu.main]

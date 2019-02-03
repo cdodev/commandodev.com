@@ -1,7 +1,7 @@
 +++
 title = "People and Culture"
 author = ["Ben Ford"]
-lastmod = 2019-02-03T19:31:46+00:00
+lastmod = 2019-02-03T19:33:41+00:00
 draft = true
 headless = true
 +++
@@ -10,4 +10,4 @@ Companies always say that "their people are their greatest asset". But how do yo
 ensure that's really true? How do you build a cohesive team who support and push
 each other to greatness?
 
-<a id="orgabc721e"></a>
+<a id="orge2f0cde"></a>

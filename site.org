@@ -25,10 +25,14 @@ software development.
 # {{< header imgurl="/img/cdo-memorial-crop.jpg" >}}
 # {{< /header >}}
 
-** TODO Who am I?
+** DONE Who am I?
+CLOSED: [2019-02-03 Sun 19:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: who-am-i
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:38]
 :END:
 You know that feeling of spinning your wheels, that you just can't find
 *traction*? I've been there, in companies large and small, as a programmer and a
@@ -49,10 +53,14 @@ endeavours.
 Before I make such a bold claim, let's just take a quick look at the definition
 of principle
 
-** TODO Principle
+** DONE Principles
+CLOSED: [2019-02-03 Sun 19:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: principle
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:38]
 :END:
 
 # {{% blockquote title="Principle" source="Google Dictionary" %}}
@@ -81,10 +89,14 @@ The single principle that unites the 3 pillars of
 *PRACTICES*
 
 <<purpose>>
-** TODO Purpose and Mission
+** DONE Purpose and Mission
+CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
 :EXPORT_FILE_NAME: purpose
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:36]
 :END:
 
 What is your company's reason for being? What's its purpose? What's the one
@@ -93,10 +105,14 @@ HA that gets your people fired up for work in the morning?
 # {{< /header >}}
 
 <<people>>
-** TODO People and Culture
+** DONE People and Culture
+CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
 :EXPORT_FILE_NAME: people
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:36]
 :END:
 
 Companies always say that "their people are their greatest asset". But how do you
@@ -106,28 +122,40 @@ each other to greatness?
 # {{< /header >}}
 
 <<pract>>
-** TODO Practices and Process
+** DONE Practices and Process
+CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
 :EXPORT_FILE_NAME: practices
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:36]
 :END:
 
 When you know you do something well, when you've really nailed it, is it
 repeatable? Can you teach anyone to achieve the same level of excellence you
 have reached?
 
-** TODO What people say
+** DONE What people say
+CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
 :EXPORT_FILE_NAME: what-people-say
 :EXPORT_HUGO_HEADLESS: t
 :END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:36]
+:END:
 People say Ben is great
 
-** TODO The Process
+** DONE The Process
+CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: home
 :EXPORT_FILE_NAME: the-process
 :EXPORT_HUGO_HEADLESS: t
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-02-03 Sun 19:36]
 :END:
 Working with me
 * Mission Section

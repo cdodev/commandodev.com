@@ -416,9 +416,9 @@ mindset for new understanding
 ** Blog
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_MENU: :menu "main"
 :END:
 
+# :EXPORT_HUGO_MENU: :menu "main"
 My Blog
 
 ** Ethos

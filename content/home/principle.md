@@ -2,7 +2,7 @@
 title = "Principles"
 author = ["Ben Ford"]
 date = 2019-02-03T19:38:00+00:00
-lastmod = 2019-02-03T19:38:26+00:00
+lastmod = 2019-02-06T09:16:26+00:00
 draft = false
 headless = true
 +++
@@ -14,10 +14,10 @@ excellence** that every business needs to **thrive** and **scale**.
 
 The single principle that unites the 3 pillars of
 
-[**PURPOSE**](#org8d16995)
+[**PURPOSE**](#org818c70f)
 
-[**PEOPLE**](#org8d16995)
+[**PEOPLE**](#org818c70f)
 
 **PRACTICES**
 
-<a id="org8d16995"></a>
+<a id="org818c70f"></a>

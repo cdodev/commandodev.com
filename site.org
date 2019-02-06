@@ -35,15 +35,20 @@ CLOSED: [2019-02-03 Sun 19:38]
 - State "DONE"       from "TODO"       [2019-02-03 Sun 19:38]
 :END:
 You know that feeling of spinning your wheels, that you just can't find
-*traction*? I've been there, in companies large and small, as a programmer and a
-technical leader. About 4 years ago my brain basically short circuited itself
-and banned me from learning more tech stuff until I figured people out. I found
-*answers*, lots of them. The most surprising thing about this process of self
+*traction*? I've been there. I've experienced this in companies large and small,
+new and established. As both a programmer and a technical leader. About 4 years
+ago my brain basically short circuited itself and banned me from learning more
+tech stuff until I figured people out. I found *answers* in the fields of
+cognitive physiology, behavioural economics and in the hundreds of book I read.
+Lots of answers in fact, but also a nagging feeling that I was missing something
+fundamental - feeling different parts of the elephant without seeing the whole
+picture if you will. The most surprising thing about this process of self
 education was just how many of the answers were actually reminders.
 
-They were things I had already learned when I was a *Royal Marine* in the early 2000s.
+They were things I had already learned but not recognised when I was a *Royal
+Marine* in the early 2000s.
 
-I dug more, read more, and the many answers I thought I had found started to
+As I learned and read more, many threads in the answers I had found started to
 coalesce. The disparate lessons started to merge into *principles*. As I began
 to apply these principles to other parts of my life, like my *martial arts*
 practice, it also became clear that I'd been looking at many parts of the same
@@ -100,7 +105,25 @@ CLOSED: [2019-02-03 Sun 19:36]
 :END:
 
 What is your company's reason for being? What's its purpose? What's the one
-HA that gets your people fired up for work in the morning?
+mission that gets your people fired up for work in the morning?
+
+It's critical that there's a consistent, concise message, which is shared across
+the whole organisation, laying out why you're here. A company's mission is the
+*WHY* that get people pulling in the same direction.
+
+Imagine a bunch of iron filings scattered onto a plate. Their orientation is
+random there's no discernable pattern. As soon as you bring a magnet within
+range though, the filings line up with an invisible force and organise
+themselves to point the right direction. *MISSON* is magnetism for people.
+
+# https://thinkgrowth.org/what-elon-musk-taught-me-about-growing-a-business-c2c173f5bff3
+{{% blockquote title="Aligning Vectors" source="Elon Musk" %}}
+
+“Every person in your company is a vector. Your progress is determined by the
+sum of all vectors.”
+
+{{% /blockquote %}}
+
 # {{< header imgurl="/img/40-cdo-afghanistan.jpg" >}}
 # {{< /header >}}
 
@@ -118,6 +141,14 @@ CLOSED: [2019-02-03 Sun 19:36]
 Companies always say that "their people are their greatest asset". But how do you
 ensure that's really true? How do you build a cohesive team who support and push
 each other to greatness?
+
+If mission is the direction you're headed in and why you're making your change
+in the world the culture that develops is the vessel that will take you there.
+Culture is *WHO* you are. The conditions and constraints you put in place define
+what that culture becomes.
+
+You don't build a culture it is *EMERGENT* based on the environment in which it
+grows.
 # {{< header imgurl="/img/training.jpg" >}}
 # {{< /header >}}
 
@@ -133,8 +164,20 @@ CLOSED: [2019-02-03 Sun 19:36]
 :END:
 
 When you know you do something well, when you've really nailed it, is it
-repeatable? Can you teach anyone to achieve the same level of excellence you
+repeatable? Can you teach anyone to achieve the same level of *excellence* you
 have reached?
+
+*Process* can be a bit of a dirty word in software development. It conjures up
+images of big A agile consultants enforcing rituals and ceremonies that
+ultimately do nothing to improve performance and everything to destroy morale.
+Most professional developers will have at least one horror story of working in a
+place that fell for this kind of cargo culting.
+
+That's why I prefer to think in terms of *PRACTICES*
+
+Practices are your playbooks. In the Royal Marines we would refer to these as
+*SOPs*: Standard Operating Procedures. They are constantly evolving, improving
+instructions that point the way to ever increasing performance.
 
 ** DONE What people say
 CLOSED: [2019-02-03 Sun 19:36]

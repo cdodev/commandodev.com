@@ -2,7 +2,7 @@
 title = "People and Culture"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-02-03T19:38:26+00:00
+lastmod = 2019-02-06T08:00:48+00:00
 draft = false
 headless = true
 +++
@@ -11,4 +11,12 @@ Companies always say that "their people are their greatest asset". But how do yo
 ensure that's really true? How do you build a cohesive team who support and push
 each other to greatness?
 
-<a id="orgebc5676"></a>
+If mission is the direction you're headed in and why you're making your change
+in the world the culture that develops is the vessel that will take you there.
+Culture is **WHO** you are. The conditions and constraints you put in place define
+what that culture becomes.
+
+You don't build a culture it is **EMERGENT** based on the environment in which it
+grows.
+
+<a id="org1918c21"></a>

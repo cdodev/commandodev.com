@@ -2,7 +2,7 @@
 title = "Purpose and Mission"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-02-06T09:16:26+00:00
+lastmod = 2019-02-14T18:29:04+00:00
 draft = false
 headless = true
 +++
@@ -12,7 +12,7 @@ mission that gets your people fired up for work in the morning?
 
 It's critical that there's a consistent, concise message, which is shared across
 the whole organisation, laying out why you're here. A company's mission is the
-**WHY** that get people pulling in the same direction.
+**WHY** that gets people pulling in the same direction.
 
 Imagine a bunch of iron filings scattered onto a plate. Their orientation is
 random there's no discernable pattern. As soon as you bring a magnet within
@@ -26,4 +26,4 @@ sum of all vectors.”
 
 {{% /blockquote %}}
 
-<a id="org1962f0e"></a>
+<a id="orga77d345"></a>

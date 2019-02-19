@@ -85,13 +85,9 @@ This is what I want to show you.
 The single principle that's you must understand to achieve the *operational
 excellence* that every business needs to *thrive* and *scale*.
 
-The single principle that unites the 3 pillars of
+The single principle that unites the 3 pillars of *PURPOSE* *PEOPLE* and *PRACTICES*
 
-[[purpose][*PURPOSE*]]
-
-[[purpose][*PEOPLE*]]
-
-*PRACTICES*
+Let's have a look at each of these in turn.
 
 <<purpose>>
 ** DONE Purpose and Mission
@@ -152,7 +148,7 @@ grows.
 # {{< header imgurl="/img/training.jpg" >}}
 # {{< /header >}}
 
-<<pract>>
+<<practices>>
 ** DONE Practices and Process
 CLOSED: [2019-02-03 Sun 19:36]
 :PROPERTIES:
@@ -434,6 +430,12 @@ First blog post about ethos and stuff
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 Mission really is everyt
+** TODO Intuition vs Cognition                                           :blog:
+:PROPERTIES:
+:EXPORT_FILE_NAME: intuition-vs-cognition
+:EXPORT_HUGO_MENU: :parent blog
+:END:
+[[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
 * Brief
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: brief

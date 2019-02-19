@@ -1,7 +1,7 @@
 +++
 title = "Elite software development"
 author = ["Ben Ford"]
-lastmod = 2019-02-06T09:16:26+00:00
+lastmod = 2019-02-19T11:24:18+00:00
 draft = false
 headless = true
 +++

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="202.4722mm"
+   height="160.1826mm"
+   viewBox="0 0 202.4722 160.1826"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="maslow.svg"
+   inkscape:export-filename="/home/ben/docs/org/commandodev.com/maslow.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="627.91172"
+     inkscape:cy="343.1336"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1918"
+     inkscape:window-height="1078"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.3850017,-119.91718)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.44955218px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 3.7929656,279.875 H 205.44923 L 104.6211,120.33791 Z"
+       id="path4485"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.47582135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 28.518335,241.34196 H 181.04497"
+       id="path4487"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.48412457px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 51.317052,205.05666 H 158.56736"
+       id="path4489"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.47507074px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 104.6211,128.6328 c 0,70.64392 0,70.64392 0,70.64392"
+       id="path4491"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.98208809px;line-height:11.23880386px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44955218"
+       x="-124.1427"
+       y="169.64804"
+       id="text4495"
+       transform="rotate(-58.776657)"><tspan
+         sodipodi:role="line"
+         id="tspan4493"
+         x="-124.1427"
+         y="169.64804"
+         style="stroke-width:0.44955218">Dev</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.98208809px;line-height:11.23880386px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44955218"
+       x="194.60898"
+       y="-4.2039084"
+       id="text4499"
+       transform="rotate(57.156215)"
+       inkscape:transform-center-x="7.385499"
+       inkscape:transform-center-y="-1.1574437e-06"><tspan
+         sodipodi:role="line"
+         id="tspan4497"
+         x="194.60898"
+         y="-4.2039084"
+         style="stroke-width:0.44955218">Data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.98208809px;line-height:11.23880386px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44955218"
+       x="68.937881"
+       y="230.42426"
+       id="text4503"><tspan
+         sodipodi:role="line"
+         id="tspan4501"
+         x="68.937881"
+         y="230.42426"
+         style="stroke-width:0.44955218">DevOps</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.98208809px;line-height:11.23880386px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44955218"
+       x="53.976227"
+       y="264.14066"
+       id="text4507"><tspan
+         sodipodi:role="line"
+         id="tspan4505"
+         x="53.976227"
+         y="264.14066"
+         style="stroke-width:0.44955218">People Ops</tspan></text>
+  </g>
+</svg>

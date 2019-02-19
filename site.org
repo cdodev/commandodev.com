@@ -217,7 +217,7 @@ My mission is to teach growing tech based companies how to achieve and maintain
 :END:
 Starting something is hard. You sweat, struggle and persist and you're off and
 running, you start to gain momentum. You build a team around you of dedicated
-*commandos* - the ones who take risks, get shit done and make things happen - the
+*commandos*. The ones who take risks, get shit done and make things happen - the
 starters. The company is small, communications overhead is minimal and you're
 focused on becoming sustainable and proving your viability.
 

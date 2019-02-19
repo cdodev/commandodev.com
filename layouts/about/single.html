@@ -2,35 +2,35 @@
 <div class="container g-py-110">
     {{ partial "page-heading.html" . }}
     <div class="row">
-        <div class="col-lg-6 offset-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ with .Resources.GetMatch "my-story.md" }}
             {{ .Content }}
             {{ end }}
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ with .Resources.GetMatch "the-rm.md" }}
             {{ .Content }}
             {{ end }}
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 offset-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ with .Resources.GetMatch "teaching-myself.md" }}
             {{ .Content }}
             {{ end }}
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ with .Resources.GetMatch "progression.md" }}
             {{ .Content }}
             {{ end }}
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 offset-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ with .Resources.GetMatch "full-circle.md" }}
             {{ .Content }}
             {{ end }}

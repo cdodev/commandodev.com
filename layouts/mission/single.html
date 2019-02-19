@@ -4,31 +4,40 @@
 
     {{ with .Resources.GetMatch "the-problem.md" }}
     <div class="row g-py-30">
-        <div class="col-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "scaling.md" }}
     <div class="row g-pb-30">
-        <div class="col-lg-6 offset-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "performing.md" }}
     <div class="row g-py-30">
-        <div class="col-lg-6 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "why-im-here.md" }}
     <div class="row g-py-30">
-        <div class="col-lg-6 offset-lg-3 text-center">
+        <div class="col-lg-8 offset-lg-2 text-center">
             <h4>{{ .Content }}</h4>
         </div>
     </div>
     {{ end }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget"
+                 data-url="https://calendly.com/commandodevelopment"
+                 style="min-width:340px;height:580px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        </div>
+    </div>
 </div>
 {{ partial "footer.html" . }}

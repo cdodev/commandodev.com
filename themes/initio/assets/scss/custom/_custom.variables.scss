@@ -1,9 +1,192 @@
 // Add here all your customized variables
-$g-color-primary: #087B37;
-$g-color-primary: #009c01;
-$g-color-primary: #006636;
+$g-color-primary: #087B38;
 
 
 $g-font-primary: "Raleway", "Open Sans", Helvetica, Arial, sans-serif !default;
 
 $g-font-primary-size: 16px;
+
+:root {
+    --bl1: #010816;
+    --bl2: #0A2852;
+    --bl3: #205182;
+    --bl4: #5D8CAD;
+    --bl5: #A1BCC9;
+    --bl6: #BCD0D7;
+    --bl7: #C9DDE0;
+    --bl8: #D4E5E6;
+    --bl9: #DAE8E7;
+    --grn1: #050B07;
+    --grn2: #0D2C19;
+    --grn3: #0A5228;
+    --grn-base: #087B3C;
+    --grn5: #24AE68;
+    --grn6: #62CD9B;
+    --grn7: #B0DDCA;
+    --grn8: #D0E7DE;
+    --grn9: #D6EBE3;
+    --r1: #450722;
+    --r2: #A11522;
+    --r3: #D14F36;
+    --o1: #E9B876;
+    --y1: #F3EFC3;
+    --grey1: #151517;
+    --grey2: #3E3F45;
+    --grey3: #62646C;
+    --grey4: #828590;
+    --grey5: #9DA1AE;
+    --grey6: #B2B8C5;
+    --grey7: #C9D1DE;
+    --grey8: #D5DFED;
+    --grey9: #E1EDFA;
+}
+// [
+//   {
+//     "paletteName": "blues",
+//     "swatches": [
+//       {
+//         "name": "bl1",
+//         "color": "010816"
+//       },
+//       {
+//         "name": "bl2",
+//         "color": "0A2852"
+//       },
+//       {
+//         "name": "bl3",
+//         "color": "205182"
+//       },
+//       {
+//         "name": "bl4",
+//         "color": "5D8CAD"
+//       },
+//       {
+//         "name": "bl5",
+//         "color": "A1BCC9"
+//       },
+//       {
+//         "name": "bl6",
+//         "color": "BCD0D7"
+//       },
+//       {
+//         "name": "bl7",
+//         "color": "C9DDE0"
+//       },
+//       {
+//         "name": "bl8",
+//         "color": "D4E5E6"
+//       },
+//       {
+//         "name": "bl9",
+//         "color": "DAE8E7"
+//       }
+//     ]
+//   },
+//   {
+//     "paletteName": "greens",
+//     "swatches": [
+//       {
+//         "name": "grn1",
+//         "color": "050B07"
+//       },
+//       {
+//         "name": "grn2",
+//         "color": "0D2C19"
+//       },
+//       {
+//         "name": "grn3",
+//         "color": "0A5228"
+//       },
+//       {
+//         "name": "grn-base",
+//         "color": "087B3C"
+//       },
+//       {
+//         "name": "grn5",
+//         "color": "24AE68"
+//       },
+//       {
+//         "name": "grn6",
+//         "color": "62CD9B"
+//       },
+//       {
+//         "name": "grn7",
+//         "color": "B0DDCA"
+//       },
+//       {
+//         "name": "grn8",
+//         "color": "D0E7DE"
+//       },
+//       {
+//         "name": "grn9",
+//         "color": "D6EBE3"
+//       }
+//     ]
+//   },
+//   {
+//     "paletteName": "reds",
+//     "swatches": [
+//       {
+//         "name": "r1",
+//         "color": "450722"
+//       },
+//       {
+//         "name": "r2",
+//         "color": "A11522"
+//       },
+//       {
+//         "name": "r3",
+//         "color": "D14F36"
+//       },
+//       {
+//         "name": "o1",
+//         "color": "E9B876"
+//       },
+//       {
+//         "name": "y1",
+//         "color": "F3EFC3"
+//       }
+//     ]
+//   },
+//   {
+//     "paletteName": "greys",
+//     "swatches": [
+//       {
+//         "name": "grey1",
+//         "color": "151517"
+//       },
+//       {
+//         "name": "grey2",
+//         "color": "3E3F45"
+//       },
+//       {
+//         "name": "grey3",
+//         "color": "62646C"
+//       },
+//       {
+//         "name": "grey4",
+//         "color": "828590"
+//       },
+//       {
+//         "name": "grey5",
+//         "color": "9DA1AE"
+//       },
+//       {
+//         "name": "grey6",
+//         "color": "B2B8C5"
+//       },
+//       {
+//         "name": "grey7",
+//         "color": "C9D1DE"
+//       },
+//       {
+//         "name": "grey8",
+//         "color": "D5DFED"
+//       },
+//       {
+//         "name": "grey9",
+//         "color": "E1EDFA"
+//       }
+//     ]
+//   }
+// ]

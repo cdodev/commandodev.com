@@ -1,7 +1,7 @@
 +++
 title = "My Story"
 author = ["Ben Ford"]
-lastmod = 2019-02-06T09:16:27+00:00
+lastmod = 2019-02-22T06:13:48+00:00
 type = "about"
 draft = false
 +++
@@ -20,5 +20,5 @@ people. This obsession has lasted ever since.
 Like many people of my generation, **bullying** was a feature of growing up. I'm
 sure that was a major driver that lead me at about 13 or 14 to decide that I
 would one day join the Royal Marine Commandos. This to my young eyes epitomised
-toughness and fitting in to a close nit social structure that had eluded me at
+toughness and fitting in to a close-knit social structure that had eluded me at
 school.

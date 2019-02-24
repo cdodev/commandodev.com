@@ -2,7 +2,13 @@
 <div class="container g-py-110">
     {{ partial "page-heading.html" . }}
     <div class="row">
-        <div class="col-lg-8 offset-lg-2 text-justify">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            {{ with .Resources.GetMatch "portrait.jpg" }}
+            {{ $img := .Fit "1200x600" }}
+            <img class="img-fluid g-rounded-3" src='{{ $img.RelPermalink }}' alt="Ben's Picture">
+        </div>
+        <div class="col-lg-8 offset-lg-2 text-justify g-pt-30">
+            {{ end }}
             {{ with .Resources.GetMatch "my-story.md" }}
             {{ .Content }}
             {{ end }}

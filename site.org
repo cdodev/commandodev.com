@@ -35,7 +35,7 @@ CLOSED: [2019-02-03 Sun 19:38]
 - State "DONE"       from "TODO"       [2019-02-03 Sun 19:38]
 :END:
 You know that feeling of spinning your wheels, that you just can't find
-*traction*? I've been there. Over my decade plus career in sowftware
+*traction*? I've been there. Over my decade plus career in software
 development, I've experienced this in many of the companies I've worked for.
 This includes everything from start ups where I was the first programmer on
 board, to building teams in global mega banks.

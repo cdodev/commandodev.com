@@ -2,13 +2,13 @@
 title = "Who am I?"
 author = ["Ben Ford"]
 date = 2019-02-03T19:38:00+00:00
-lastmod = 2019-02-21T11:06:10+00:00
+lastmod = 2019-02-25T14:54:02+00:00
 draft = false
 headless = true
 +++
 
 You know that feeling of spinning your wheels, that you just can't find
-**traction**? I've been there. Over my decade plus career in sowftware
+**traction**? I've been there. Over my decade plus career in software
 development, I've experienced this in many of the companies I've worked for.
 This includes everything from start ups where I was the first programmer on
 board, to building teams in global mega banks.

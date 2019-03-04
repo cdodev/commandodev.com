@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<div class="container g-py-110">
+<div class="container g-pt-110 g-pb-50">
 {{ with .Site.GetPage "/home" }}
     {{ with .GetPage "elite-development.md" }}
     {{ partial "page-heading.html" . }}
@@ -76,16 +76,28 @@
         </div>
     </div>
     {{ end }}
+
+    {{ with .GetPage "ooda.md" }}
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="u-heading-v1-4 text-center g-bg-main g-brd-primary g-mb-20">
+ 						    <h2 class="h2 u-heading-v1__title">So what's the single principle?</h2>
+            </div>
+        </div>
+        <div class="col-lg-8 offset-lg-2">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
             <!-- Calendly inline widget begin -->
             <div class="calendly-inline-widget"
                  data-url="https://calendly.com/commandodevelopment"
-                 style="min-width:340px;height:580px;"></div>
+                 style="min-width:340px;height:380px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         </div>
     </div>
-
     <!-- Calendly inline widget end -->
 {{ end }}
 </div>

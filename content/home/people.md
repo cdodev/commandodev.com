@@ -2,7 +2,7 @@
 title = "People and Culture"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-02-06T09:16:26+00:00
+lastmod = 2019-03-04T07:26:02+00:00
 draft = false
 headless = true
 +++
@@ -19,4 +19,14 @@ what that culture becomes.
 You don't build a culture it is **EMERGENT** based on the environment in which it
 grows.
 
-<a id="org0975682"></a>
+{{% blockquote title="Lead like a gardener" source="Gen. Stanley McChrystal - Team of Teams" %}}
+
+A gardener creates an environment that encourages growth. An environment full of
+light and nourishment. An environment with sufficient space for stretching and
+expanding.
+
+Leadership — and gardening –are all about creating positive change.
+
+{{% /blockquote %}}
+
+<a id="org92b771a"></a>

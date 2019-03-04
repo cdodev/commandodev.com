@@ -2,7 +2,7 @@
 title = "Practices and Process"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-02-06T09:16:26+00:00
+lastmod = 2019-03-04T07:33:24+00:00
 draft = false
 headless = true
 +++
@@ -22,3 +22,11 @@ That's why I prefer to think in terms of **PRACTICES**
 Practices are your playbooks. In the Royal Marines we would refer to these as
 **SOPs**: Standard Operating Procedures. They are constantly evolving, improving
 instructions that point the way to ever increasing performance.
+
+{{% blockquote title="" source="Myamoto Musashi" %}}
+
+Do nothing which is of no use.
+
+Step by step walk the ten thousand mile road
+
+{{% /blockquote %}}

@@ -7,78 +7,92 @@ $g-font-primary: "Raleway", "Open Sans", Helvetica, Arial, sans-serif !default;
 $g-font-primary-size: 16px;
 
 :root {
-    --bl1: #010816;
-    --bl2: #0A2852;
-    --bl3: #205182;
-    --bl4: #5D8CAD;
-    --bl5: #A1BCC9;
-    --bl6: #BCD0D7;
-    --bl7: #C9DDE0;
-    --bl8: #D4E5E6;
-    --bl9: #DAE8E7;
-    --grn1: #050B07;
-    --grn2: #0D2C19;
-    --grn3: #0A5228;
-    --grn-base: #087B3C;
-    --grn5: #24AE68;
-    --grn6: #62CD9B;
-    --grn7: #B0DDCA;
-    --grn8: #D0E7DE;
-    --grn9: #D6EBE3;
-    --r1: #450722;
-    --r2: #A11522;
-    --r3: #D14F36;
-    --o1: #E9B876;
-    --y1: #F3EFC3;
-    --grey1: #151517;
-    --grey2: #3E3F45;
-    --grey3: #62646C;
-    --grey4: #828590;
-    --grey5: #9DA1AE;
-    --grey6: #B2B8C5;
-    --grey7: #C9D1DE;
-    --grey8: #D5DFED;
-    --grey9: #E1EDFA;
+    --blue-1: #0E1520;
+    --blue-2: #212D60;
+    --blue-3: #2E3192;
+    --blue-4: #4151B0;
+    --blue-5: #6991CB;
+    --blue-6: #94C1D7;
+    --blue-7: #BBDBE0;
+    --blue-8: #D1E6E6;
+    --blue-9: #DAE8E6;
+    --green-1: #08110A;
+    --green-2: #0F371C;
+    --green-3: #0B5C29;
+    --green-4: #087B38;
+    --green-5: #209953;
+    --green-6: #4DB479;
+    --green-7: #8FCEAA;
+    --green-8: #C0DFCE;
+    --green-9: #D6EBDF;
+    --red-1: #200E17;
+    --red-2: #58162E;
+    --red-3: #881026;
+    --red-4: #AB2A0B;
+    --red-5: #BF5017;
+    --red-6: #D17F3A;
+    --red-7: #E3B267;
+    --red-8: #EDD795;
+    --red-9: #F3EBC4;
+    --grey-1: #141416;
+    --grey-2: #3F3F45;
+    --grey-3: #62636C;
+    --grey-4: #838590;
+    --grey-5: #9EA2AE;
+    --grey-6: #B5BAC8;
+    --grey-7: #C9D0DE;
+    --grey-8: #D7E0EE;
+    --grey-9: #E1EDFA;
 }
+
+$g-color-green-6: var(--green-6);
+$g-color-green-9: var(--green-9);
+
+.g-bg-green-6 {
+    color: $g-color-green-9;
+    background-color: $g-color-green-6;
+}
+
+// from palettte.app: https://palettte.app/
 // [
 //   {
 //     "paletteName": "blues",
 //     "swatches": [
 //       {
-//         "name": "bl1",
-//         "color": "010816"
+//         "name": "blue-1",
+//         "color": "0E1520"
 //       },
 //       {
-//         "name": "bl2",
-//         "color": "0A2852"
+//         "name": "blue-2",
+//         "color": "212D60"
 //       },
 //       {
-//         "name": "bl3",
-//         "color": "205182"
+//         "name": "blue-3",
+//         "color": "2E3192"
 //       },
 //       {
-//         "name": "bl4",
-//         "color": "5D8CAD"
+//         "name": "blue-4",
+//         "color": "4151B0"
 //       },
 //       {
-//         "name": "bl5",
-//         "color": "A1BCC9"
+//         "name": "blue-5",
+//         "color": "6991CB"
 //       },
 //       {
-//         "name": "bl6",
-//         "color": "BCD0D7"
+//         "name": "blue-6",
+//         "color": "94C1D7"
 //       },
 //       {
-//         "name": "bl7",
-//         "color": "C9DDE0"
+//         "name": "blue-7",
+//         "color": "BBDBE0"
 //       },
 //       {
-//         "name": "bl8",
-//         "color": "D4E5E6"
+//         "name": "blue-8",
+//         "color": "D1E6E6"
 //       },
 //       {
-//         "name": "bl9",
-//         "color": "DAE8E7"
+//         "name": "blue-9",
+//         "color": "DAE8E6"
 //       }
 //     ]
 //   },
@@ -86,40 +100,40 @@ $g-font-primary-size: 16px;
 //     "paletteName": "greens",
 //     "swatches": [
 //       {
-//         "name": "grn1",
-//         "color": "050B07"
+//         "name": "green-1",
+//         "color": "08110A"
 //       },
 //       {
-//         "name": "grn2",
-//         "color": "0D2C19"
+//         "name": "green-2",
+//         "color": "0F371C"
 //       },
 //       {
-//         "name": "grn3",
-//         "color": "0A5228"
+//         "name": "green-3",
+//         "color": "0B5C29"
 //       },
 //       {
-//         "name": "grn-base",
-//         "color": "087B3C"
+//         "name": "green-4",
+//         "color": "087B38"
 //       },
 //       {
-//         "name": "grn5",
-//         "color": "24AE68"
+//         "name": "green-5",
+//         "color": "209953"
 //       },
 //       {
-//         "name": "grn6",
-//         "color": "62CD9B"
+//         "name": "green-6",
+//         "color": "4DB479"
 //       },
 //       {
-//         "name": "grn7",
-//         "color": "B0DDCA"
+//         "name": "green-7",
+//         "color": "8FCEAA"
 //       },
 //       {
-//         "name": "grn8",
-//         "color": "D0E7DE"
+//         "name": "green-8",
+//         "color": "C0DFCE"
 //       },
 //       {
-//         "name": "grn9",
-//         "color": "D6EBE3"
+//         "name": "green-9",
+//         "color": "D6EBDF"
 //       }
 //     ]
 //   },
@@ -127,24 +141,40 @@ $g-font-primary-size: 16px;
 //     "paletteName": "reds",
 //     "swatches": [
 //       {
-//         "name": "r1",
-//         "color": "450722"
+//         "name": "red-1",
+//         "color": "200E17"
 //       },
 //       {
-//         "name": "r2",
-//         "color": "A11522"
+//         "name": "red-2",
+//         "color": "58162E"
 //       },
 //       {
-//         "name": "r3",
-//         "color": "D14F36"
+//         "name": "red-3",
+//         "color": "881026"
 //       },
 //       {
-//         "name": "o1",
-//         "color": "E9B876"
+//         "name": "red-4",
+//         "color": "AB2A0B"
 //       },
 //       {
-//         "name": "y1",
-//         "color": "F3EFC3"
+//         "name": "red-5",
+//         "color": "BF5017"
+//       },
+//       {
+//         "name": "red-6",
+//         "color": "D17F3A"
+//       },
+//       {
+//         "name": "red-7",
+//         "color": "E3B267"
+//       },
+//       {
+//         "name": "red-8",
+//         "color": "EDD795"
+//       },
+//       {
+//         "name": "red-9",
+//         "color": "F3EBC4"
 //       }
 //     ]
 //   },
@@ -152,39 +182,39 @@ $g-font-primary-size: 16px;
 //     "paletteName": "greys",
 //     "swatches": [
 //       {
-//         "name": "grey1",
-//         "color": "151517"
+//         "name": "grey-1",
+//         "color": "141416"
 //       },
 //       {
-//         "name": "grey2",
-//         "color": "3E3F45"
+//         "name": "grey-2",
+//         "color": "3F3F45"
 //       },
 //       {
-//         "name": "grey3",
-//         "color": "62646C"
+//         "name": "grey-3",
+//         "color": "62636C"
 //       },
 //       {
-//         "name": "grey4",
-//         "color": "828590"
+//         "name": "grey-4",
+//         "color": "838590"
 //       },
 //       {
-//         "name": "grey5",
-//         "color": "9DA1AE"
+//         "name": "grey-5",
+//         "color": "9EA2AE"
 //       },
 //       {
-//         "name": "grey6",
-//         "color": "B2B8C5"
+//         "name": "grey-6",
+//         "color": "B5BAC8"
 //       },
 //       {
-//         "name": "grey7",
-//         "color": "C9D1DE"
+//         "name": "grey-7",
+//         "color": "C9D0DE"
 //       },
 //       {
-//         "name": "grey8",
-//         "color": "D5DFED"
+//         "name": "grey-8",
+//         "color": "D7E0EE"
 //       },
 //       {
-//         "name": "grey9",
+//         "name": "grey-9",
 //         "color": "E1EDFA"
 //       }
 //     ]

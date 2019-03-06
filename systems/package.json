@@ -1,0 +1,12 @@
+{
+  "name": "systems",
+  "version": "1.0.0",
+  "description": "Biological systems for modeling people",
+  "main": "index.js",
+  "repository": "git@gitlab.com:boothead/commandodev.com.git",
+  "author": "Ben Ford",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}

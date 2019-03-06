@@ -1,0 +1,16 @@
+{
+  "name": "systems",
+  "set": "010319",
+  "source": "https://github.com/cdodev/spacchetti.git",
+  "depends": [
+      "flare"
+    , "smolder"
+    , "drawing"
+    , "console"
+    , "colors"
+    , "integers"
+    , "lists"
+    , "canvas"
+    , "math"
+  ]
+}

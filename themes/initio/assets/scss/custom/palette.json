@@ -4,39 +4,39 @@
     "swatches": [
       {
         "name": "blue-1",
-        "color": "0E1520"
+        "color": "040C20"
       },
       {
         "name": "blue-2",
-        "color": "212D60"
+        "color": "1B2946"
       },
       {
         "name": "blue-3",
-        "color": "2E3192"
+        "color": "42516E"
       },
       {
         "name": "blue-4",
-        "color": "4151B0"
+        "color": "6A7C99"
       },
       {
         "name": "blue-5",
-        "color": "6991CB"
+        "color": "92A7C3"
       },
       {
         "name": "blue-6",
-        "color": "94C1D7"
+        "color": "B0C5DB"
       },
       {
         "name": "blue-7",
-        "color": "BBDBE0"
+        "color": "C5D7E7"
       },
       {
         "name": "blue-8",
-        "color": "D1E6E6"
+        "color": "D4E2ED"
       },
       {
         "name": "blue-9",
-        "color": "DAE8E6"
+        "color": "DDE9F1"
       }
     ]
   },
@@ -45,15 +45,15 @@
     "swatches": [
       {
         "name": "green-1",
-        "color": "08110A"
+        "color": "030A07"
       },
       {
         "name": "green-2",
-        "color": "0F371C"
+        "color": "072F1E"
       },
       {
         "name": "green-3",
-        "color": "0B5C29"
+        "color": "07572E"
       },
       {
         "name": "green-4",
@@ -61,23 +61,23 @@
       },
       {
         "name": "green-5",
-        "color": "209953"
+        "color": "1E9E48"
       },
       {
         "name": "green-6",
-        "color": "4DB479"
+        "color": "57C372"
       },
       {
         "name": "green-7",
-        "color": "8FCEAA"
+        "color": "92DB9E"
       },
       {
         "name": "green-8",
-        "color": "C0DFCE"
+        "color": "C0E5C3"
       },
       {
         "name": "green-9",
-        "color": "D6EBDF"
+        "color": "D7ECD7"
       }
     ]
   },

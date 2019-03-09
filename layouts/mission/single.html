@@ -1,9 +1,10 @@
 {{ partial "header.html" . }}
-<div class="container g-py-100">
-    {{ partial "page-heading.html" . }}
+{{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
+
+<section id="content" class="container g-py-50">
 
     {{ with .Resources.GetMatch "the-problem.md" }}
-    <div class="row g-py-30">
+    <div class="row g-py-20">
         <div class="col-lg-8 offset-lg-2 text-justify">
             {{ .Content }}
         </div>
@@ -17,27 +18,22 @@
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "performing.md" }}
-    <div class="row g-py-30">
+    <div class="row g-py-20">
         <div class="col-lg-8 offset-lg-2 text-justify">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
+</section>
+<section class="g-bg-blue-light">
     {{ with .Resources.GetMatch "why-im-here.md" }}
-    <div class="row g-py-30">
-        <div class="col-lg-8 offset-lg-2 text-center">
-            <h4>{{ .Content }}</h4>
+    <div class="container g-pb-300">
+        <div class="row g-pt-50">
+            <div class="col-lg-8 offset-lg-2 text-center g-py-20">
+                <h4>{{ .Content }}</h4>
+            </div>
         </div>
     </div>
     {{ end }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/commandodevelopment"
-                 style="min-width:340px;height:380px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-        </div>
-    </div>
-</div>
+</section>
 {{ partial "footer.html" . }}

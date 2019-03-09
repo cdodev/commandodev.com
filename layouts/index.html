@@ -5,7 +5,7 @@
   {{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
 {{ end }}
 <section id="content" >
-    <div class="container g-pt-20 g-pb-50">
+    <div class="container g-py-50">
         {{ with .GetPage "who-am-i.md" }}
         <div class="row g-py-20">
             <div class="col-lg-6 text-justify">
@@ -19,7 +19,7 @@
         </div>
         {{ end }}
         {{ with .GetPage "principle.md" }}
-        <div class="row">
+        <div class="row g-py-20">
 
             <div class="col-lg-4 offset-lg-1 my-auto">
                 {{ with .Site.GetPage "quotes/principle.md" }}
@@ -33,7 +33,7 @@
         </div>
         {{ end }}
         {{ with .GetPage "purpose.md" }}
-        <div class="row">
+        <div class="row g-py-20">
             <div class="col-lg-6">
                 <div class="u-heading-v2-1--bottom text-left g-color-primary  g-brd-primary g-mb-20">
  						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
@@ -50,7 +50,7 @@
         </div>
         {{ end }}
         {{ with .GetPage "people.md" }}
-        <div class="row">
+        <div class="row g-py-20">
 
             <div class="col-lg-4 offset-lg-1 my-auto">
                 {{ with .Site.GetPage "quotes/lead-like-a-gardener.md" }}
@@ -69,7 +69,7 @@
         </div>
         {{ end }}
         {{ with .GetPage "practices.md" }}
-        <div class="row">
+        <div class="row g-py-20">
             <div class="col-lg-6">
                 <div class="u-heading-v2-1--bottom text-left g-color-primary  g-brd-primary g-mb-20">
  						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
@@ -89,7 +89,7 @@
     </div>
 </section>
 <section id="ooda" class="g-bg-blue-light">
-    <div class="container g-py-50 g-pb-300">
+    <div class="container g-pt-50 g-pb-300">
         {{ with .GetPage "ooda.md" }}
         <div class="row">
             <div class="col-lg-8 offset-lg-2">

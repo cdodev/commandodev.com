@@ -1,4 +1,15 @@
-<footer id="footer" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-pt-30">
+<div id="calendly" class="g-bg-blue-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="widget position-absolute g-bg-white">
+                    {{ partial "calendly.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="bg-blue-dark">
 	  <div class="container">
 		    <div class="row">
 			      {{ if .Site.Params.footerEnableContact }}
@@ -110,6 +121,9 @@
 <script src="/js/hs.hamburgers.js"></script>
 <script src="/js/hs.dropdown.js"></script>
 <script src="/js/hs.scrollbar.js"></script>
+<script src="/js/hs.go-to.js"></script>
+<script src="/js/hs.height-calc.js"></script>
+
 
 <!-- convertkit opt in -->
 <script async data-uid="72fbf310b1" src="https://f.convertkit.com/72fbf310b1/e15b47890a.js"></script>
@@ -133,6 +147,17 @@ window.intercomSettings = {
     $.HSCore.components.HSHeader.init($('#js-header'));
     $.HSCore.helpers.HSHamburgers.init('.hamburger');
     });
+
+
+    $(document).ready(function () {
+    // initialization of header's height equal offset
+        /* $.HSCore.helpers.HSHeightCalc.init(); */
+
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+
 
 </script>
 </body>

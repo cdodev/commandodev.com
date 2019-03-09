@@ -9,11 +9,11 @@
   &--bottom::after {
     @extend %u-heading-v2;
     @extend %u-heading-v2-1;
-    @include px-to-rem(margin-top, 25px);
+    @include px-to-rem(margin-top, 5px);
   }
   &--top::before {
     @extend %u-heading-v2;
     @extend %u-heading-v2-1;
-    @include px-to-rem(margin-bottom, 25px);
+    @include px-to-rem(margin-bottom, 5px);
   }
 }

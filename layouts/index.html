@@ -1,104 +1,113 @@
 {{ partial "header.html" . }}
-<div class="container g-pt-110 g-pb-50">
 {{ with .Site.GetPage "/home" }}
-    {{ with .GetPage "elite-development.md" }}
-    {{ partial "page-heading.html" . }}
-    {{ end }}
-    {{ with .GetPage "who-am-i.md" }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2 text-justify">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-    {{ with .GetPage "principle.md" }}
-    <div class="row">
+{{ with .GetPage "elite-development.md" }}
 
-        <div class="col-lg-8 offset-lg-2">
-            <blockquote class="blockquote g-bg-green-6 g-brd-left-none g-font-size-14 g-pa-20 g-mb-30 g-pl-40">
-                <h4 class="h3 u-heading-v1__title">Principle</h4>
-                <div class="">
-                    <p><em>ˈprɪnsɪp(ə)l</em> noun</p>
-                    <ol>
-                        <li>a fundamental truth or proposition that serves as the foundation for a system
-                            of belief or behaviour or for a chain of reasoning. “the basic principles of
-                            justice”</li>
-                        <li>a general scientific theorem or law that has numerous special applications
-                            across a wide field.</li>
-                    </ol>
-
-                    <p>synonyms:   truth, proposition, concept, idea, theory, postulate; More</p>
-                </div>
-                <footer class="blockquote-footer g-color-white g-ml-30">
-                    <cite title="Source Title">Google Dictionary</cite>
-                </footer>
-            </blockquote>
-        </div>
-        <div class="col-lg-8 offset-lg-2">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-    {{ with .GetPage "purpose.md" }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <div class="u-heading-v1-4 text-left g-bg-main g-brd-primary g-mb-20">
- 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
-            </div>
-        </div>
-        <div class="col-lg-8 offset-lg-2">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-    {{ with .GetPage "people.md" }}
-    <div class="row">
-
-        <div class="col-lg-8 offset-lg-2">
-            <div class="u-heading-v1-4 text-right g-bg-main g-brd-primary g-mb-20">
- 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
-            </div>
-        </div>
-        <div class="col-lg-8 offset-lg-2">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-    {{ with .GetPage "practices.md" }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <div class="u-heading-v1-4 text-left g-bg-main g-brd-primary g-mb-20">
- 						    <h3 class="h3 u-heading-v1__title">{{ .Title }}</h3>
-            </div>
-        </div>
-        <div class="col-lg-8 offset-lg-2">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-
-    {{ with .GetPage "ooda.md" }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <div class="u-heading-v1-4 text-center g-bg-main g-brd-primary g-mb-20">
- 						    <h2 class="h2 u-heading-v1__title">So what's the single principle?</h2>
-            </div>
-        </div>
-        <div class="col-lg-8 offset-lg-2">
-            {{ .Content }}
-        </div>
-    </div>
-    {{ end }}
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/commandodevelopment"
-                 style="min-width:340px;height:380px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-        </div>
-    </div>
-    <!-- Calendly inline widget end -->
+  {{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
 {{ end }}
-</div>
+<section id="content" >
+    <div class="container g-pt-20 g-pb-50">
+        {{ with .GetPage "who-am-i.md" }}
+        <div class="row g-py-20">
+            <div class="col-lg-6 text-justify">
+                {{ .Content }}
+            </div>
+            <div class="col-lg-4 offset-lg-1 my-auto">
+                {{ with .Site.GetPage "quotes/know-one-thing.md" }}
+                {{ partial "quote.html" (dict "page" . "title" false "author" true) }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ with .GetPage "principle.md" }}
+        <div class="row">
+
+            <div class="col-lg-4 offset-lg-1 my-auto">
+                {{ with .Site.GetPage "quotes/principle.md" }}
+                {{ partial "quote.html" (dict "page" . "title" true "author" false) }}
+                {{ end }}
+            </div>
+
+            <div class="col-lg-6 offset-lg-1">
+                {{ .Content }}
+            </div>
+        </div>
+        {{ end }}
+        {{ with .GetPage "purpose.md" }}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="u-heading-v2-1--bottom text-left g-color-primary  g-brd-primary g-mb-20">
+ 						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
+                </div>
+                <div class="text-justify">
+                    {{ .Content }}
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 my-auto">
+                {{ with .Site.GetPage "quotes/aligning-vectors.md" }}
+                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ with .GetPage "people.md" }}
+        <div class="row">
+
+            <div class="col-lg-4 offset-lg-1 my-auto">
+                {{ with .Site.GetPage "quotes/lead-like-a-gardener.md" }}
+                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
+                {{ end }}
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <div class="u-heading-v2-1--bottom text-right g-color-primary  g-brd-primary g-mb-20">
+ 						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
+                </div>
+                <div class="text-justify">
+                    {{ .Content }}
+                </div>
+
+            </div>
+        </div>
+        {{ end }}
+        {{ with .GetPage "practices.md" }}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="u-heading-v2-1--bottom text-left g-color-primary  g-brd-primary g-mb-20">
+ 						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
+                </div>
+                <div class="text-justify">
+                    {{ .Content }}
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 my-auto">
+                {{ with .Site.GetPage "quotes/do-nothing.md" }}
+                {{ partial "quote.html" (dict "page" . "title" false "author" true) }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+    </div>
+</section>
+<section id="ooda" class="g-bg-blue-light">
+    <div class="container g-py-50 g-pb-300">
+        {{ with .GetPage "ooda.md" }}
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="u-heading-v2-1--bottom text-center g-color-primary  g-brd-primary g-mb-20">
+ 						        <h2 class="h2 text-uppercase u-heading-v2__title g-font-secondary">So what's the single principle?</h2>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-2">
+                {{ .Content }}
+            </div>
+            <div class="col-lg-6 offset-lg-3 my-auto">
+                {{ with .Site.GetPage "quotes/strategic-game.md" }}
+                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
 {{ partial "footer.html" . }}

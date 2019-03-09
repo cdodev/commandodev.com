@@ -19,9 +19,8 @@
 :EXPORT_FILE_NAME: elite-development
 :EXPORT_HUGO_HEADLESS: t
 :END:
-In the Royal Marines we used
-to say elite performance is a state of mind. I can show you what that means for
-software development.
+In the Royal Marines we used to say elite performance is a state of mind. I can
+show you what that means for software development.
 # {{< header imgurl="/img/cdo-memorial-crop.jpg" >}}
 # {{< /header >}}
 
@@ -53,26 +52,6 @@ career before technology and programming.
 They were things I had already learned, and in fact deeply ingrained but not
 recognised when I was a *Royal Marine* in the early 2000s.
 
-Having this moment of recognition was a breakthrough, because it showed me that
-once you are able to translate something from one domain to another and keep the
-essence of why it works, you have your hands on a fundamental principle. This is
-nothing new. The famous swordsman Musashi knew this way back in the 1600s:
-
-{{% blockquote title="" source="Myamoto Musashi" %}}
-
-"The principle of strategy is having one thing, to know ten thousand things"
-
-{{% /blockquote %}}
-
-
-The disparate lessons started to merge into *principles*. As I began to apply
-these principles to other parts of my life, like my *martial arts* practice, it
-also became clear that I'd been looking at many parts of the same puzzle. There
-was actually *ONE PRINCIPLE* at the centre of many human endeavours.
-
-Before I make such a bold claim, let's just take a quick look at the definition
-of principle
-
 ** DONE Principles
 CLOSED: [2019-02-03 Sun 19:38]
 :PROPERTIES:
@@ -94,6 +73,15 @@ CLOSED: [2019-02-03 Sun 19:38]
 
 # synonyms:	truth, proposition, concept, idea, theory, postulate; More
 # {{% /blockquote %}}
+Having this moment of recognition was a breakthrough, because it showed me that
+once you are able to translate something from one domain to another and keep the
+essence of why it works, you have your hands on a fundamental principle. This is
+nothing new. The famous swordsman Musashi knew this way back in the 1600s:
+
+The disparate lessons started to merge into *principles*. As I began to apply
+these principles to other parts of my life, like my *martial arts* practice, it
+also became clear that I'd been looking at many parts of the same puzzle. There
+was actually *ONE PRINCIPLE* at the centre of many human endeavours.
 
 This is what I want to show you.
 
@@ -127,14 +115,6 @@ random there's no discernable pattern. As soon as you bring a magnet within
 range though, the filings line up with an invisible force and organise
 themselves to point the right direction. *MISSON* is magnetism for people.
 
-# https://thinkgrowth.org/what-elon-musk-taught-me-about-growing-a-business-c2c173f5bff3
-{{% blockquote title="Aligning Vectors" source="Elon Musk" %}}
-
-“Every person in your company is a vector. Your progress is determined by the
-sum of all vectors.”
-
-{{% /blockquote %}}
-
 # {{< header imgurl="/img/40-cdo-afghanistan.jpg" >}}
 # {{< /header >}}
 
@@ -161,17 +141,6 @@ what that culture becomes.
 You don't build a culture it is *EMERGENT* based on the environment in which it
 grows.
 
-{{% blockquote title="Lead like a gardener" source="Gen. Stanley McChrystal - Team of Teams" %}}
-
-A gardener creates an environment that encourages growth. An environment full of
-light and nourishment. An environment with sufficient space for stretching and
-expanding.
-
-Leadership — and gardening –are all about creating positive change.
-
-{{% /blockquote %}}
-# {{< header imgurl="/img/training.jpg" >}}
-# {{< /header >}}
 
 <<practices>>
 ** DONE Practices and Process
@@ -199,15 +168,6 @@ That's why I prefer to think in terms of *PRACTICES*
 Practices are your playbooks. In the Royal Marines we would refer to these as
 *SOPs*: Standard Operating Procedures. They are constantly evolving, improving
 instructions that point the way to ever increasing performance.
-
-
-{{% blockquote title="" source="Myamoto Musashi" %}}
-
-Do nothing which is of no use.
-
-Step by step walk the ten thousand mile road
-
-{{% /blockquote %}}
 
 ** DONE The OODA loop
 CLOSED: [2019-02-03 Sun 19:36]
@@ -250,18 +210,6 @@ doesn't work is stripped away over time. Boyd's work on the OODA loop, and some
 of his other contributions, take the output from that crucible and extract the
 *essential structure* that make it all work. Small wonder then that this is a theory
 that can be applied to pretty much everything.
-
-
-{{% blockquote title="The Strategic game of ? and ?" source="Col. John Boyd" %}}
-Goal:
-
-/Survive, survive on own terms, or improve our capacity for independent action./
-
-The competition for limited resources to satisfy these desires may force one to:
-
-/Diminish adversary’s capacity for independent action, or deny him the opportunity to survive on his terms, or make it impossible for him to survive at all./
-
-{{% /blockquote %}}
 
 ** DONE What people say
 CLOSED: [2019-02-03 Sun 19:36]
@@ -524,6 +472,113 @@ Mission really is everyt
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
+
+** TODO Functional people abstractions                                   :blog:
+:PROPERTIES:
+:EXPORT_FILE_NAME: fpp-abstractions
+:EXPORT_HUGO_MENU: :parent blog
+:END:
+
+One of the primary drives programmers have is to uncover and use the right
+abstractions. That's also one of the things that draws people to functional
+programming: the abstractions we use in FP are fundamental, atomic and based on
+maths and logic. The main reason we seek abstractions like this are so that we
+can decrease cognitive overhead by [[https://en.wikipedia.org/wiki/Chunking_(psychology)][Chunking]] knowledge into composable, related
+concepts.
+
+What if you could use the same principle, and even some of the same
+abstractions, to reason about people and teams delivering software?
+
+<!--more-->
+
+So what might some fundamental abstractions look like for teams and the process
+of shipping code? What we're looking for here are some mental models [fn:1]
+
+*** What makes a good abstraction?
+Before we dive into this I want to take just a short detour to put some
+constraints around what benefits we want to accrue from the mental tools we choose.
+
+*** The OODA loop
+**** Observe
+**** Orient
+**** Decide
+**** Act
+**** Destruction and Creation
+
+
+* Quotes
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: quotes
+:END:
+** Know one thing
+:PROPERTIES:
+:EXPORT_FILE_NAME: know-one-thing
+:EXPORT_AUTHOR: Myamoto Musashi
+:END:
+The principle of strategy is having one thing, to know ten thousand things
+
+** Principle
+:PROPERTIES:
+:EXPORT_FILE_NAME: principle
+:END:
+/ˈprɪnsɪp(ə)l/
+noun
+
+1. a fundamental truth or proposition that serves as the foundation for a system
+   of belief or behaviour or for a chain of reasoning. "the basic principles of
+   justice"
+2. a general scientific theorem or law that has numerous special applications
+   across a wide field.
+
+synonyms:	truth, proposition, concept, idea, theory, postulate; More
+
+** Aligning Vectors
+:PROPERTIES:
+:EXPORT_FILE_NAME: aligning-vectors
+:EXPORT_AUTHOR: Elon Musk
+:END:
+# https://thinkgrowth.org/what-elon-musk-taught-me-about-growing-a-business-c2c173f5bff3
+
+Every person in your company is a vector. Your progress is determined by the
+sum of all vectors.
+
+** Lead like a gardener
+:PROPERTIES:
+:EXPORT_FILE_NAME: lead-like-a-gardener
+:EXPORT_AUTHOR: Gen. Stanley McChrystal
+:END:
+
+A gardener creates an environment that encourages growth. An environment full of
+light and nourishment. An environment with sufficient space for stretching and
+expanding.
+
+Leadership – and gardening – are all about creating positive change.
+
+** Do nothing which is of no use
+:PROPERTIES:
+:EXPORT_FILE_NAME: do-nothing
+:EXPORT_AUTHOR: Myamoto Musashi
+:END:
+
+Do nothing which is of no use.
+
+Step by step walk the ten thousand mile road
+
+** The Strategic game of ? and ?
+:PROPERTIES:
+:EXPORT_FILE_NAME: strategic-game
+:EXPORT_AUTHOR: Col. John Boyd
+:END:
+
+Goal:
+
+/Survive, survive on own terms, or improve our capacity for independent action./
+
+The competition for limited resources to satisfy these desires may force one to:
+
+/Diminish adversary’s capacity for independent action, or deny him the opportunity to survive on his terms, or make it impossible for him to survive at all./
+
+
 * Brief
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: brief
@@ -830,6 +885,8 @@ Implementation plan and technology
 
 <!--more-->
 * Footnotes
+
+[fn:1] https://fs.blog/mental-models/
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:
 # eval: (org-hugo-auto-export-mode)

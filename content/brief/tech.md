@@ -1,7 +1,7 @@
 +++
 title = "Technology"
 author = ["Ben Ford"]
-lastmod = 2019-02-07T19:13:14+00:00
+lastmod = 2019-03-09T10:41:11+00:00
 draft = false
 weight = 40
 +++

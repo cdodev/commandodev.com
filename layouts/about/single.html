@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
+
+{{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
 <div class="container g-py-110">
-    {{ partial "page-heading.html" . }}
     <div class="row">
         <div class="col-lg-8 offset-lg-2 text-center">
             {{ with .Resources.GetMatch "portrait.jpg" }}
@@ -42,19 +43,9 @@
             {{ end }}
         </div>
     </div>
-
-    <div class="row">
-        <div class="mx-auto g-my-30">
+    <div class="row g-pb-300">
+        <div class="mx-auto g-my-30 g-bg-blue-light">
             <img alt="enso" src="/img/Enso.svg"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/commandodevelopment"
-                 style="min-width:340px;height:380px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@ $g-color-primary: #087B38;
 
 
 $g-font-primary: "Raleway", "Open Sans", Helvetica, Arial, sans-serif !default;
+$g-font-secondary: "Roboto", "Open Sans", Helvetica, Arial, sans-serif !default;
 
 $g-font-primary-size: 16px;
 
@@ -47,10 +48,58 @@ $g-font-primary-size: 16px;
     --grey-9: #E1EDFA;
 }
 
+$g-color-blue-1: var(--blue-1);
+$g-color-blue-2: var(--blue-2);
+$g-color-blue-3: var(--blue-3);
+$g-color-blue-6: var(--blue-6);
+$g-color-blue-9: var(--blue-9);
 $g-color-green-6: var(--green-6);
 $g-color-green-9: var(--green-9);
 
+.g-bg-blue-3 {
+    color: $g-color-blue-9;
+    background-color: $g-color-blue-3;
+}
 .g-bg-green-6 {
     color: $g-color-green-9;
     background-color: $g-color-green-6;
+}
+
+.g-bg-blue-light {
+    color: $g-color-blue-1;
+    background-color: $g-color-blue-9;
+}
+
+%bg-blue-dark {
+    color: $g-color-blue-9;
+    background-color: $g-color-blue-3;
+
+    a {
+        color: $g-color-blue-6;
+    }
+}
+
+.bg-blue-dark { @extend %bg-blue-dark; }
+
+.g-blue-shadow {
+    @extend %bg-blue-dark;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 15px 15px -2px $g-color-blue-2;
+    -moz-box-shadow: 0px 15px 15px -2px $g-color-blue-2;
+    box-shadow: 0px 15px 15px -2px $g-color-blue-2;
+}
+
+#calendly {
+    // height: 280px;
+    .widget {
+        top: -330px;
+        border-radius: 5px;
+        padding: 5px 5px;
+        width: 100%;
+        height: 380px;
+    }
+}
+
+#footer {
+    padding-top: 80px;
 }

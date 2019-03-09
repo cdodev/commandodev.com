@@ -2,7 +2,7 @@
 title = "Purpose and Mission"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-02-14T18:29:04+00:00
+lastmod = 2019-03-09T10:50:47+00:00
 draft = false
 headless = true
 +++
@@ -19,11 +19,4 @@ random there's no discernable pattern. As soon as you bring a magnet within
 range though, the filings line up with an invisible force and organise
 themselves to point the right direction. **MISSON** is magnetism for people.
 
-{{% blockquote title="Aligning Vectors" source="Elon Musk" %}}
-
-“Every person in your company is a vector. Your progress is determined by the
-sum of all vectors.”
-
-{{% /blockquote %}}
-
-<a id="orga77d345"></a>
+<a id="org3b5d8d6"></a>

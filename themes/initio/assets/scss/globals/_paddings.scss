@@ -292,6 +292,10 @@
   @include px-to-rem(padding-bottom, 250px !important);
 }
 
+.g-pb-300 {
+    @include px-to-rem(padding-bottom, 300px !important);
+}
+
 .g-pb-13 {
   @include px-to-rem(padding-bottom, 13px !important);
 }

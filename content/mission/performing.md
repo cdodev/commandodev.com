@@ -1,7 +1,7 @@
 +++
 title = "Performing"
 author = ["Ben Ford"]
-lastmod = 2019-03-09T10:41:09+00:00
+lastmod = 2019-03-10T11:09:31+00:00
 type = "mission"
 draft = false
 +++
@@ -13,7 +13,7 @@ They operate by consistently holding themselves to standards that are
 universally understood and shared. The foundations of this ability are
 **operational excellence**, which enables **continuous improvement** and evolution.
 
-One such organisation which has been learning an honing these lessons for over
+One such organisation which has been learning and honing these lessons for over
 350 years is the **Royal Marines**. Way before I was a software developer I served
 in the corps, in fact I [taught myself how to code](/about/) en route to the second Iraq
 war on board a ship. When I began my second career in software development I

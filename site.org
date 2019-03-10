@@ -84,14 +84,12 @@ these principles to other parts of my life, like my *martial arts* practice, it
 also became clear that I'd been looking at many parts of the same puzzle. There
 was actually *ONE PRINCIPLE* at the centre of many human endeavours.
 
-This is what I want to show you.
+{{% emphasis %}}This is what I want to show you.{{% /emphasis %}}
 
 The single principle that's you must understand to achieve the *operational
 excellence* that every business needs to *thrive* and *scale*.
 
 The single principle that unites the 3 pillars of *PURPOSE* *PEOPLE* and *PRACTICES*
-
-Let's have a look at each of these in turn.
 
 <<purpose>>
 ** DONE Purpose and Mission
@@ -259,7 +257,7 @@ running, you start to gain momentum. You build a team around you of dedicated
 starters. The company is small, communications overhead is minimal and you're
 focused on becoming sustainable and proving your viability.
 
-But then what?
+{{% emphasis %}}But then what?{{% /emphasis %}}
 ** Scaling
 :PROPERTIES:
 :EXPORT_FILE_NAME: scaling
@@ -296,7 +294,7 @@ looked up my time in the corps as something fun and challenging that had
 certainly shaped me personally, but that didn't have much bearing on my new
 direction.
 
-*I was wrong.*
+{{% emphasis %}}I was wrong.{{% /emphasis %}}
 
 The Royal Marines have evolved from a regiment of maritime foot soldiers formed
 in 1664 through constant evolution to today's role as an elite, commando trained,
@@ -420,7 +418,7 @@ programmer. At this point in my life I mostly looked at my time in the Royal
 Marines as something that was a great *challenge* and great fun, but as something
 separate from my new career.
 
-*I was so wrong.*
+{{% emphasis %}}I was *so* wrong.{{% /emphasis %}}
 
 ** Full circle
 :PROPERTIES:

@@ -1,7 +1,7 @@
 +++
 title = "Progression"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T15:30:23+00:00
+lastmod = 2019-03-10T16:43:07+00:00
 type = "about"
 draft = false
 weight = 3
@@ -20,4 +20,4 @@ programmer. At this point in my life I mostly looked at my time in the Royal
 Marines as something that was a great **challenge** and great fun, but as something
 separate from my new career.
 
-**I was so wrong.**
+{{% emphasis %}}I was **so** wrong.{{% /emphasis %}}

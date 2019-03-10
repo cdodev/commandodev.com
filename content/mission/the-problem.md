@@ -1,7 +1,7 @@
 +++
 title = "The problem"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T15:30:22+00:00
+lastmod = 2019-03-10T16:39:18+00:00
 type = "mission"
 draft = false
 +++
@@ -12,4 +12,4 @@ running, you start to gain momentum. You build a team around you of dedicated
 starters. The company is small, communications overhead is minimal and you're
 focused on becoming sustainable and proving your viability.
 
-But then what?
+{{% emphasis %}}But then what?{{% /emphasis %}}

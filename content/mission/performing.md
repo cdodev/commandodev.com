@@ -1,7 +1,7 @@
 +++
 title = "Performing"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T15:30:22+00:00
+lastmod = 2019-03-10T16:42:47+00:00
 type = "mission"
 draft = false
 +++
@@ -21,7 +21,7 @@ looked up my time in the corps as something fun and challenging that had
 certainly shaped me personally, but that didn't have much bearing on my new
 direction.
 
-**I was wrong.**
+{{% emphasis %}}I was wrong.{{% /emphasis %}}
 
 The Royal Marines have evolved from a regiment of maritime foot soldiers formed
 in 1664 through constant evolution to today's role as an elite, commando trained,

@@ -2,9 +2,10 @@
 title = "People and Culture"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-03-09T10:58:21+00:00
+lastmod = 2019-03-10T15:30:21+00:00
 draft = false
 headless = true
+weight = 1
 +++
 
 Companies always say that "their people are their greatest asset". But how do you
@@ -19,4 +20,4 @@ what that culture becomes.
 You don't build a culture it is **EMERGENT** based on the environment in which it
 grows.
 
-<a id="org5e4b38c"></a>
+<a id="org133a6b7"></a>

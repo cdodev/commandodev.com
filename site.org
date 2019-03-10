@@ -13,6 +13,7 @@
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: home
 :EXPORT_HUGO_HEADLESS: t
+:EXPORT_HUGO_WEIGHT: 1
 :END:
 ** Elite software development
 :PROPERTIES:
@@ -243,6 +244,7 @@ Working with me
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
 :EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_HUGO_WEIGHT: 2
 :END:
 My mission is to teach growing tech based companies how to achieve and maintain
 *operational excellence* as they scale
@@ -323,6 +325,7 @@ performance to your tech business so that you can make your difference in the wo
 :EXPORT_HUGO_SECTION:
 :EXPORT_HUGO_BUNDLE: about
 :EXPORT_HUGO_TYPE: about
+:EXPORT_HUGO_WEIGHT: 3
 :END:
 ** About
 :PROPERTIES:

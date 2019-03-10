@@ -1,9 +1,10 @@
 +++
 title = "About"
 author = ["Ben Ford"]
-lastmod = 2019-03-09T10:41:09+00:00
+lastmod = 2019-03-10T15:30:22+00:00
 type = "about"
 draft = false
+weight = 3
 [menu.main]
   weight = 2001
   identifier = "about"

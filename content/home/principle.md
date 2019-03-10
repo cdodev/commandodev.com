@@ -2,9 +2,10 @@
 title = "Principles"
 author = ["Ben Ford"]
 date = 2019-02-03T19:38:00+00:00
-lastmod = 2019-03-09T10:41:08+00:00
+lastmod = 2019-03-10T15:30:21+00:00
 draft = false
 headless = true
+weight = 1
 +++
 
 Having this moment of recognition was a breakthrough, because it showed me that
@@ -26,4 +27,4 @@ The single principle that unites the 3 pillars of **PURPOSE** **PEOPLE** and **P
 
 Let's have a look at each of these in turn.
 
-<a id="org60b8317"></a>
+<a id="org1577da1"></a>

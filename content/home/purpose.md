@@ -2,9 +2,10 @@
 title = "Purpose and Mission"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-03-09T10:50:47+00:00
+lastmod = 2019-03-10T15:30:21+00:00
 draft = false
 headless = true
+weight = 1
 +++
 
 What is your company's reason for being? What's its purpose? What's the one
@@ -19,4 +20,4 @@ random there's no discernable pattern. As soon as you bring a magnet within
 range though, the filings line up with an invisible force and organise
 themselves to point the right direction. **MISSON** is magnetism for people.
 
-<a id="org3b5d8d6"></a>
+<a id="org66023fe"></a>

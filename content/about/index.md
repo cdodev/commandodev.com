@@ -1,7 +1,7 @@
 +++
 title = "About"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T15:30:22+00:00
+lastmod = 2019-03-10T16:50:52+00:00
 type = "about"
 draft = false
 weight = 3
@@ -11,5 +11,4 @@ weight = 3
 +++
 
 I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
-a bouncer, a barman, a refuse collector (for one day), an itinerant marquee
-fabricator, a telecoms engineer and a programmer.
+a bouncer, a refuse collector, a programmer and a tech team builder and leader.

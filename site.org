@@ -331,8 +331,7 @@ performance to your tech business so that you can make your difference in the wo
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
 I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
-a bouncer, a barman, a refuse collector (for one day), an itinerant marquee
-fabricator, a telecoms engineer and a programmer.
+a bouncer, a refuse collector, a programmer and a tech team builder and leader.
 
 ** My Story
 :PROPERTIES:

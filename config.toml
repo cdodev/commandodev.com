@@ -6,8 +6,6 @@ contentdir = "content"
 layoutdir = "layouts"
 publishDir = "public"
 
-theme = ["initio"]
-
 cleandestinationdir = true
 
 pygmentsCodeFences = true       # This applies to Chroma too.

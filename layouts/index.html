@@ -21,15 +21,16 @@
         {{ with .GetPage "principle.md" }}
         <div class="row g-py-20">
 
-            <div class="col-lg-4 offset-lg-1 my-auto">
+            <div class="col-lg-6 order-lg-12">
+                {{ .Content }}
+            </div>
+
+            <div class="col-lg-4 offset-lg-1 my-auto order-lg-1">
                 {{ with .Site.GetPage "quotes/principle.md" }}
                 {{ partial "quote.html" (dict "page" . "title" true "author" false) }}
                 {{ end }}
             </div>
-
-            <div class="col-lg-6 offset-lg-1">
-                {{ .Content }}
-            </div>
+            <div class="col-lg-1 order-lg-2"></div>
         </div>
         {{ end }}
         {{ with .GetPage "purpose.md" }}
@@ -52,12 +53,7 @@
         {{ with .GetPage "people.md" }}
         <div class="row g-py-20">
 
-            <div class="col-lg-4 offset-lg-1 my-auto">
-                {{ with .Site.GetPage "quotes/lead-like-a-gardener.md" }}
-                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
-                {{ end }}
-            </div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-6 offset-lg-1 order-lg-12">
                 <div class="u-heading-v2-1--bottom text-right g-color-primary  g-brd-primary g-mb-20">
  						        <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
                 </div>
@@ -66,6 +62,12 @@
                 </div>
 
             </div>
+            <div class="col-lg-4 offset-lg-1 my-auto order-lg-1">
+                {{ with .Site.GetPage "quotes/lead-like-a-gardener.md" }}
+                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
+                {{ end }}
+            </div>
+            <div class="col-lg-1 order-lg-2"></div>
         </div>
         {{ end }}
         {{ with .GetPage "practices.md" }}

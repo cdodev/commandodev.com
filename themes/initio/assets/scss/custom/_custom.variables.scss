@@ -87,7 +87,8 @@ $g-color-green-9: var(--green-9);
 #calendly {
     // height: 280px;
     .widget {
-        top: -330px;
+        overflow: hidden;
+        top: -310px;
         border-radius: 5px;
         padding: 5px 5px;
         width: 100%;

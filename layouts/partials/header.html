@@ -20,18 +20,20 @@
   {{ $bs := resources.Get "css/bootstrap.css" }}
   {{ $fa := resources.Get "css/font-awesome.min.css" }}
 
-  {{ $options := (dict "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
+  {{ $options := (dict "targetPath" "cdodev.css" "enableSourceMap" true "includePaths" (slice "assets/scss") "outputStyle" "compressed") }}
   {{ $sass := resources.Get "scss/unify.scss" }}
   {{ $user := $sass | resources.ToCSS $options }}
-  {{ $style := slice $bs $fa $user }}
+  {{ $style := slice $bs $fa }}
 
   <style>
-      {{- if .Site.IsServer -}}
-      {{ ($style | resources.Concat "").Content | safeCSS }}
-      {{- else -}}
-      {{ ($style | resources.Concat "styles.css" | minify).Content | safeCSS }}
-      {{- end -}}
+   {{- if .Site.IsServer -}}
+   {{ ($style | resources.Concat "").Content | safeCSS }}
+   {{- else -}}
+   {{ ($style | resources.Concat "styles.css" | minify).Content | safeCSS }}
+   {{- end -}}
   </style>
+
+  <link href="{{ $user.RelPermalink }}" rel="stylesheet">
 
 	<!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">

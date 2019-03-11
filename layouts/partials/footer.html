@@ -103,12 +103,21 @@
 {{ end -}}
 
 
-<link rel="stylesheet" href="/css/dzsparallaxer.css">
-<link rel="stylesheet" href="/css/scroller.css">
-<link rel="stylesheet" href="/css/advancedscroller/plugin.css">
-<link rel="stylesheet" href="/css/hs.megamenu.css">
-<link rel="stylesheet" href="/css/hamburgers.min.css">
+{{ $dzs := resources.Get "css/dzsparallaxer.css" }}
+{{ $sc := resources.Get "css/scroller.css" }}
+{{ $asc := resources.Get "css/advancedscroller/plugin.css" }}
+{{ $mm := resources.Get "css/hs.megamenu.css" }}
+{{ $h := resources.Get "css/hamburgers.min.css" }}
+{{ $footstyle := slice $dzs $sc $asc $mm $h }}
 
+
+<style>
+ {{- if .Site.IsServer -}}
+ {{ ($footstyle | resources.Concat "").Content | safeCSS }}
+ {{- else -}}
+ {{ ($footstyle | resources.Concat "footstyles.css" | minify).Content | safeCSS }}
+ {{- end -}}
+</style>
 
 <!-- JS Global Compulsory -->
 <script src="/js/jquery.min.js"></script>

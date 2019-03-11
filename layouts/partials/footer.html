@@ -120,25 +120,30 @@
 </style>
 
 <!-- JS Global Compulsory -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/jquery-migrate.min.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/offcanvas.js"></script>
-
+{{ $jq := resources.Get "js/jquery.min.js" }}
+{{ $jqm := resources.Get "js/jquery-migrate.min.js" }}
+{{ $pop := resources.Get "js/popper.min.js" }}
+{{ $bs := resources.Get "js/bootstrap.min.js" }}
+{{ $offc := resources.Get "js/offcanvas.js" }}
 <!-- JS Implementing Plugins -->
-<script src="/js/dzsparallaxer.js"></script>
-<!-- <script src="/js/scroller.js"></script> -->
-<script src="/js/hs.megamenu.js"></script>
-
+{{ $jdzs := resources.Get "js/dzsparallaxer.js" }}
+{{ $jmm := resources.Get "js/hs.megamenu.js" }}
 <!-- JS Unify -->
-<script src="/js/hs.core.js"></script>
-<script src="/js/hs.header.js"></script>
-<script src="/js/hs.hamburgers.js"></script>
-<script src="/js/hs.dropdown.js"></script>
-<!-- <script src="/js/hs.scrollbar.js"></script> -->
-<script src="/js/hs.go-to.js"></script>
-<script src="/js/hs.height-calc.js"></script>
+{{ $jsc := resources.Get "js/hs.core.js" }}
+{{ $hsh := resources.Get "js/hs.header.js" }}
+{{ $hshm := resources.Get "js/hs.hamburgers.js" }}
+{{ $hsdd := resources.Get "js/hs.dropdown.js" }}
+{{ $hsgt := resources.Get "js/hs.go-to.js" }}
+{{ $hshgt := resources.Get "js/hs.height-calc.js" }}
+{{ $footjs := slice $jq $jqm $pop $bs $offc $jdzs $jmm $jsc $hsh $hshm $hsdd $hsgt $hshgt }}
+
+<style>
+ {{- if .Site.IsServer -}}
+ {{ ($footjs | resources.Concat "").Content }}
+ {{- else -}}
+ {{ ($footjs | resources.Concat "foot.js" | minify).Content }}
+ {{- end -}}
+</style>
 
 
 <!-- convertkit opt in -->

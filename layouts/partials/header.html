@@ -10,36 +10,31 @@
 
 	<link rel="shortcut icon" href="/{{ .Site.Params.favicon }}">
 
-	<!-- Bootstrap -->
-  <link href="/css/bootstrap.css" rel="stylesheet">
-	<!-- Icons -->
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- Custom styles -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
-    {{ if .Site.Params.customsharethis }}
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
-    {{ end }}
-        <!-- "outputStyle" "compressed"  -->
-    {{ $options := (dict "targetPath" "cdodev.css" "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
-   {{ $sass := resources.Get "scss/unify.scss" }}
-   {{ $style := $sass | resources.ToCSS $options }}
+  {{ if .Site.Params.customsharethis }}
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons">
+  </script>
+  {{ end }}
 
-   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
-	 <!-- <link rel="stylesheet" href="/css/cdodev.css"> -->
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134332089-1"></script>
-   <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+  {{ $bs := resources.Get "css/bootstrap.css" }}
+  {{ $fa := resources.Get "css/font-awesome.min.css" }}
 
-       gtag('config', 'UA-134332089-1');
-   </script>
+  {{ $options := (dict "enableSourceMap" true "includePaths" (slice "assets/scss")) }}
+  {{ $sass := resources.Get "scss/unify.scss" }}
+  {{ $user := $sass | resources.ToCSS $options }}
+  {{ $style := slice $bs $fa $user }}
 
+  <style>
+      {{- if .Site.IsServer -}}
+      {{ ($style | resources.Concat "").Content | safeCSS }}
+      {{- else -}}
+      {{ ($style | resources.Concat "styles.css" | minify).Content | safeCSS }}
+      {{- end -}}
+  </style>
+
+	<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
 </head>
 <body>

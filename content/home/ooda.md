@@ -2,7 +2,7 @@
 title = "The OODA loop"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-03-10T15:30:21+00:00
+lastmod = 2019-03-16T12:06:57+00:00
 draft = false
 headless = true
 weight = 1
@@ -24,7 +24,7 @@ the campaign that smashed the Iraqi army and led to the liberation of Kuwait in
 first Gulf war of the early 90s.
 
 What came out of this period was a complete rethink on the laws and structure of
-conflict condensed down to a tiny amount of published output. What Boyd was able
+conflict, condensed down to a tiny amount of published output. What Boyd was able
 to do was take several millennia of learning, from **The Art of War** to the
 **Blitzkrieg**, and refine it down to a briefing and a couple of published papers.
 Boyd's particular gift lay in combining knowledge from different fields of

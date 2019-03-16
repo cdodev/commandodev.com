@@ -10,7 +10,8 @@
         <div class="row g-py-20">
             <div class="col-lg-6 text-justify">
                 {{ .Content }}
-            </div>
+
+           </div>
             <div class="col-lg-4 offset-lg-1 my-auto">
                 {{ with .Site.GetPage "quotes/know-one-thing.md" }}
                 {{ partial "quote.html" (dict "page" . "title" false "author" true) }}

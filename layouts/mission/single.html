@@ -5,23 +5,32 @@
 
     {{ with .Resources.GetMatch "the-problem.md" }}
     <div class="row g-py-20">
-        <div class="col-lg-8 offset-lg-2 text-justify">
+        <div class="col-lg-6 offset-lg-3 text-center">
             {{ .Content }}
         </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "scaling.md" }}
-    <div class="row g-pb-30">
-        <div class="col-lg-8 offset-lg-2 text-justify">
+    <div class="row g-py-20">
+        <div class="col-lg-6 text-justify order-lg-12">
             {{ .Content }}
         </div>
+        <div class="col-lg-6 order-lg-1"> </div>
     </div>
     {{ end }}
     {{ with .Resources.GetMatch "performing.md" }}
     <div class="row g-py-20">
-        <div class="col-lg-8 offset-lg-2 text-justify">
+        <div class="col-lg-6 text-center offset-lg-3">
             {{ .Content }}
         </div>
+    </div>
+    {{ end }}
+    {{ with .Resources.GetMatch "the-rm.md" }}
+    <div class="row g-py-20">
+        <div class="col-lg-6 text-justify">
+            {{ .Content }}
+        </div>
+        <div class="col-lg-6"> </div>
     </div>
     {{ end }}
 </section>

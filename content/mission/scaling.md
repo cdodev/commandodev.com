@@ -1,7 +1,7 @@
 +++
 title = "Scaling"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T15:30:22+00:00
+lastmod = 2019-03-12T21:14:38+00:00
 type = "mission"
 draft = false
 +++
@@ -16,3 +16,10 @@ constrictive and start to leave. A hierarchy begins to form, which slows
 **communications** down and introduces noise into the system. The mission becomes
 blurry and people aren't sure how what they are doing contributes to the **purpose**
 of this grand enterprise that you've put in motion.
+
+There are organisations that have figured out how to move fast, while remaining
+oriented on their goals and grounded in who they are. They get the best out of
+people in insanely challenging circumstances, often under ludicrous **constraints**.
+They operate by consistently holding themselves to standards that are
+universally understood and shared. The foundations of this ability are
+**operational excellence**, which enables **continuous improvement** and evolution.

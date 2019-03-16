@@ -34,24 +34,41 @@ CLOSED: [2019-02-03 Sun 19:38]
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2019-02-03 Sun 19:38]
 :END:
-You know that feeling of spinning your wheels, that you just can't find
-*traction*? I've been there. Over my decade plus career in software
-development, I've experienced this in many of the companies I've worked for.
-This includes everything from start ups where I was the first programmer on
-board, to building teams in global mega banks.
 
-About 4 years ago my brain basically short circuited itself and banned me from
-learning more tech stuff until I figured people and teams out.
+Have you built an MVP, followed the lean start up way and achieved product
+market fit? Are you now at the point where you are going to start scaling your
+business, adding more people and accelerating the execution of your mission?
 
-I found many *answers* in the fields of cognitive physiology, behavioural
-economics and in the hundreds of book I read, but I couldn't help feeling that I
-was missing something fundamental - feeling different parts of the elephant
-without seeing the whole picture. The most surprising thing about this process
-of self education was just how many of the answers were actually reminders of my
-career before technology and programming.
 
-They were things I had already learned, and in fact deeply ingrained but not
-recognised when I was a *Royal Marine* in the early 2000s.
+{{% emphasis %}}What's your strategy?{{% /emphasis %}}
+
+
+The behaviours and tactics that worked to get you out of the blocks and running
+are not the same as those required to achieve and maintain scaleable growth.
+Getting this transition right is incredibly important: do it too early and
+you'll stifle your ability to iterate with a small team. Do it too late, or not
+at all, and you'll be trying to layer more people into a chaotic environment and
+you'll kill their ability to deliver.
+
+I've been in many of these situations over the last 10 years in tech. An
+organisation scaling up without putting the right systems in place is a horrible
+place to be. No matter how strong the founder's vision and how compelling the
+mission, without the *right foundations* the company lurches from one crisis to
+another and can't deliver. It's a stressful, frustrating experience that drives
+the best people out of the company.
+
+{{% emphasis cls="text-uppercase" %}}I can help{{% /emphasis %}}
+
+Before I had a career in tech I was a *Royal Marine Commando*, and it's there that
+I learned the essence of building a high performance culture. What I do now for
+my customers it to translate the operational excellence that's driven the corps'
+evolution for the last 3 and a half centuries to a set of systems for tech
+businesses.
+
+It's all based on a *single abstraction*. Understanding this one thing is what
+allows you to understand the *10,000 things* that are required for elite
+performance and continuous improvement in the face of change.
+
 
 ** DONE Principles
 CLOSED: [2019-02-03 Sun 19:38]
@@ -74,15 +91,29 @@ CLOSED: [2019-02-03 Sun 19:38]
 
 # synonyms:	truth, proposition, concept, idea, theory, postulate; More
 # {{% /blockquote %}}
+Over my decade plus career in software development, I've experienced the feeling
+of being in teams using the wrong processes and not adapting to their realities
+fast enough. This includes everything from start ups where I was the first
+programmer on board, to building teams in global mega banks.
+
+About 4 years ago my brain basically short circuited itself and banned me from
+learning more tech stuff until I figured out how to make the point at which the
+rubber meats the road work better: *People and teams*.
+
+As I researched more and began to understand what makes a great development
+team, I started to recognise the underlying principles. They were things I had
+already learned, and in fact deeply ingrained, but not recognised when I was a
+*Royal Marine* in the early 2000s.
+
+
 Having this moment of recognition was a breakthrough, because it showed me that
 once you are able to translate something from one domain to another and keep the
 essence of why it works, you have your hands on a fundamental principle. This is
-nothing new. The famous swordsman Musashi knew this way back in the 1600s:
+nothing new. The famous swordsman Myamoto Musashi knew this way back in the
+1600s, as the quote above shows.
 
-The disparate lessons started to merge into *principles*. As I began to apply
-these principles to other parts of my life, like my *martial arts* practice, it
-also became clear that I'd been looking at many parts of the same puzzle. There
-was actually *ONE PRINCIPLE* at the centre of many human endeavours.
+So what if you could understand a *SINGLE PRINCIPLE* and from that drive the
+evolution of your organisation's operating system?
 
 {{% emphasis %}}This is what I want to show you.{{% /emphasis %}}
 
@@ -194,7 +225,7 @@ the campaign that smashed the Iraqi army and led to the liberation of Kuwait in
 first Gulf war of the early 90s.
 
 What came out of this period was a complete rethink on the laws and structure of
-conflict condensed down to a tiny amount of published output. What Boyd was able
+conflict, condensed down to a tiny amount of published output. What Boyd was able
 to do was take several millennia of learning, from *The Art of War* to the
 *Blitzkrieg*, and refine it down to a briefing and a couple of published papers.
 Boyd's particular gift lay in combining knowledge from different fields of
@@ -274,17 +305,18 @@ constrictive and start to leave. A hierarchy begins to form, which slows
 blurry and people aren't sure how what they are doing contributes to the *purpose*
 of this grand enterprise that you've put in motion.
 
-** Performing
-:PROPERTIES:
-:EXPORT_FILE_NAME: performing
-:END:
-
 There are organisations that have figured out how to move fast, while remaining
 oriented on their goals and grounded in who they are. They get the best out of
 people in insanely challenging circumstances, often under ludicrous *constraints*.
 They operate by consistently holding themselves to standards that are
 universally understood and shared. The foundations of this ability are
 *operational excellence*, which enables *continuous improvement* and evolution.
+
+** Performing
+:PROPERTIES:
+:EXPORT_FILE_NAME: performing
+:END:
+
 
 One such organisation which has been learning and honing these lessons for over
 350 years is the *Royal Marines*. Way before I was a software developer I served
@@ -296,6 +328,11 @@ direction.
 
 {{% emphasis %}}I was wrong.{{% /emphasis %}}
 
+
+** The Royal Marines
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-rm
+:END:
 The Royal Marines have evolved from a regiment of maritime foot soldiers formed
 in 1664 through constant evolution to today's role as an elite, commando trained,
 rapid reaction force. They have *high performance* figured out, and can teach it

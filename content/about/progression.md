@@ -1,7 +1,7 @@
 +++
 title = "Progression"
 author = ["Ben Ford"]
-lastmod = 2019-03-10T16:43:07+00:00
+lastmod = 2019-03-12T21:14:39+00:00
 type = "about"
 draft = false
 weight = 3

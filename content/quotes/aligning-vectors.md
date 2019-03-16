@@ -1,7 +1,7 @@
 +++
 title = "Aligning Vectors"
 author = ["Elon Musk"]
-lastmod = 2019-03-10T15:30:24+00:00
+lastmod = 2019-03-12T21:14:40+00:00
 draft = false
 +++
 

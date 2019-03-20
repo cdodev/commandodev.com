@@ -1,9 +1,10 @@
 {
   "name": "systems",
-  "set": "010319",
+  "set": "190319",
   "source": "https://github.com/cdodev/spacchetti.git",
   "depends": [
       "flare"
+    , "effect"
     , "smolder"
     , "drawing"
     , "console"
@@ -12,5 +13,10 @@
     , "lists"
     , "canvas"
     , "math"
+    , "linear-algebra"
+    , "p5"
+    , "psci-support"
+    , "newtype"
+    , "profunctor-lenses"
   ]
 }

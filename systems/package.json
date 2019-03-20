@@ -8,5 +8,9 @@
   "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "p5": "^0.7.3",
+    "pulp": "^12.3.1"
   }
 }

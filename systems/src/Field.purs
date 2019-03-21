@@ -1,32 +1,35 @@
 module Field where
 
 import Prelude
-import Data.Maybe (Maybe(..), maybe)
-import Data.Lens
-import Data.Int (toNumber)
-import Math as M
-import Data.Lens.Iso.Newtype (_Newtype)
-import Data.Symbol (SProxy(SProxy))
-import Data.Lens.Record (prop)
-import Data.Newtype hiding (over)
 
+import Color (hsla, cssStringRGBA)
+import Control.MonadPlus (empty)
+import Control.MonadZero (guard)
+import Data.Array ((..))
+import Data.Int (toNumber, floor)
+import Data.Lens (over, (^.), to, Lens')
+import Data.Lens.Iso.Newtype (_Newtype)
+import Data.Lens.Record (prop)
+import Data.Map (Map)
+import Data.Map as Map
+import Data.Maybe (Maybe(..), fromMaybe, maybe)
+import Data.Newtype (class Newtype, unwrap)
+import Data.Symbol (SProxy(SProxy))
+import Data.Traversable (for, for_)
+import Data.Tuple (Tuple(..))
 import Effect (Effect)
-import Effect.Console (log)
-import P5.Types (Vector)
-import P5
-import P5.Color
-import P5.Data
-import P5.Environment
-import P5.Events
-import P5.IO
-import P5.Image
-import P5.LightsAndCamera
-import P5.Math
-import P5.Rendering
-import P5.Shape
-import P5.Structure
-import P5.Transform
-import P5.Typography
+import Effect.Console (logShow)
+import Effect.Random (random)
+import Effect.Uncurried (EffectFn1, runEffectFn1)
+import Math as M
+import P5 (P5, draw, getP5, setup)
+import P5.Color (background3, fill, stroke)
+import Noise (seed, simplex3)
+import P5.Rendering (createCanvas)
+import P5.Shape (ellipse, rect, strokeWeight)
+-- import P5.Structure
+-- import P5.Transform
+-- import P5.Typography
 
 type Vec = { x :: Number, y :: Number }
 
@@ -87,7 +90,13 @@ derive instance newtypeParticle :: Newtype Particle _
 instance showParticle :: Show Particle where
   show (Particle p) = "Particle " <> show p
 
+mkParticle :: Number -> Number -> Particle
+mkParticle x y =
+  let p = XY { x: x, y: y}
+      v = Velocity { x:0.0, y:0.0}
+      a = Acceleration { x:0.0, y:0.0}
 
+  in Particle { pos: p, vel: v, acc: a}
 move :: Acceleration -> Particle -> Particle
 move acc (Particle p ) =
   let newVel = applyAcc acc p.vel
@@ -119,17 +128,137 @@ addPos a b = { x: a.x + b.x, y: a.y + b.y }
 
 
 --------------------------------------------------------------------------------
+type ColorConfig = {
+    opacity :: Number
+  , baseHue :: Int
+  , hueRange :: Int
+  , hueSpeed :: Number
+  , sat :: Int
+  }
+
+colorConf :: ColorConfig
+colorConf = { opacity: 0.7
+            , baseHue: 270
+            , hueRange: 90
+            , hueSpeed: 0.01
+            , sat: 100
+            }
+
+type Config = {
+    zoom :: Int
+  , windowDim :: Dimensions
+  , noiseSpeed :: Number
+  , particleSpeed :: Int
+  , fieldForce :: Int
+  , fieldSize :: Int
+  , randomForce :: Int
+  , cc :: ColorConfig
+  }
+
+mkConfig :: Int -> Int -> Config
+mkConfig w h =
+  { zoom: 80
+  , windowDim: Dimensions { x: w, y: h }
+  , noiseSpeed: 0.01
+  , particleSpeed: 2
+  , fieldForce: 90
+  , fieldSize: 3
+  , randomForce: 10
+  , cc: colorConf
+  }
+
+--------------------------------------------------------------------------------
+
+type Field = Map (Tuple Int Int) Acceleration
+
+--------------------------------------------------------------------------------
+type PState = { noiseZ :: Number
+              , hueCounter :: Number
+              , particles :: Array Particle
+              }
+
+
+foreign import setStateImpl :: EffectFn1 PState Void
+
+foreign import getStateImpl :: Effect PState
+
+getState :: Effect PState
+getState = getStateImpl
+
+setState :: PState -> Effect Void
+setState = runEffectFn1 setStateImpl
+
+
+initState :: PState
+initState = { noiseZ: 0.0
+            , hueCounter: 0.0
+            , particles: []
+            }
+
+--------------------------------------------------------------------------------
+foreign import frameCountImpl :: EffectFn1 P5 Int
+
+frameCount :: P5 -> Effect Int
+frameCount = runEffectFn1 frameCountImpl
+--------------------------------------------------------------------------------
 type AppState = {
-  p5 :: P5
+    p5 :: P5
   }
 
 initialState :: Maybe AppState
 initialState = Nothing
 
+initAppState :: Dimensions -> P5 -> Effect AppState
+initAppState (Dimensions dim) p5 = do
+  pure { p5: p5 }
+
+calcField :: P5 -> Config -> PState -> Effect Field
+calcField p5 cnf st = do
+  let cols = cnf.windowDim ^. to unwrap <<< prop (SProxy :: SProxy "x") / cnf.fieldSize
+      rows = cnf.windowDim ^. to unwrap <<< prop (SProxy :: SProxy "y") / cnf.fieldSize
+      keys = Tuple <$> (0 .. cols)
+                   <*> (0 .. rows)
+      z = toNumber cnf.zoom
+      v = { x: 0.0, y: 0.0 }
+  kvs <- for keys $ \kv@(Tuple x y) -> do
+    let x' = toNumber x
+        y' = toNumber y
+        dx = x'-(toNumber cols)/2.0
+        dy = y'-(toNumber rows)/2.0
+        a  = Radians $ (M.atan2 dy dx) + M.pi/2.0
+        l = (M.sqrt (dx*dx + dy*dy))/100.0
+        v' = setLength l $ setAngle a v
+    x1 <- (_ / 2.0) <$> simplex3 (x'/z) (y'/z) (st.noiseZ)
+    y1 <- (_ / 2.0) <$> simplex3 (x'/z + 4000.0) (y'/z + 4000.0) (st.noiseZ)
+    pure $ Tuple kv $ Acceleration $ v' + { x: x1, y:y1 }
+  pure $ Map.fromFoldable kvs
+
+drawParticles :: P5 -> Config -> PState -> Field -> Effect (Array Particle)
+drawParticles p5 conf ps field = do
+  let h = (M.sin ps.hueCounter * (toNumber conf.cc.hueRange)) + toNumber conf.cc.baseHue
+      c = hsla h (toNumber conf.cc.sat) 0.5 conf.cc.opacity
+  fill p5 $ cssStringRGBA c
+  for ps.particles $ \p -> do
+    let x = floor $ posXY p (_.x) / toNumber conf.fieldSize
+        y = floor $ posXY p (_.y) / toNumber conf.fieldSize
+    let mv = Map.lookup (Tuple x y) field
+    mp <- for mv $ \v -> do
+      drawP <<< wrap conf.windowDim $ move v p
+    pure $ fromMaybe p mp
+  where
+    posXY :: Particle -> (Vec -> Number) -> Number
+    posXY (Particle p) f = f $ unwrap p.pos
+    drawP p = do
+      -- sz <- random
+      ellipse p5 (posXY p (_.x)) (posXY p (_.y)) 4.0 Nothing
+      pure p
+
 main :: Maybe AppState -> Effect (Maybe AppState)
 main mAppState = do
-  let w = 600.0
-      h = 600.0
+  let w = 800
+      h = 400
+      dim = Dimensions { x: w, y: h}
+      conf = mkConfig w h
   p <- maybe getP5 (\x -> pure x.p5) mAppState
 
   let palette =
@@ -140,15 +269,27 @@ main mAppState = do
         , e: "#9d7f38"
         }
   setup p do
-    _ <- createCanvas p w h Nothing
+    _ <- createCanvas p (toNumber w) (toNumber h) Nothing
+    -- n <- random
+    _ <- seed (10000.0)
+    let nParticles = w * h / 200
+    ps <- for (0 .. nParticles) $ \_ -> mkP dim
+    _ <- setState (initState { particles = ps })
     pure unit
 
   draw p do
-    background3 p palette.b Nothing
-    stroke p palette.a
-    strokeWeight p 5.0
-    rect p 100.0 100.0 50.0 50.0 Nothing Nothing
-    rect p 110.0 110.0 50.0 50.0 Nothing Nothing
+    s <- getState
+    -- logShow s.noiseZ
+    field <- calcField p conf s
+    background3 p "black" Nothing
+    p' <- drawParticles p conf s field
+    _ <- setState (s { noiseZ = s.noiseZ + conf.noiseSpeed
+                     , hueCounter = s.hueCounter + conf.cc.hueSpeed
+                     , particles = p'})
     pure unit
 
   pure $ Just { p5: p }
+
+  where
+    randomN n = (*) (toNumber n) <$> random
+    mkP (Dimensions dim) = mkParticle <$> randomN dim.x <*> randomN dim.y

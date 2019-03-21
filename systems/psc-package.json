@@ -13,6 +13,7 @@
     , "lists"
     , "canvas"
     , "math"
+    , "random"
     , "linear-algebra"
     , "p5"
     , "psci-support"

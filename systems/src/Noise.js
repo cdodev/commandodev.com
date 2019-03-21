@@ -148,7 +148,7 @@ exports.simplex2Impl = function(xin, yin) {
 };
 
 // 3D simplex noise
-exports.simplex3 = function(xin, yin, zin) {
+exports.simplex3Impl = function(xin, yin, zin) {
     var n0, n1, n2, n3; // Noise contributions from the four corners
 
     // Skew the input space to determine which simplex cell we're in

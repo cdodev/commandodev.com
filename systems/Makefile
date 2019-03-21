@@ -19,4 +19,7 @@ purs-build:
 	pp2n build
 
 parcel-build:
-	./node_modules/.bin/parcel build src/index.html
+	./node_modules/.bin/parcel build src/p5.html
+
+watch:
+	./node_modules/.bin/parcel src/p5.html

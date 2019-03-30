@@ -14,6 +14,8 @@
     , "canvas"
     , "math"
     , "random"
+    , "record"
+    , "st"
     , "linear-algebra"
     , "p5"
     , "psci-support"

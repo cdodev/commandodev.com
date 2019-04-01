@@ -2,7 +2,7 @@
 title = "Principles"
 author = ["Ben Ford"]
 date = 2019-02-03T19:38:00+00:00
-lastmod = 2019-03-16T12:05:26+00:00
+lastmod = 2019-04-01T11:49:17+01:00
 draft = false
 headless = true
 weight = 1
@@ -15,7 +15,7 @@ programmer on board, to building teams in global mega banks.
 
 About 4 years ago my brain basically short circuited itself and banned me from
 learning more tech stuff until I figured out how to make the point at which the
-rubber meats the road work better: **People and teams**.
+rubber meets the road work better: **People and teams**.
 
 As I researched more and began to understand what makes a great development
 team, I started to recognise the underlying principles. They were things I had
@@ -38,4 +38,4 @@ excellence** that every business needs to **thrive** and **scale**.
 
 The single principle that unites the 3 pillars of **PURPOSE** **PEOPLE** and **PRACTICES**
 
-<a id="org79041e8"></a>
+<a id="org8401dfe"></a>

@@ -512,6 +512,18 @@ let
       installPhase = "ln -s $src $out";
     };
 
+    "media-types" = pkgs.stdenv.mkDerivation {
+      name = "media-types";
+      version = "v4.0.1";
+      src = pkgs.fetchgit {
+        url = "https://github.com/purescript-contrib/purescript-media-types.git";
+        rev = "v4.0.1";
+        sha256 = "0ykwmxrhmwfy6c5mxjxa43xdf5xqakrqyvr5fn986yad50gjqj75";
+      };
+      phases = "installPhase";
+      installPhase = "ln -s $src $out";
+    };
+
     "newtype" = pkgs.stdenv.mkDerivation {
       name = "newtype";
       version = "v3.0.0";
@@ -939,6 +951,42 @@ let
         url = "https://github.com/purescript-web/purescript-web-events.git";
         rev = "v2.0.0";
         sha256 = "0z2q9zjjyx3djlkbdhhnhb1aw175rgklb5ylf3rnk9makbfk1rnf";
+      };
+      phases = "installPhase";
+      installPhase = "ln -s $src $out";
+    };
+
+    "web-file" = pkgs.stdenv.mkDerivation {
+      name = "web-file";
+      version = "v2.0.0";
+      src = pkgs.fetchgit {
+        url = "https://github.com/purescript-web/purescript-web-file.git";
+        rev = "v2.0.0";
+        sha256 = "05cc4vn1kpn2rzh7b14216v0jidyl7kzfqq7q9ydhmxlwb2k8jix";
+      };
+      phases = "installPhase";
+      installPhase = "ln -s $src $out";
+    };
+
+    "web-html" = pkgs.stdenv.mkDerivation {
+      name = "web-html";
+      version = "v2.0.0";
+      src = pkgs.fetchgit {
+        url = "https://github.com/purescript-web/purescript-web-html.git";
+        rev = "v2.0.0";
+        sha256 = "06dvymqxh297zz9h2y07w9hd6p8nw08r79whxjwcyh3zlsjra99d";
+      };
+      phases = "installPhase";
+      installPhase = "ln -s $src $out";
+    };
+
+    "web-storage" = pkgs.stdenv.mkDerivation {
+      name = "web-storage";
+      version = "v3.0.0";
+      src = pkgs.fetchgit {
+        url = "https://github.com/purescript-web/purescript-web-storage.git";
+        rev = "v3.0.0";
+        sha256 = "1ycb2s29aw9w6lqik6hfmp9nf9i2yhn0q26hc4p3450jam5mj8bx";
       };
       phases = "installPhase";
       installPhase = "ln -s $src $out";

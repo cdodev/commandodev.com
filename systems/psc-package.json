@@ -17,9 +17,9 @@
     , "record"
     , "st"
     , "linear-algebra"
-    , "p5"
     , "psci-support"
     , "newtype"
     , "profunctor-lenses"
+    , "web-html"
   ]
 }

@@ -6,12 +6,11 @@ import Data.Tuple (Tuple(..))
 import Color (hsla, cssStringHSLA)
 import Control.Monad.ST (ST)
 import Control.Monad.ST as ST
-import Data.Array ((!!), (..))
+import Data.Array ((..))
 import Data.Function.Uncurried (Fn1, Fn2, Fn3, mkFn3, runFn1, runFn2, runFn3)
 import Data.Int (toNumber, floor)
-import Data.Maybe (Maybe(..), maybe)
+import Data.Maybe (maybe)
 import Data.Newtype (class Newtype)
-import Data.Symbol (SProxy(SProxy))
 import Data.Traversable (for)
 import Effect (Effect)
 import Effect.Exception (throw)
@@ -19,23 +18,15 @@ import Effect.Random (random)
 import Effect.Uncurried (EffectFn1, EffectFn2, EffectFn3, mkEffectFn2, runEffectFn1, runEffectFn2, runEffectFn3)
 import Math as M
 import Noise (seed, simplex3)
-import Graphics.Canvas
+import Graphics.Canvas (Context2D, Dimensions, arc, fillPath, getCanvasDimensions, getCanvasElementById, getContext2D, setFillStyle)
 import Record.ST (STRecord)
-import Record.ST as RecST
 import Unsafe.Coerce (unsafeCoerce)
 import Web.HTML (window)
 import Web.HTML.Window (requestAnimationFrame)
 
 
-x = SProxy :: SProxy "x"
-y = SProxy :: SProxy "y"
-
-pos = SProxy :: SProxy "pos"
-prevPos = SProxy :: SProxy "prevPos"
-vel = SProxy :: SProxy "vel"
-acc = SProxy :: SProxy "acc"
-size = SProxy :: SProxy "size"
-
+--------------------------------------------------------------------------------
+-- TYPES
 
 type VecT = ( x :: Number, y :: Number )
 
@@ -45,76 +36,18 @@ type Acceleration = Vec
 type Velocity = Vec
 type XY = Vec
 
-
---------------------------------------------------------------------------------
-newtype Radians = Radians Number
-derive instance newtypeRadians :: Newtype Radians _
-
---------------------------------------------------------------------------------
-foreign import getLengthImpl :: forall r. Fn1 (STRecord r VecT) (ST r Number)
-
-getLength :: forall r. STRecord r VecT -> ST r Number
-getLength = runFn1 getLengthImpl
-
-foreign import setLengthImpl :: forall r. Fn2 (STRecord r VecT) Number (ST r Unit)
-
-setLength :: forall r. STRecord r VecT -> Number -> ST r Unit
-setLength = runFn2 setLengthImpl
-
-foreign import setAngleImpl :: forall r. Fn2 (STRecord r VecT) Radians (ST r Unit)
-setAngle :: forall r. STRecord r VecT -> Radians -> ST r Unit
-setAngle = runFn2 setAngleImpl
-
-foreign import getAngleImpl :: forall r. Fn1 (STRecord r VecT) (ST r Radians)
-getAngle :: forall r. STRecord r VecT -> ST r Radians
-getAngle = runFn1 getAngleImpl
-
---------------------------------------------------------------------------------
 type FieldDim = { cols :: Int, rows :: Int }
 
---------------------------------------------------------------------------------
+type ParticleT = (
+    pos :: XY
+  , prevPos :: XY
+  , vel :: Velocity
+  , acc :: Acceleration
+  , size :: Number
+  )
 
-foreign import calculateFieldImpl :: EffectFn2 FieldDim (Fn3 Int Int Vec Unit) Unit
-
-calculateField :: FieldDim -> (Int -> Int -> Vec -> Unit) -> Effect Unit
-calculateField dims f = runEffectFn2 calculateFieldImpl dims (mkFn3 f)
-
---------------------------------------------------------------------------------
-type ParticleT = ( pos :: XY, prevPos :: XY, vel :: Velocity, acc :: Acceleration, size :: Number )
-
-type Particle = Record ParticleT
-
-mkParticle :: Number -> Number -> Effect Particle
-mkParticle xdim ydim = do
-  let p = { x: xdim, y: ydim}
-      a = { x:0.0, y:0.0}
-  s <- mul 2.0 <$> random
-  v <- ({ x: _, y: _}) <$> ((_ - 0.5) <$> random)
-                       <*> ((_ - 0.5) <$> random)
-  pure { pos: p, prevPos: p, vel: v, acc: a, size: s}
-
-foreign import moveImpl :: forall r. Fn3 (STRecord r ParticleT) Acceleration Number (ST r Unit)
-
-move :: forall r. STRecord r ParticleT -> Acceleration -> Number -> ST r Unit
-move = runFn3 moveImpl
-
-foreign import wrapImpl :: forall r. Fn2 (STRecord r ParticleT) Dimensions (ST r Unit)
-
-wrap :: forall r. STRecord r ParticleT -> Dimensions -> ST r Unit
-wrap = runFn2 wrapImpl
-
-foreign import addToImpl :: forall r. Fn2 (STRecord r VecT) Vec (ST r Unit)
-addTo :: forall r. STRecord r VecT -> Vec -> ST r Unit
-addTo = runFn2 addToImpl
-
-foreign import drawBackgroundImpl :: EffectFn2 Context2D Dimensions Unit
-
-drawBackground :: Context2D -> Dimensions -> Effect Unit
-drawBackground = runEffectFn2 drawBackgroundImpl
-
---------------------------------------------------------------------------------
 type ColorConfig = {
-    opacity :: Number
+  opacity :: Number
   , baseHue :: Int
   , hueRange :: Int
   , hueSpeed :: Number
@@ -141,55 +74,127 @@ type Config = {
   , cc :: ColorConfig
   }
 
+type Particle = Record ParticleT
+
+
+type PState = { noiseZ :: Number
+              , hueCounter :: Number
+              , particles :: Array Particle
+              , field :: Array (Array Vec)
+              }
+
+newtype Radians = Radians Number
+derive instance newtypeRadians :: Newtype Radians _
+
+--------------------------------------------------------------------------------
+-- VECTOR OPS
+
+foreign import getLengthImpl :: forall r. Fn1 (STRecord r VecT) (ST r Number)
+getLength :: forall r. STRecord r VecT -> ST r Number
+getLength = runFn1 getLengthImpl
+
+foreign import setLengthImpl :: forall r. Fn2 (STRecord r VecT) Number (ST r Unit)
+setLength :: forall r. STRecord r VecT -> Number -> ST r Unit
+setLength = runFn2 setLengthImpl
+
+
+foreign import setAngleImpl :: forall r. Fn2 (STRecord r VecT) Radians (ST r Unit)
+setAngle :: forall r. STRecord r VecT -> Radians -> ST r Unit
+setAngle = runFn2 setAngleImpl
+
+foreign import getAngleImpl :: forall r. Fn1 (STRecord r VecT) (ST r Radians)
+getAngle :: forall r. STRecord r VecT -> ST r Radians
+getAngle = runFn1 getAngleImpl
+
+--------------------------------------------------------------------------------
+-- PARTICLE OPS
+
+foreign import moveImpl :: forall r. Fn3 (STRecord r ParticleT) Acceleration Number (ST r Unit)
+move :: forall r. STRecord r ParticleT -> Acceleration -> Number -> ST r Unit
+move = runFn3 moveImpl
+
+foreign import wrapImpl :: forall r. Fn2 (STRecord r ParticleT) Dimensions (ST r Unit)
+wrap :: forall r. STRecord r ParticleT -> Dimensions -> ST r Unit
+wrap = runFn2 wrapImpl
+
+foreign import addToImpl :: forall r. Fn2 (STRecord r VecT) Vec (ST r Unit)
+addTo :: forall r. STRecord r VecT -> Vec -> ST r Unit
+addTo = runFn2 addToImpl
+
+
+--------------------------------------------------------------------------------
+-- CONSTRUCTORS
+
 mkConfig :: Int -> Dimensions -> Config
 mkConfig fSize dim =
   { zoom: 80
   , fieldDim: calcExtents dim fSize
   , canvasDim: dim
   , noiseSpeed: 0.01
-  , particleSpeed: 5.0
+  , particleSpeed: 3.0
   , fieldForce: 90
   , fieldSize: fSize
   , randomForce: 10
   , cc: colorConf
   }
+  where
+    calcExtents d i = { cols: floor $ d.width / toNumber i
+                      , rows: floor $ d.height / toNumber i}
 
-calcExtents :: Dimensions -> Int -> FieldDim
-calcExtents d i = { cols: floor $ d.width / toNumber i
-                  , rows: floor $ d.height / toNumber i}
+mkParticle :: Number -> Number -> Effect Particle
+mkParticle xdim ydim = do
+  let p = { x: xdim, y: ydim}
+      a = { x:0.0, y:0.0}
+  s <- mul 2.0 <$> random
+  v <- ({ x: _, y: _}) <$> ((_ - 0.5) <$> random)
+                       <*> ((_ - 0.5) <$> random)
+  pure { pos: p, prevPos: p, vel: v, acc: a, size: s}
+
+
 
 --------------------------------------------------------------------------------
-
-type Field = Array (Array Vec) -- Map (Tuple Int Int) Acceleration
-
---------------------------------------------------------------------------------
-type PState = { noiseZ :: Number
-              , hueCounter :: Number
-              , particles :: Array Particle
-              , field :: Field
-              }
-
-foreign import setStateImpl :: Fn1 PState Unit
+-- STATE
 
 foreign import getStateImpl :: Effect PState
-
 getState :: Effect PState
 getState = getStateImpl
 
+foreign import setStateImpl :: Fn1 PState Unit
 setState :: PState -> Unit
 setState = runFn1 setStateImpl
 
 
 --------------------------------------------------------------------------------
-foreign import initFieldImpl :: EffectFn1 FieldDim Unit
+-- INITIALIZATION
 
+foreign import initFieldImpl :: EffectFn1 FieldDim Unit
 initField :: FieldDim -> Effect Unit
 initField = runEffectFn1 initFieldImpl
 
 foreign import initParticlesImpl :: EffectFn1 (Array Particle) Unit
-
 initParticles :: Array Particle -> Effect Unit
 initParticles = runEffectFn1 initParticlesImpl
+
+initState :: Config -> Effect Unit
+initState conf = do
+  let dim = conf.fieldDim
+      wdim = conf.canvasDim
+      nParticles = wdim.height * wdim.width / 100.0
+  initField dim
+  initParticles =<< (for (0 .. floor nParticles) $ \_ -> mkP wdim)
+  where
+    randomN n = (_ * n) <$> random
+    mkP dim = do
+      x' <- randomN dim.width
+      y' <- randomN dim.height
+      mkParticle x' y'
+
+--------------------------------------------------------------------------------
+-- FEILD CALCULATION
+
+foreign import calculateFieldImpl :: EffectFn2 FieldDim (Fn3 Int Int Vec Unit) Unit
+calculateField :: FieldDim -> (Int -> Int -> Vec -> Unit) -> Effect Unit
+calculateField dims f = runEffectFn2 calculateFieldImpl dims (mkFn3 f)
 
 calcField :: Config -> PState -> Effect Unit
 calcField cnf st = do
@@ -213,11 +218,8 @@ calcField cnf st = do
         setLength accV l
         addTo accV { x: x1, y: y1 }
   calculateField dims (\c r v -> ST.run (fn c r v))
--- getP :: forall a. Array (Array a) -> Int -> Int -> Maybe a
-getP f col row = join $ (_ !! col) <$> f !! row
 
 foreign import incrNoiseImpl :: EffectFn1 Number Unit
-
 incrNoise :: Number -> Effect Unit
 incrNoise = runEffectFn1 incrNoiseImpl
 
@@ -225,8 +227,15 @@ foreign import incrHueImpl :: EffectFn1 Number Unit
 incrHue :: Number -> Effect Unit
 incrHue = runEffectFn1 incrHueImpl
 
-foreign import drawParticlesImpl :: EffectFn3 Int FieldDim (EffectFn2 Particle Acceleration Unit) Unit
 
+--------------------------------------------------------------------------------
+-- DRAWING
+
+foreign import drawBackgroundImpl :: EffectFn2 Context2D Dimensions Unit
+drawBackground :: Context2D -> Dimensions -> Effect Unit
+drawBackground = runEffectFn2 drawBackgroundImpl
+
+foreign import drawParticlesImpl :: EffectFn3 Int FieldDim (EffectFn2 Particle Acceleration Unit) Unit
 drawParticles :: Int -> FieldDim -> (Particle -> Acceleration -> Effect Unit) -> Effect Unit
 drawParticles sz dims = runEffectFn3 drawParticlesImpl sz dims <<< mkEffectFn2
 
@@ -249,7 +258,6 @@ drawAll ctx conf ps = do
     toRec :: forall r. Particle -> STRecord r ParticleT
     toRec = unsafeCoerce
 
-
 drawParticle :: Context2D -> PState -> Config -> Particle -> Effect Unit
 drawParticle ctx ps conf p = do
   -- beginPath ctx
@@ -257,30 +265,19 @@ drawParticle ctx ps conf p = do
   where
     p' = { x: p.pos.x, y: p.pos.y, radius: p.size, start: 0.0, end: 2.0*M.pi}
 
-
-initState :: Config -> Effect Unit
-initState conf = do
-  let dim = conf.fieldDim
-      wdim = conf.canvasDim
-      nParticles = wdim.height * wdim.width / 100.0
-  initField dim
-  initParticles =<< (for (0 .. floor nParticles) $ \_ -> mkP wdim)
-  where
-    randomN n = (_ * n) <$> random
-    mkP dim = do
-      x' <- randomN dim.width
-      y' <- randomN dim.height
-      mkParticle x' y'
-
 draw :: Context2D -> Config -> Effect Unit
 draw ctx conf = do
   state <- getState
-  drawBackground ctx conf.canvasDim
+  -- drawBackground ctx conf.canvasDim
   void $ requestAnimationFrame (draw ctx conf) =<< window
   calcField conf state
   drawAll ctx conf state
   incrNoise conf.noiseSpeed
   incrHue conf.cc.hueSpeed
+
+
+--------------------------------------------------------------------------------
+-- SET UP AND MAIN
 
 setUp :: String -> Effect (Tuple Context2D Config)
 setUp el = do
@@ -289,6 +286,7 @@ setUp el = do
     dim <- getCanvasDimensions canv
     ctx <- getContext2D canv
     let conf = mkConfig 5 dim
+    drawBackground ctx conf.canvasDim
     initState conf
     pure $ Tuple ctx conf
 

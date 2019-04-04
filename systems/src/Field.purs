@@ -196,13 +196,13 @@ foreign import calculateFieldImpl :: EffectFn2 FieldDim (Fn3 Int Int Vec Unit) U
 calculateField :: FieldDim -> (Int -> Int -> Vec -> Unit) -> Effect Unit
 calculateField dims f = runEffectFn2 calculateFieldImpl dims (mkFn3 f)
 
-calcField :: Config -> PState -> Effect Unit
-calcField cnf st = do
+calcField :: forall r. Config -> PState -> (Int -> Int -> Vec -> ST r Unit)
+calcField cnf st =
   let dims = cnf.fieldDim
       z = toNumber cnf.zoom
-      toRec :: forall r. Acceleration -> STRecord r VecT
+      toRec :: Acceleration -> STRecord r VecT
       toRec = unsafeCoerce
-      fn :: forall r. Int -> Int -> Acceleration -> ST r Unit
+      fn :: Int -> Int -> Acceleration -> ST r Unit
       fn col row accV' = do
 
         let accV = toRec accV'
@@ -217,7 +217,8 @@ calcField cnf st = do
         setAngle accV a
         setLength accV l
         addTo accV { x: x1, y: y1 }
-  calculateField dims (\c r v -> ST.run (fn c r v))
+  in fn
+  -- calculateField dims (\c r v -> ST.run (fn c r v))
 
 foreign import incrNoiseImpl :: EffectFn1 Number Unit
 incrNoise :: Number -> Effect Unit
@@ -268,9 +269,10 @@ drawParticle ctx ps conf p = do
 draw :: Context2D -> Config -> Effect Unit
 draw ctx conf = do
   state <- getState
-  -- drawBackground ctx conf.canvasDim
+  drawBackground ctx conf.canvasDim
   void $ requestAnimationFrame (draw ctx conf) =<< window
-  calcField conf state
+  let dims = conf.fieldDim
+  calculateField dims (\c r v -> ST.run (calcField conf state c r v))
   drawAll ctx conf state
   incrNoise conf.noiseSpeed
   incrHue conf.cc.hueSpeed
@@ -286,7 +288,6 @@ setUp el = do
     dim <- getCanvasDimensions canv
     ctx <- getContext2D canv
     let conf = mkConfig 5 dim
-    drawBackground ctx conf.canvasDim
     initState conf
     pure $ Tuple ctx conf
 

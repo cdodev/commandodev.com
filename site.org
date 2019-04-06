@@ -275,7 +275,7 @@ Working with me
 :EXPORT_HUGO_MENU: :menu "main"
 :EXPORT_HUGO_WEIGHT: 2
 :END:
-My mission is to teach growing tech based companies how to achieve and maintain
+My mission is to teach growing tech companies how to achieve and maintain
 *operational excellence* as they scale
 
 ** The problem

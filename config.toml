@@ -17,6 +17,7 @@ pygmentsUseClassic = false      # Needs Hugo 0.28+, default=false => Use Chroma 
 
 enableEmoji = true
 
+googleAnalytics = "UA-134332089-1"
 # [[menu.main]]
 #     name = "home"
 #     url = "/"

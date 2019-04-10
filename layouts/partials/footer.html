@@ -98,9 +98,8 @@
 {{ if .Site.Params.disqus -}}
 <script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
 {{ end -}}
-{{ if .Site.Params.google.analytics -}}
-{{ partial "analyticstracking.html" . }}
-{{ end -}}
+
+{{ template "_internal/google_analytics.html" . }}
 
 
 {{ $dzs := resources.Get "css/dzsparallaxer.css" }}

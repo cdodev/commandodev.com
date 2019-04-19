@@ -63,6 +63,15 @@ function addTo(vec, v) {
 
 exports.addToImpl = mkImpl(addTo);
 
+
+function set(vec, v) {
+    vec.x = v.x;
+    vec.y = v.y;
+}
+
+exports.setImpl = mkImpl(set);
+
+
 function getLength(vec) {
     return Math.sqrt(vec.x * vec.x + vec.y * vec.y);
 }
@@ -126,7 +135,7 @@ exports.wrapImpl = function(particle, canvas) {
     };
 }
 
-exports.drawBackgroundImpl = function(ctx, canvas) {
-    ctx.fillStyle = "black";
+exports.drawBackgroundImpl = function(ctx, canvas, fill) {
+    ctx.fillStyle = fill;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 };

@@ -4,6 +4,7 @@ import Prelude
 
 import Data.Tuple (Tuple(..))
 import Control.Monad.ST (ST)
+import Color (Color, cssStringRGBA)
 import Data.Array ((..))
 import Data.Function.Uncurried (Fn1, Fn2, Fn3, mkFn3, runFn1, runFn2, runFn3)
 import Data.Int (toNumber, floor)
@@ -40,7 +41,7 @@ type ParticleT = (
   )
 
 type ColorConfig = {
-  opacity :: Number
+    opacity :: Number
   , baseHue :: Int
   , hueRange :: Int
   , hueSpeed :: Number
@@ -52,7 +53,7 @@ colorConf = { opacity: 0.7
             , baseHue: 270
             , hueRange: 90
             , hueSpeed: 0.01
-            , sat: 100
+            , sat: 50
             }
 
 type Config = {
@@ -114,25 +115,17 @@ foreign import addToImpl :: forall r. Fn2 (STRecord r VecT) Vec (ST r Unit)
 addTo :: forall r. STRecord r VecT -> Vec -> ST r Unit
 addTo = runFn2 addToImpl
 
+foreign import setImpl :: forall r. Fn2 (STRecord r VecT) Vec (ST r Unit)
+set :: forall r. STRecord r VecT -> Vec -> ST r Unit
+set = runFn2 setImpl
 
 --------------------------------------------------------------------------------
 -- CONSTRUCTORS
-
-mkConfig :: Int -> Dimensions -> Config
-mkConfig fSize dim =
-  { zoom: 80
-  , fieldDim: calcExtents dim fSize
-  , canvasDim: dim
-  , noiseSpeed: 0.01
-  , particleSpeed: 3.0
-  , fieldForce: 90
-  , fieldSize: fSize
-  , randomForce: 10
-  , cc: colorConf
+calcExtents :: Dimensions -> Int -> FieldDim
+calcExtents d i =
+  { cols: floor $ d.width / toNumber i
+  , rows: floor $ d.height / toNumber i
   }
-  where
-    calcExtents d i = { cols: floor $ d.width / toNumber i
-                      , rows: floor $ d.height / toNumber i}
 
 mkParticle :: Number -> Number -> Effect Particle
 mkParticle xdim ydim = do
@@ -202,9 +195,9 @@ incrHue = runEffectFn1 incrHueImpl
 --------------------------------------------------------------------------------
 -- DRAWING
 
-foreign import drawBackgroundImpl :: EffectFn2 Context2D Dimensions Unit
-drawBackground :: Context2D -> Dimensions -> Effect Unit
-drawBackground = runEffectFn2 drawBackgroundImpl
+foreign import drawBackgroundImpl :: EffectFn3 Context2D Dimensions String Unit
+drawBackground :: Context2D -> Dimensions -> Color -> Effect Unit
+drawBackground ctx dim color = runEffectFn3 drawBackgroundImpl ctx dim (cssStringRGBA color)
 
 foreign import drawParticlesImpl :: EffectFn3 Int FieldDim (EffectFn2 Particle Acceleration Unit) Unit
 drawParticles :: Int -> FieldDim -> (Particle -> Acceleration -> Effect Unit) -> Effect Unit
@@ -213,12 +206,12 @@ drawParticles sz dims = runEffectFn3 drawParticlesImpl sz dims <<< mkEffectFn2
 --------------------------------------------------------------------------------
 -- SET UP AND MAIN
 
-setUp :: String -> Effect (Tuple Context2D Config)
-setUp el = do
+setUp :: String -> (Dimensions -> Config) -> Effect (Tuple Context2D Config)
+setUp el mkConf = do
   mCanv <- getCanvasElementById el
   (flip $ maybe (throw $ "Canvas Element " <> el <> " not found")) mCanv $ \canv -> do
     dim <- getCanvasDimensions canv
     ctx <- getContext2D canv
-    let conf = mkConfig 5 dim
+    let conf = mkConf dim
     initState conf
     pure $ Tuple ctx conf

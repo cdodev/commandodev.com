@@ -3,21 +3,23 @@ module Galaxy where
 import Prelude
 
 import Data.Tuple (Tuple(..))
-import Color (hsla, cssStringHSLA)
+import Color (hsla, cssStringHSLA, rgba, black)
 import Control.Monad.ST (ST)
-import Control.Monad.ST as ST
+import Control.Monad.ST (run) as ST
 import Data.Int (toNumber)
 import Effect (Effect)
 import Effect.Random (random)
 import Math as M
 import Noise (seed, simplex3)
-import Graphics.Canvas (Context2D, arc, fillPath, setFillStyle)
+import Graphics.Canvas (Context2D, Dimensions, arc, fillPath, setFillStyle)
 import Record.ST (STRecord)
+import Record.ST (freeze) as ST
 import Unsafe.Coerce (unsafeCoerce)
 import Web.HTML (window)
 import Web.HTML.Window (requestAnimationFrame)
 
-import Field (Acceleration, Config, PState, Particle, ParticleT, Radians(..), Vec, VecT, addTo, calculateField, drawBackground, drawParticles, getState, incrHue, incrNoise, move, setAngle, setLength, setUp, wrap)
+import Field (Acceleration, Config, PState, Particle, ParticleT, Radians(..), Vec, VecT, calcExtents, calculateField, colorConf, drawBackground, drawParticles, getState, incrHue, incrNoise, move, set, setAngle, setUp, wrap)
+
 
 calcField :: forall r. Config -> PState -> (Int -> Int -> Vec -> ST r Unit)
 calcField cnf st =
@@ -31,16 +33,26 @@ calcField cnf st =
         let accV = toRec accV'
             x' = toNumber col
             y' = toNumber row
-            dx = x'-(toNumber dims.cols)/2.0
-            dy = y'-(toNumber dims.rows)/2.0
-            a  = Radians $ (M.atan2 dy dx) + M.pi/2.0
-            l = (M.sqrt (dx*dx + dy*dy))/100.0
-            x1 = (_ / 2.0) $ simplex3 (x'/z) (y'/z) st.noiseZ
-            y1 = (_ / 2.0) $ simplex3 (x'/z*50.0 + 40000.0) (y'/z*50.0 + 40000.0) st.noiseZ
-        setAngle accV a
-        setLength accV l
-        addTo accV { x: x1, y: y1 }
+            -- dx = x'-(toNumber dims.cols)/2.0
+            -- dy = y'-(toNumber dims.rows)/2.0
+            -- a  = Radians $ (M.atan2 dy dx) + M.pi/2.0
+            -- l = (M.sqrt (dx*dx + dy*dy))/100.0
+            angle = (_ * M.pi * 2.0) $ (_ / 2.0) $ simplex3 (x'/z) (y'/z) st.noiseZ
+            length = (_ / 2.0) $ simplex3 (x'/z*2.0 + 40000.0) (y'/z*2.0 + 40000.0) st.noiseZ
+            newVec = toRec {x: 0.0, y:length}
+        setAngle newVec $ Radians angle
+        v <- ST.freeze newVec
+        set accV v
   in fn
+
+
+        --   angle = (_ * M.pi * 2.0) $ (_ / 2.0) $ simplex3 (x'/z) (y'/z) st.noiseZ
+        --   length = (_ / 2.0) $ simplex3 (x'/z*2.0 + 40000.0) (y'/z*2.0 + 40000.0) st.noiseZ
+        --   newVec = toRec {x: 0.0, y:length}
+        -- setAngle newVec $ Radians angle
+        -- v <- ST.freeze newVec
+        -- set accV v
+
 
 drawAll :: Context2D -> Config -> PState -> Effect Unit
 drawAll ctx conf ps = do
@@ -71,7 +83,7 @@ drawParticle ctx ps conf p = do
 draw :: Context2D -> Config -> Effect Unit
 draw ctx conf = do
   state <- getState
-  drawBackground ctx conf.canvasDim
+  drawBackground ctx conf.canvasDim $ rgba 0 0 0 0.05
   void $ requestAnimationFrame (draw ctx conf) =<< window
   let dims = conf.fieldDim
   calculateField dims (\c r v -> ST.run (calcField conf state c r v))
@@ -79,14 +91,28 @@ draw ctx conf = do
   incrNoise conf.noiseSpeed
   incrHue conf.cc.hueSpeed
 
-
 --------------------------------------------------------------------------------
 -- SET UP AND MAIN
+
+mkConfig :: Int -> Dimensions -> Config
+mkConfig fSize dim =
+  { zoom: 80
+  , fieldDim: calcExtents dim fSize
+  , canvasDim: dim
+  , noiseSpeed: 0.01
+  , particleSpeed: 1.0
+  , fieldForce: 90
+  , fieldSize: fSize
+  , randomForce: 10
+  , cc: colorConf
+  }
+
 
 main :: Effect Unit
 main = do
   state <- getState
   _ <- seed =<< random
 
-  (Tuple ctx conf) <- setUp "canvas"
+  (Tuple ctx conf) <- setUp "canvas" $ mkConfig 5
+  drawBackground ctx conf.canvasDim black
   draw ctx conf

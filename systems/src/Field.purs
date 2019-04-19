@@ -165,7 +165,7 @@ initState :: Config -> Effect Unit
 initState conf = do
   let dim = conf.fieldDim
       wdim = conf.canvasDim
-      nParticles = wdim.height * wdim.width / 100.0
+      nParticles = wdim.height * wdim.width / 400.0
   initField dim
   initParticles =<< (for (0 .. floor nParticles) $ \_ -> mkP wdim)
   where

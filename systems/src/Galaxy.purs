@@ -81,7 +81,7 @@ drawParticle ctx ps conf p = do
 draw :: Context2D -> Config -> Effect Unit
 draw ctx conf = do
   state <- getState
-  drawBackground ctx conf.canvasDim $ rgba 0 0 0 0.3
+  drawBackground ctx conf.canvasDim $ rgba 0 0 0 0.1
   void $ requestAnimationFrame (draw ctx conf) =<< window
   let dims = conf.fieldDim
   calculateField dims (\c r v -> ST.run (calcField conf state c r v))
@@ -102,7 +102,7 @@ mkConfig fSize dim =
   , fieldForce: 90
   , fieldSize: fSize
   , randomForce: 10
-  , cc: colorConf
+  , cc: colorConf { hueSpeed = 0.005 }
   }
 
 

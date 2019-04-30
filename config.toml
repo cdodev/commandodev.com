@@ -53,7 +53,7 @@ googleAnalytics = "UA-134332089-1"
 
 [[params.social]]
 	title = "facebook"
-	url = "https://www.facebook.com/boothead"
+	url = "https://www.facebook.com/cdodevelopment"
   icon = "facebook"
   footer = true
   sharethis = true
@@ -67,7 +67,7 @@ googleAnalytics = "UA-134332089-1"
   network = "twitter"
 [[params.social]]
 	title = "linkedin"
-	url = "https://www.linkedin.com/in/boothead"
+	url = "https://www.linkedin.com/company/14067794"
   icon = "linkedin"
   footer = true
   sharethis = true

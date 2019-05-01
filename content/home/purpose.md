@@ -2,7 +2,7 @@
 title = "Purpose and Mission"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-03-12T21:14:37+00:00
+lastmod = 2019-05-01T21:15:00+01:00
 draft = false
 headless = true
 weight = 1
@@ -20,4 +20,4 @@ random there's no discernable pattern. As soon as you bring a magnet within
 range though, the filings line up with an invisible force and organise
 themselves to point the right direction. **MISSON** is magnetism for people.
 
-<a id="org442cbd2"></a>
+<a id="orgcacd1f5"></a>

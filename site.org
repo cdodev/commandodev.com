@@ -61,7 +61,7 @@ the best people out of the company.
 
 Before I had a career in tech I was a *Royal Marine Commando*, and it's there that
 I learned the essence of building a high performance culture. What I do now for
-my customers it to translate the operational excellence that's driven the corps'
+my customers is to translate the operational excellence that's driven the corps'
 evolution for the last 3 and a half centuries to a set of systems for tech
 businesses.
 
@@ -509,7 +509,6 @@ Mission really is everyt
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
-
 ** TODO Functional people abstractions                                   :blog:
 :PROPERTIES:
 :EXPORT_FILE_NAME: fpp-abstractions

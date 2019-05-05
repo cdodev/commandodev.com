@@ -1,9 +1,10 @@
 +++
 title = "Performing"
 author = ["Ben Ford"]
-lastmod = 2019-05-01T21:15:01+01:00
+lastmod = 2019-05-04T09:57:26+01:00
 type = "mission"
 draft = false
+weight = 2
 +++
 
 One such organisation which has been learning and honing these lessons for over

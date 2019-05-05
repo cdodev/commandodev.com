@@ -1,9 +1,10 @@
 +++
 title = "Scaling"
 author = ["Ben Ford"]
-lastmod = 2019-05-01T21:15:01+01:00
+lastmod = 2019-05-04T09:57:26+01:00
 type = "mission"
 draft = false
+weight = 2
 +++
 
 Then you start to scale up. You get more revenue, or you take on some funding.

@@ -1,13 +1,12 @@
 +++
 title = "Mission"
 author = ["Ben Ford"]
-lastmod = 2019-05-01T21:15:01+01:00
+lastmod = 2019-05-04T10:12:53+01:00
 type = "mission"
 draft = false
-weight = 2
 [menu.main]
-  weight = 2001
   identifier = "mission"
+  weight = 2
 +++
 
 My mission is to teach growing tech companies how to achieve and maintain

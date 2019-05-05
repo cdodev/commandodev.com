@@ -1,7 +1,7 @@
 +++
 title = "Do nothing which is of no use"
 author = ["Myamoto Musashi"]
-lastmod = 2019-05-01T21:15:03+01:00
+lastmod = 2019-05-04T09:57:28+01:00
 draft = false
 +++
 

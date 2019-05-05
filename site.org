@@ -5,7 +5,7 @@
 * Home
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
-:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_HUGO_MENU: :menu "main" :weight 1
 :EXPORT_FILE_NAME: _index
 :END:
 
@@ -272,8 +272,7 @@ Working with me
 ** Mission
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
-:EXPORT_HUGO_MENU: :menu "main"
-:EXPORT_HUGO_WEIGHT: 2
+:EXPORT_HUGO_MENU: :menu "main" :weight 2
 :END:
 My mission is to teach growing tech companies how to achieve and maintain
 *operational excellence* as they scale
@@ -360,12 +359,11 @@ performance to your tech business so that you can make your difference in the wo
 :EXPORT_HUGO_SECTION:
 :EXPORT_HUGO_BUNDLE: about
 :EXPORT_HUGO_TYPE: about
-:EXPORT_HUGO_WEIGHT: 3
 :END:
 ** About
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
-:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_HUGO_MENU: :menu "main" :weight 4
 :END:
 I learned to code on a warship in 2003 on the way to Iraq. I've been a commando,
 a bouncer, a refuse collector, a programmer and a tech team builder and leader.
@@ -485,6 +483,7 @@ mindset for new understanding
 ** Blog
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_MENU: :menu "main" :weight 3
 :END:
 
 # :EXPORT_HUGO_MENU: :menu "main"
@@ -503,7 +502,7 @@ First blog post about ethos and stuff
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 Mission really is everyt
-** TODO Intuition vs Cognition                                           :blog:
+** TODO Bi-modal thinking                                                :blog:
 :PROPERTIES:
 :EXPORT_FILE_NAME: intuition-vs-cognition
 :EXPORT_HUGO_MENU: :parent blog
@@ -540,7 +539,226 @@ constraints around what benefits we want to accrue from the mental tools we choo
 **** Decide
 **** Act
 **** Destruction and Creation
+** TODO I joined the Royal Marines 19 years ago today                    :blog:
+SCHEDULED: <2019-05-01 Wed>
+:PROPERTIES:
+:EXPORT_FILE_NAME: joining-the-royal-marines
+:EXPORT_HUGO_MENU: :parent blog
+:END:
+So it's as good an opportunity as any to reflect on some of lessons that incredibly
+intense period of my life taught me.
+*** Standards matter
+How does a new hire experience joining your organisation? How do you impart the
+culture, values and mission of your company? Do you even have a common
+understanding of what those are?
 
+The Royal Marines take a bunch of very different individuals off the street
+every two weeks to form a recruit troop of about 30. These men (still only men
+for the time being) come from all walks and stages of life from the 16 year old
+who's never left home before to someone in their late 20s who's had half a
+career already. The corps then applies a process that in 7 months or so spits
+about half of them out of the other end as elite commandos.
+
+The men that pass out of basic training with their green berets are completely
+different individuals from those that started. They've put on probably about a
+stone of muscle and are capable of things they couldn't comprehend doing just
+over half a year ago.
+
+And it starts on day 1 week 1 with lesson 1: *How to wash.*
+
+Yep. As a grown man striving to become an elite Royal Marine Commando the very
+first thing you get shown is how to correctly wash your balls. Literally.
+
+What kind of message is this sending?
+
+The main one (which was compounded on a daily basis) is that there is an
+expected standard and that standard is to be reached by everyone. No exceptions.
+
+**** Takeaway
+Onboarding is essential. How people experience their first few interactions as a
+new member of the team will shape everything to come.
+
+*** Knowledge is not the same as skill
+
+When we received lesson #1 it wasn't a description. The whole troop shuffled
+into the ablutions in towels and flip flops and our drill instructor physically
+showed us. And then watched while we did it. This was the pattern for almost
+every lesson. Very little theory, start doing immediately based on a clear
+understanding of what's required.
+
+*Show. Try. Correct. Repeat.*
+
+Contrast this with how I went about learning my current programming language of
+choice [[https://www.haskell.org/][Haskell]]: Read a book, read another book. Read a couple of academic papers
+that deepen concepts in the books. I built up quite a lot of knowledge, and I
+couldn't actually write Haskell for shit. That knowledge didn't start to
+solidify into skill until I Actually. Started. Doing!
+
+It's true that knowledge compounds, but knowledge doesn't really stick until
+it's solidified with practice. The other observation here is that the order in
+which you learn skills vs acquire knowledge is different and complimentary in
+many ways.
+
+**** Skills compose small to large
+In the Royal Marines one example of this is:
+
+ * Personal Discipline
+ * Attention to Detail
+ * Dry weapon handling
+ * Live fire on the range
+ * Dry section drills
+ * Live section attacks in the field
+
+Each skill builds upon and requires mastery of the one before.
+
+What would this look like if we taught programming like this?
+
+ * Bash
+ * Git
+ * How to use github
+ * Editor/IDE set up and efficiency
+ * Programming language
+ * Algorithms
+
+Almost the exact opposite of how most people traditionally learn :-)
+
+**** Knowledge is deconstructed large to small
+Often when we are taught something in an academic context it's presented as a
+large concepts and broken down iteratively. This kind of iterative breakdown
+also works really well for breaking down large scale plans and mission:
+
+ * Purpose
+ * Vision
+ * Mission
+ * Current Priority
+ * Tasks
+
+**** Takeaways
+
+Bottom up skill building and top down knowledge breakdown compliment each other.
+
+Think about how skills are developed and nurtured, after all:
+
+#+BEGIN_QUOTE
+We don't rise to the level of our expectations, we fall to the level of our
+training -- Archilochus
+#+END_QUOTE
+
+*** Everyone leads
+One of the key concepts in modern militaries is the concept of *mission
+command*. Gen Stan McChrystal calls it empowered execution, Jocko Willink refers
+to it as decentralised command.
+
+No matter what you call it, the idea is that decision making should happen with
+the people at the edges of the organisation - the ones in the fight. That means
+that everyone is a leader. As the pace of change or level of uncertainty
+increases, this becomes more and more essential.
+
+*** Summary
+This is getting a bit too long. There's a whole lot more to cover on what businesses
+and tech can learn from military strategy and tactics. Conflict is a crucible
+that distils only the essential and our best teachers in navigating modern
+complexity may well be those whose writing has been tested the longest:
+
+ * Musashi
+ * Sun Tzu
+ * John Boyd
+
+Let me know in the comments, or [[https://twitter.com/commandodev][twitter]] what else you'd like to hear about.
+
+** TODO Discipline equals freedom
+SCHEDULED: <2019-05-03 Fri>
+:PROPERTIES:
+:EXPORT_FILE_NAME: discipline-equals-freedom
+:EXPORT_HUGO_MENU: :parent blog
+:END:
+
+I remember when I heard this phrase the first time. It was when Jocko Willink
+first really burst into the light on Tim Ferriss' blog in 2015. I was starting to
+realise just how much I had learned in the Royal Marines in the context of
+building and leading development teams.
+
+Only a decade or so after I left the corps - I'm not the sharpest tool in the
+box sometimes. :-)
+
+I'd also drunk deeply of the typed functional programming kool aid, had used it in
+anger to build a team at a start up, and had found it ridiculously effective. I
+was primed to make some links between the two and the flash of inspiration came
+in the form of 3 words:
+
+#+BEGIN_QUOTE
+*DISCIPLINE EQUALS FREEDOM*
+#+END_QUOTE
+
+What did I see in this seemingly simple statement?
+
+To answer this let's first use the original quote from Aristotle, because it
+more closely matches the intuition I had at the time:
+
+
+#+BEGIN_QUOTE
+*FROM DISCIPLINE COMES FREEDOM*
+#+END_QUOTE
+
+Some key observations drop out of this small rewording:
+
+ * Discipline is not a static thing. It's not a binary state.
+ * Freedom isn't a static thing either: It's a *vector* that has a magnitude and a
+   direction.
+ * Discipline doesn't equal freedom: Having more freedom is an *emergent* property
+   of applying discipline.
+ * Discipline, even though often spoken about as something one has, is not
+   additive. It's actually about what you *take away*.
+
+So what are we actually talking about here?
+
+We're talking about applying *CONSTRAINTS* to *COMPLEX ADAPTIVE SYSTEMS* in
+order to influence their *EMERGENT BEHAVIOURS*
+
+So let's restate Jocko and Aristotle (alexa: what is hubris?) to:
+
+#+BEGIN_QUOTE
+*CONSTRAINTS* shape *BEHAVIOUR*
+#+END_QUOTE
+
+This is an incredibly profound principle, with implications for everything that
+happens in any kind of human endeavour. For example:
+
+Culture is an emergent property of the constraints applied to a group of
+people. That means you don't get to create culture. The only thing you get to do
+is shape are the constraints that form the system in which that culture evolves.
+
+Quality is an emergent property of the constraints applied to a software
+project. That means you don't get to create quality. The only thing you get to
+shape are the constraints that inform how the software develops.
+
+The kind of person your child develops into is an emergent property of the
+constraints you apply as a parent. That means you don't get to create carbon
+copies of yourself. How kids develop is an emergent property of the constraints
+you (try to) apply as a parent.
+
+*** Summary
+We generally think of constraints with a negative connotation. Just look at some
+of the synonyms: restriction, limitation, control, obstruction, impediment
+*handicap*
+
+These are all fair enough when you're in any kind of linear system. In a linear
+world discipline doesn't equal freedom because you only would only see what you
+can't do. But we do not live in a linear world. We live in a complex, networked
+adaptive world and instead of shunning constraints, we should view them as
+essential structure that we need to shape our path. How would you ever be able
+to take on a novel challenge without understanding the constraints of the
+project, if anything is theoretically possible, no tangible progress is actually
+possible.
+
+So let's restate these ideas one last time:
+
+#+begin_quote
+*STRUCTURE* enables *PROGRESS*
+#+end_quote
+
+Pay attention to the structures you put in place in your life and work. Progress
+is a second order effect of the leverage you create.
 
 * Quotes
 :PROPERTIES:

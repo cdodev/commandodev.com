@@ -2,13 +2,15 @@
 title = "I joined the Royal Marines 19 years ago today"
 author = ["Ben Ford"]
 publishDate = 2019-05-01T00:00:00+01:00
-lastmod = 2019-05-04T09:57:27+01:00
+lastmod = 2019-05-13T16:26:23+01:00
 tags = ["blog"]
 draft = true
 +++
 
 So it's as good an opportunity as any to reflect on some of lessons that incredibly
 intense period of my life taught me.
+
+<!--more-->
 
 
 ## Standards matter {#standards-matter}

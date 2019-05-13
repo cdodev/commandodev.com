@@ -517,14 +517,17 @@ Mission really is everyt
 One of the primary drives programmers have is to uncover and use the right
 abstractions. That's also one of the things that draws people to functional
 programming: the abstractions we use in FP are fundamental, atomic and based on
-maths and logic. The main reason we seek abstractions like this are so that we
+maths and logic.
+
+<!--more-->
+
+The main reason we seek abstractions like this are so that we
 can decrease cognitive overhead by [[https://en.wikipedia.org/wiki/Chunking_(psychology)][Chunking]] knowledge into composable, related
 concepts.
 
 What if you could use the same principle, and even some of the same
 abstractions, to reason about people and teams delivering software?
 
-<!--more-->
 
 So what might some fundamental abstractions look like for teams and the process
 of shipping code? What we're looking for here are some mental models [fn:1]
@@ -547,6 +550,9 @@ SCHEDULED: <2019-05-01 Wed>
 :END:
 So it's as good an opportunity as any to reflect on some of lessons that incredibly
 intense period of my life taught me.
+
+<!--more-->
+
 *** Standards matter
 How does a new hire experience joining your organisation? How do you impart the
 culture, values and mission of your company? Do you even have a common
@@ -677,6 +683,8 @@ I remember when I heard this phrase the first time. It was when Jocko Willink
 first really burst into the light on Tim Ferriss' blog in 2015. I was starting to
 realise just how much I had learned in the Royal Marines in the context of
 building and leading development teams.
+
+<!--more-->
 
 Only a decade or so after I left the corps - I'm not the sharpest tool in the
 box sometimes. :-)

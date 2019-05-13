@@ -2,7 +2,7 @@
 title = "Discipline equals freedom"
 author = ["Ben Ford"]
 publishDate = 2019-05-03T00:00:00+01:00
-lastmod = 2019-05-04T09:57:28+01:00
+lastmod = 2019-05-13T16:25:23+01:00
 draft = true
 +++
 
@@ -10,6 +10,8 @@ I remember when I heard this phrase the first time. It was when Jocko Willink
 first really burst into the light on Tim Ferriss' blog in 2015. I was starting to
 realise just how much I had learned in the Royal Marines in the context of
 building and leading development teams.
+
+<!--more-->
 
 Only a decade or so after I left the corps - I'm not the sharpest tool in the
 box sometimes. :-)

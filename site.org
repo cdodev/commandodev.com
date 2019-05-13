@@ -490,6 +490,7 @@ mindset for new understanding
 My Blog
 
 ** Ethos
+SCHEDULED: <2019-04-27 Sat>
 :PROPERTIES:
 :EXPORT_FILE_NAME: ethos
 :EXPORT_HUGO_MENU: :parent blog
@@ -497,18 +498,21 @@ My Blog
 First blog post about ethos and stuff
 
 ** Mission
+SCHEDULED: <2019-04-28 Sun>
 :PROPERTIES:
 :EXPORT_FILE_NAME: mission
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 Mission really is everyt
 ** TODO Bi-modal thinking                                                :blog:
+SCHEDULED: <2019-04-29 Mon>
 :PROPERTIES:
 :EXPORT_FILE_NAME: intuition-vs-cognition
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
 ** TODO Functional people abstractions                                   :blog:
+SCHEDULED: <2019-04-30 Tue>
 :PROPERTIES:
 :EXPORT_FILE_NAME: fpp-abstractions
 :EXPORT_HUGO_MENU: :parent blog
@@ -542,18 +546,22 @@ constraints around what benefits we want to accrue from the mental tools we choo
 **** Decide
 **** Act
 **** Destruction and Creation
-** TODO I joined the Royal Marines 19 years ago today                    :blog:
+** I joined the Royal Marines 19 years ago today                    :blog:
 SCHEDULED: <2019-05-01 Wed>
 :PROPERTIES:
-:EXPORT_FILE_NAME: joining-the-royal-marines
+:EXPORT_HUGO_BUNDLE: joining-the-royal-marines
 :EXPORT_HUGO_MENU: :parent blog
+:END:
+*** I joined the Royal Marines 19 years ago today
+:PROPERTIES:
+:EXPORT_FILE_NAME: index
 :END:
 So it's as good an opportunity as any to reflect on some of lessons that incredibly
 intense period of my life taught me.
 
 <!--more-->
 
-*** Standards matter
+**** Standards matter
 How does a new hire experience joining your organisation? How do you impart the
 culture, values and mission of your company? Do you even have a common
 understanding of what those are?
@@ -580,11 +588,11 @@ What kind of message is this sending?
 The main one (which was compounded on a daily basis) is that there is an
 expected standard and that standard is to be reached by everyone. No exceptions.
 
-**** Takeaway
+***** Takeaway
 Onboarding is essential. How people experience their first few interactions as a
 new member of the team will shape everything to come.
 
-*** Knowledge is not the same as skill
+**** Knowledge is not the same as skill
 
 When we received lesson #1 it wasn't a description. The whole troop shuffled
 into the ablutions in towels and flip flops and our drill instructor physically
@@ -605,7 +613,7 @@ it's solidified with practice. The other observation here is that the order in
 which you learn skills vs acquire knowledge is different and complimentary in
 many ways.
 
-**** Skills compose small to large
+***** Skills compose small to large
 In the Royal Marines one example of this is:
 
  * Personal Discipline
@@ -628,7 +636,7 @@ What would this look like if we taught programming like this?
 
 Almost the exact opposite of how most people traditionally learn :-)
 
-**** Knowledge is deconstructed large to small
+***** Knowledge is deconstructed large to small
 Often when we are taught something in an academic context it's presented as a
 large concepts and broken down iteratively. This kind of iterative breakdown
 also works really well for breaking down large scale plans and mission:
@@ -639,7 +647,7 @@ also works really well for breaking down large scale plans and mission:
  * Current Priority
  * Tasks
 
-**** Takeaways
+***** Takeaways
 
 Bottom up skill building and top down knowledge breakdown compliment each other.
 
@@ -650,7 +658,7 @@ We don't rise to the level of our expectations, we fall to the level of our
 training -- Archilochus
 #+END_QUOTE
 
-*** Everyone leads
+**** Everyone leads
 One of the key concepts in modern militaries is the concept of *mission
 command*. Gen Stan McChrystal calls it empowered execution, Jocko Willink refers
 to it as decentralised command.
@@ -660,7 +668,7 @@ the people at the edges of the organisation - the ones in the fight. That means
 that everyone is a leader. As the pace of change or level of uncertainty
 increases, this becomes more and more essential.
 
-*** Summary
+**** Summary
 This is getting a bit too long. There's a whole lot more to cover on what businesses
 and tech can learn from military strategy and tactics. Conflict is a crucible
 that distils only the essential and our best teachers in navigating modern
@@ -672,13 +680,16 @@ complexity may well be those whose writing has been tested the longest:
 
 Let me know in the comments, or [[https://twitter.com/commandodev][twitter]] what else you'd like to hear about.
 
-** TODO Discipline equals freedom
+** Discipline equals freedom
 SCHEDULED: <2019-05-03 Fri>
 :PROPERTIES:
-:EXPORT_FILE_NAME: discipline-equals-freedom
+:EXPORT_HUGO_BUNDLE: discipline-equals-freedom
 :EXPORT_HUGO_MENU: :parent blog
 :END:
-
+*** Discipline equals freedom
+:PROPERTIES:
+:EXPORT_FILE_NAME: index
+:END:
 I remember when I heard this phrase the first time. It was when Jocko Willink
 first really burst into the light on Tim Ferriss' blog in 2015. I was starting to
 realise just how much I had learned in the Royal Marines in the context of
@@ -745,7 +756,8 @@ constraints you apply as a parent. That means you don't get to create carbon
 copies of yourself. How kids develop is an emergent property of the constraints
 you (try to) apply as a parent.
 
-*** Summary
+**** Summary
+
 We generally think of constraints with a negative connotation. Just look at some
 of the synonyms: restriction, limitation, control, obstruction, impediment
 *handicap*

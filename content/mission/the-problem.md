@@ -1,10 +1,9 @@
 +++
 title = "The problem"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:26+01:00
+lastmod = 2019-05-13T16:39:52+01:00
 type = "mission"
 draft = false
-weight = 2
 +++
 
 Starting something is hard. You sweat, struggle and persist and you're off and

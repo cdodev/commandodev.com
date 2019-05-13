@@ -1,10 +1,9 @@
 +++
 title = "Why I'm here"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:26+01:00
+lastmod = 2019-05-13T16:39:52+01:00
 type = "mission"
 draft = false
-weight = 2
 +++
 
 So that's why I'm here.

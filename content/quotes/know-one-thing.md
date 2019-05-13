@@ -1,7 +1,7 @@
 +++
 title = "Know one thing"
 author = ["Myamoto Musashi"]
-lastmod = 2019-05-04T09:57:28+01:00
+lastmod = 2019-05-13T16:39:54+01:00
 draft = false
 +++
 

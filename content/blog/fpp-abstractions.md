@@ -1,7 +1,8 @@
 +++
 title = "Functional people abstractions"
 author = ["Ben Ford"]
-lastmod = 2019-05-13T16:26:09+01:00
+publishDate = 2019-04-30T00:00:00+01:00
+lastmod = 2019-05-13T16:59:04+01:00
 tags = ["blog"]
 draft = true
 +++

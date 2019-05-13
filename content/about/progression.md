@@ -1,10 +1,9 @@
 +++
 title = "Progression"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:27+01:00
+lastmod = 2019-05-13T16:39:53+01:00
 type = "about"
 draft = false
-weight = 3
 +++
 
 I left the Royal Marines in 2004 and went into **telecoms** operations. The

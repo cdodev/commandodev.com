@@ -1,10 +1,9 @@
 +++
 title = "Teaching myself programming"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:27+01:00
+lastmod = 2019-05-13T16:39:53+01:00
 type = "about"
 draft = false
-weight = 3
 +++
 
 In 2003 the unit I was part of, Commando Helicopter Force, was tasked with

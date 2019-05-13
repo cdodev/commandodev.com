@@ -7,7 +7,10 @@
         <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
 
             <article class="u-shadow-v11">
-                <img class="img-fluid w-100" alt="" src=""/>
+                {{ $headerImg := .Resources.GetMatch "header.*" }}
+                {{ if $headerImg }}
+                <img class="img-fluid w-100" alt="" src='{{ ($headerImg.Fill "500x500").RelPermalink }}' />
+                {{ end }}
                 <div class="g-bg-white g-pa-30 g-font-secondary">
                     <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">
                         <time class="entry-date published" date="{{ .Date }}">{{ .Date.Format .Site.Params.DateForm }}</time>

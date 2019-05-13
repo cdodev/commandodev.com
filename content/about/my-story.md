@@ -1,10 +1,9 @@
 +++
 title = "My Story"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:27+01:00
+lastmod = 2019-05-13T16:39:52+01:00
 type = "about"
 draft = false
-weight = 3
 +++
 
 My father is an engineer and we spent much of my early childhood in Africa

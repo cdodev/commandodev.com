@@ -1,10 +1,9 @@
 +++
 title = "The Royal Marines"
 author = ["Ben Ford"]
-lastmod = 2019-05-04T09:57:27+01:00
+lastmod = 2019-05-13T16:39:52+01:00
 type = "about"
 draft = false
-weight = 3
 +++
 
 Having decided on the Royal Marines in my teens, I didn't actually end up

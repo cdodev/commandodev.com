@@ -1,9 +1,8 @@
 +++
 title = "Discipline equals freedom"
 author = ["Ben Ford"]
-publishDate = 2019-05-03T00:00:00+01:00
-lastmod = 2019-05-13T16:25:23+01:00
-draft = true
+lastmod = 2019-05-13T16:42:55+01:00
+draft = false
 +++
 
 I remember when I heard this phrase the first time. It was when Jocko Willink

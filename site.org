@@ -489,7 +489,7 @@ mindset for new understanding
 # :EXPORT_HUGO_MENU: :menu "main"
 My Blog
 
-** Ethos
+** TODO Ethos
 SCHEDULED: <2019-04-27 Sat>
 :PROPERTIES:
 :EXPORT_FILE_NAME: ethos
@@ -497,13 +497,13 @@ SCHEDULED: <2019-04-27 Sat>
 :END:
 First blog post about ethos and stuff
 
-** Mission
+** TODO Mission
 SCHEDULED: <2019-04-28 Sun>
 :PROPERTIES:
 :EXPORT_FILE_NAME: mission
 :EXPORT_HUGO_MENU: :parent blog
 :END:
-Mission really is everyt
+Mission really is everything
 ** TODO Bi-modal thinking                                                :blog:
 SCHEDULED: <2019-04-29 Mon>
 :PROPERTIES:
@@ -511,13 +511,16 @@ SCHEDULED: <2019-04-29 Mon>
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
-** TODO Functional people abstractions                                   :blog:
+** Functional people abstractions                                   :blog:
 SCHEDULED: <2019-04-30 Tue>
 :PROPERTIES:
-:EXPORT_FILE_NAME: fpp-abstractions
+:EXPORT_HUGO_BUNDLE: fpp-abstractions
 :EXPORT_HUGO_MENU: :parent blog
 :END:
-
+*** Functional people abstractions
+:PROPERTIES:
+:EXPORT_FILE_NAME: index
+:END:
 One of the primary drives programmers have is to uncover and use the right
 abstractions. That's also one of the things that draws people to functional
 programming: the abstractions we use in FP are fundamental, atomic and based on
@@ -536,17 +539,17 @@ abstractions, to reason about people and teams delivering software?
 So what might some fundamental abstractions look like for teams and the process
 of shipping code? What we're looking for here are some mental models [fn:1]
 
-*** What makes a good abstraction?
+**** What makes a good abstraction?
 Before we dive into this I want to take just a short detour to put some
 constraints around what benefits we want to accrue from the mental tools we choose.
 
-*** The OODA loop
-**** Observe
-**** Orient
-**** Decide
-**** Act
-**** Destruction and Creation
-** I joined the Royal Marines 19 years ago today                    :blog:
+**** The OODA loop
+***** Observe
+***** Orient
+***** Decide
+***** Act
+***** Destruction and Creation
+** I joined the Royal Marines 19 years ago today                         :blog:
 SCHEDULED: <2019-05-01 Wed>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: joining-the-royal-marines

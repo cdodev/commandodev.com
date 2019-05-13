@@ -1,10 +1,9 @@
 +++
 title = "Functional people abstractions"
 author = ["Ben Ford"]
-publishDate = 2019-04-30T00:00:00+01:00
-lastmod = 2019-05-13T16:59:04+01:00
+lastmod = 2019-05-13T17:07:44+01:00
 tags = ["blog"]
-draft = true
+draft = false
 +++
 
 One of the primary drives programmers have is to uncover and use the right

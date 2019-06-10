@@ -33,7 +33,7 @@ googleAnalytics = "UA-134332089-1"
   favicon = "cdodev.ico"
   avatar = "img/logo.svg"
   phone = "+447540722690"
-  email = "ben@commandodev.com"
+  email = "ben@commando.dev"
   year = "2019"
   # description = "Commando development"
 
@@ -81,7 +81,7 @@ googleAnalytics = "UA-134332089-1"
     network = ""
 [[params.social]]
 	title = "email"
-	url = "mailto:ben@commandodev.com"
+	url = "mailto:ben@commando.dev"
   icon = "fa-envelope"
   footer = false
   sharethis = true

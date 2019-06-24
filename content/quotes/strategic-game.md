@@ -1,7 +1,7 @@
 +++
 title = "The Strategic game of ? and ?"
 author = ["Col. John Boyd"]
-lastmod = 2019-05-13T16:39:54+01:00
+lastmod = 2019-06-24T07:14:24+01:00
 draft = false
 +++
 

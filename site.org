@@ -511,8 +511,8 @@ SCHEDULED: <2019-04-29 Mon>
 :EXPORT_HUGO_MENU: :parent blog
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
-** Functional people abstractions                                   :blog:
-SCHEDULED: <2019-04-30 Tue>
+** TODO Functional people abstractions                                   :blog:
+SCHEDULED: <2019-06-24 Mon>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: fpp-abstractions
 :EXPORT_HUGO_MENU: :parent blog
@@ -549,11 +549,14 @@ constraints around what benefits we want to accrue from the mental tools we choo
 ***** Decide
 ***** Act
 ***** Destruction and Creation
-** I joined the Royal Marines 19 years ago today                         :blog:
-SCHEDULED: <2019-05-01 Wed>
+** DONE I joined the Royal Marines 19 years ago today                    :blog:
+CLOSED: [2019-05-01 Wed 06:51] SCHEDULED: <2019-05-01 Wed>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: joining-the-royal-marines
 :EXPORT_HUGO_MENU: :parent blog
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2019-06-24 Mon 06:51]
 :END:
 *** I joined the Royal Marines 19 years ago today
 :PROPERTIES:
@@ -684,7 +687,7 @@ complexity may well be those whose writing has been tested the longest:
 Let me know in the comments, or [[https://twitter.com/commandodev][twitter]] what else you'd like to hear about.
 
 ** Discipline equals freedom
-SCHEDULED: <2019-05-03 Fri>
+CLOSED: <2019-05-03 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: discipline-equals-freedom
 :EXPORT_HUGO_MENU: :parent blog

@@ -2,7 +2,7 @@
 title = "People and Culture"
 author = ["Ben Ford"]
 date = 2019-02-03T19:36:00+00:00
-lastmod = 2019-05-13T16:39:51+01:00
+lastmod = 2019-06-24T07:14:21+01:00
 draft = false
 headless = true
 weight = 1
@@ -20,4 +20,4 @@ what that culture becomes.
 You don't build a culture it is **EMERGENT** based on the environment in which it
 grows.
 
-<a id="org6f1f1e9"></a>
+<a id="org295d25f"></a>

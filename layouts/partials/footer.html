@@ -138,7 +138,7 @@
 {{ $masonary := resources.Get "js/masonary.js" }}
 {{ $footjs := slice $jq $jqe $jqm $pop $bs $offc $jdzs $jmm $jsc $hsh $hshm $hsdd $hsgt $hshgt $masonary }}
 
-<script type="text/javascript" src="{{ ($footjs | resources.Concat "foot.js").Permalink }}">
+<script type="text/javascript" src="{{ ($footjs | resources.Concat "foot.js").RelPermalink }}">
 
 </script>
 

@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
-<section id="content" class="container g-pb-300">
+<section id="content" class="container">
     <div class="masonry-grid row g-py-110">
         <div class="masonry-grid-sizer col-sm-1"></div>
         {{ range .Paginator.Pages }}

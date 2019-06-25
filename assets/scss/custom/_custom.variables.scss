@@ -83,19 +83,3 @@ $g-color-green-9: var(--green-9);
     -moz-box-shadow: 0px 15px 15px -2px $g-color-blue-2;
     box-shadow: 0px 15px 15px -2px $g-color-blue-2;
 }
-
-#calendly {
-    // height: 280px;
-    .widget {
-        overflow: hidden;
-        top: -310px;
-        border-radius: 5px;
-        padding: 5px 5px;
-        width: 100%;
-        height: 380px;
-    }
-}
-
-#footer {
-    padding-top: 80px;
-}

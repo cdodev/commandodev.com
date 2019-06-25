@@ -1,14 +1,32 @@
-<div id="calendly" class="g-bg-blue-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="widget position-absolute g-bg-white">
-                    {{ partial "calendly.html" . }}
+<section id="calendly" class="g-bg-blue-light">
+    <div class="container g-pt-50">
+        <div class="calendly-header">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="u-heading-v2-1--bottom text-center g-color-primary  g-brd-primary g-mb-20">
+ 						            <h2 class="h2 text-uppercase u-heading-v2__title g-font-secondary">Let's talk</h2>
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="col-lg-8 offset-lg-2">
+                    If you're still reading, and recognise any of the issues I talk
+                    about, we should chat. Stick a slot in my calendar for a free 30
+                    minute session where we can go over common sticking points.
+                </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="calendly-widget position-absolute">
+                        {{ partial "calendly.html" . }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 <footer id="footer" class="bg-blue-dark">
 	  <div class="container">
 		    <div class="row">

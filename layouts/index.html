@@ -92,7 +92,7 @@
     </div>
 </section>
 <section id="ooda" class="g-bg-blue-light">
-    <div class="container g-pt-50 g-pb-300">
+    <div class="container g-pt-50 g-pb-400">
         {{ with .GetPage "ooda.md" }}
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -102,11 +102,6 @@
             </div>
             <div class="col-lg-8 offset-lg-2">
                 {{ .Content }}
-            </div>
-            <div class="col-lg-6 offset-lg-3 my-auto">
-                {{ with .Site.GetPage "quotes/strategic-game.md" }}
-                {{ partial "quote.html" (dict "page" . "title" true "author" true) }}
-                {{ end }}
             </div>
         </div>
         {{ end }}

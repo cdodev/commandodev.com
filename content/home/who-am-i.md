@@ -1,8 +1,8 @@
 +++
 title = "Who am I?"
-author = ["Ben Ford"]
+author = ["benford"]
 date = 2019-02-03T19:38:00+00:00
-lastmod = 2019-06-24T07:14:21+01:00
+lastmod = 2019-07-11T12:51:15+01:00
 draft = false
 headless = true
 weight = 1

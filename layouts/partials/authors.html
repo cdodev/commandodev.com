@@ -1,0 +1,15 @@
+{{ $authors := .Site.Data.authors }}
+{{ with .Params.author }}
+{{ $author_type := (printf "%T" .) }}
+{{ $author_is_slice := (eq "[]string" $author_type) }}
+
+<div class="media align-items-center g-brd-bottom g-brd-gray-light-v4 pb-5 mb-5">
+  {{ if $author_is_slice }}
+    {{- range . }}
+      {{ partial "author.html" (index $authors .) }}
+    {{ end }}
+  {{ else }}
+    {{ partial "author.html" . }}
+  {{ end }}
+</div>
+{{ end }}

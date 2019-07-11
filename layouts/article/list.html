@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+{{ partial "top-paralax.html" (dict "title" .Title "subtitle" .Content) }}
+<section id="content" class="container">
+    <div class="masonry-grid row g-py-110">
+        <div class="masonry-grid-sizer col-sm-1"></div>
+        {{ range .Paginator.Pages }}
+        <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
+
+            <article class="u-shadow-v11">
+                {{ $headerImg := .Resources.GetMatch "header.*" }}
+                {{ if $headerImg }}
+                <img class="img-fluid w-100" alt="" src='{{ ($headerImg.Fill "500x500").RelPermalink }}' />
+                {{ end }}
+                <div class="g-bg-white g-pa-30 g-font-secondary">
+                    <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">
+                        <time class="entry-date published" date="{{ .Date }}">{{ .Date.Format .Site.Params.DateForm }}</time>
+                    </span>
+                    <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                        <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer"
+                           href="{{ .Permalink }}"
+                           rel="bookmark">
+                            {{ .Title }}
+                        </a>
+                    </h2>
+                    <p class="g-color-gray-dark-v4 g-line-height-1_8">
+                        {{ .Summary }}
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+        {{ end }}
+    </div>
+
+    <nav class="text-center">
+        <ul class="list-inlint">
+            {{ template "_internal/pagination.html" . }}
+        </ul>
+    </nav>
+</section>
+
+</div>	<!-- /container -->
+{{ partial "footer.html" . }}

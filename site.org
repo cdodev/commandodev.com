@@ -1,5 +1,5 @@
 #+STARTUP: content
-#+AUTHOR: Ben Ford
+#+AUTHOR: benford
 #+HUGO_BASE_DIR: .
 #+HUGO_AUTO_SET_LASTMOD: t
 * Home
@@ -476,24 +476,25 @@ when you have an intellectual or spiritual breakthrough you realise that you
 haven't got somewhere new, but that you have returned to the beginning with a
 mindset for new understanding
 
-* Blog
+* Writing
 :PROPERTIES:
-:EXPORT_HUGO_SECTION: blog
+:EXPORT_HUGO_SECTION: writing
+:EXPORT_HUGO_TYPE: article
 :END:
-** Blog
+** Articles
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_MENU: :menu "main" :weight 3
 :END:
 
 # :EXPORT_HUGO_MENU: :menu "main"
-My Blog
+This is where I write about teams, performance and what we can learn from the military.
 
 ** TODO Ethos
 SCHEDULED: <2019-04-27 Sat>
 :PROPERTIES:
 :EXPORT_FILE_NAME: ethos
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 First blog post about ethos and stuff
 
@@ -501,21 +502,21 @@ First blog post about ethos and stuff
 SCHEDULED: <2019-04-28 Sun>
 :PROPERTIES:
 :EXPORT_FILE_NAME: mission
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 Mission really is everything
-** TODO Bi-modal thinking                                                :blog:
+** TODO Bi-modal thinking                                                :article:
 SCHEDULED: <2019-04-29 Mon>
 :PROPERTIES:
 :EXPORT_FILE_NAME: intuition-vs-cognition
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 [[https://www.kotterinc.com/research-and-perspectives/survive-thrive/][Survive + Thrive - Kotter]]
-** TODO Functional people abstractions                                   :blog:
+** TODO Functional people abstractions                                   :article:
 SCHEDULED: <2019-06-24 Mon>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: fpp-abstractions
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 *** Functional people abstractions
 :PROPERTIES:
@@ -549,21 +550,22 @@ constraints around what benefits we want to accrue from the mental tools we choo
 ***** Decide
 ***** Act
 ***** Destruction and Creation
-** DONE I joined the Royal Marines 19 years ago today                    :blog:
-CLOSED: [2019-05-01 Wed 06:51] SCHEDULED: <2019-05-01 Wed>
+** DONE I joined the Royal Marines 19 years ago today                    :article:
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: joining-the-royal-marines
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2019-06-24 Mon 06:51]
 :END:
 *** I joined the Royal Marines 19 years ago today
+CLOSED: [2019-05-01 Wed 06:51] SCHEDULED: <2019-05-01 Wed>
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
 :END:
 So it's as good an opportunity as any to reflect on some of lessons that incredibly
 intense period of my life taught me.
+
 
 <!--more-->
 
@@ -690,7 +692,7 @@ Let me know in the comments, or [[https://twitter.com/commandodev][twitter]] wha
 CLOSED: <2019-05-03 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: discipline-equals-freedom
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 *** Discipline equals freedom
 :PROPERTIES:
@@ -790,7 +792,7 @@ is a second order effect of the leverage you create.
 SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: learning-about-learning
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 *** Learning about learning
 :PROPERTIES:
@@ -802,7 +804,7 @@ A post about learning
 SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: structure
-:EXPORT_HUGO_MENU: :parent blog
+:EXPORT_HUGO_MENU: :parent writing
 :END:
 *** Structure
 :PROPERTIES:

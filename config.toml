@@ -1,4 +1,4 @@
-baseURL = "http://commandodev.com/"
+baseURL = "http://commando.dev/"
 languageCode = "en-gb"
 title = "Commando Development"
 
@@ -45,11 +45,17 @@ googleAnalytics = "UA-134332089-1"
   showDownload = true
   showClients = true
 
+  share = true
+
   footerEnableContact = true
   footerEnableFollowme = true
   footerEnableTextWidget = true
   footerEnableFormWidget = true
 
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
 
 [[params.social]]
 	title = "facebook"

@@ -1,0 +1,17 @@
+    <img class="d-flex img-fluid g-width-40 g-height-40 rounded-circle mr-3" src="../../assets/img-temp/100x100/img4.jpg" alt="Author Image">
+    <div class="media-body">
+        <h4 class="h6 g-color-black g-font-weight-600 mb-0">By {{ .name }}</h4>
+        <span class="d-block g-color-gray-dark-v5 g-font-size-12">May 31, 2017</span>
+    </div>
+
+    <!-- Figure Social Icons -->
+    <ul class="list-inline mb-0">
+        {{- range $key, $value := .social }}
+        <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v2 u-icon-size--xs g-brd-gray-light-v4 g-brd-primary--hover g-color-gray-dark-v3 g-color-white--hover g-bg-primary--hover rounded-circle g-text-underline--none--hover" href="{{ $value }}">
+                <i class="fa fa-{{ $key }}"></i>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <!-- End Figure Social Icons -->

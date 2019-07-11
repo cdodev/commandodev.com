@@ -1,0 +1,11 @@
+{
+    "name": "Ben Ford",
+    "bio": "Ben Ford brings his combined experience of a decade in tech and service in the Royal Marines to show high growth tech companies how to build high performance teams and thrive in uncertainty and chaos",
+    "image": "/authors/benford.jpg",
+    "weight": 1,
+    "social": {
+        "twitter": "https://twitter.com/boothead",
+        "github": "https://www.github.com/boothead",
+        "globe": "https://commando.dev"
+    }
+}

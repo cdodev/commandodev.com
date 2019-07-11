@@ -1,14 +1,17 @@
 {{ partial "header.html" . }}
-<section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="./header.jpg" style="background-image: url(./header.png);">
-      <div class="container text-center g-pos-rel g-z-index-1 g-pb-50">
-        <div class="row d-flex justify-content-center align-content-end flex-wrap g-min-height-500">
-          <div class="col-lg-7 mt-auto">
-            <div class="mb-5">
-                <h1 class="g-color-white g-font-weight-600 g-mb-30">{{ .Title }}</h1>
+<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero" style="height: 130%; background-image: url('./header.png'); transform: translate3d(0px, -103.635px, 0px);">
+    </div>
+    <div class="u-bg-overlay_iiner">
+        <div class="container g-color-white text-center g-bg-cover__inner g-pb-100 g-pt-150">
+
+            <div class="col-lg-12">
+                <div class="g-mb-20">
+ 						        <h1 class="h1 g-font-secondary">{{ .Title }}</h1>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 </section>
 <section id="content">
     <div class="container g-py-50">

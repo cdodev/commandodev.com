@@ -1,4 +1,5 @@
-    <img class="d-flex img-fluid g-width-40 g-height-40 rounded-circle mr-3" src="../../assets/img-temp/100x100/img4.jpg" alt="Author Image">
+{{ $img := $.Resources.GetMatch .image }}
+    <img class="d-flex img-fluid g-width-40 g-height-40 rounded-circle mr-3" src="{{ $img.RelPermalink }}" alt="Author Image">
     <div class="media-body">
         <h4 class="h6 g-color-black g-font-weight-600 mb-0">By {{ .name }}</h4>
         <span class="d-block g-color-gray-dark-v5 g-font-size-12">May 31, 2017</span>

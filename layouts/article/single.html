@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
-    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero" style="height: 130%; background-image: url('./header.png'); transform: translate3d(0px, -103.635px, 0px);">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero"
+         style="height: 130%; background-image: url('{{ (.Resources.GetMatch "header*").RelPermalink }}'); transform: translate3d(0px, -103.635px, 0px);">
     </div>
     <div class="u-bg-overlay_iiner">
         <div class="container g-color-white text-center g-bg-cover__inner g-pb-100 g-pt-150">

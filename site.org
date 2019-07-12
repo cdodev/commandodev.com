@@ -789,26 +789,32 @@ Pay attention to the structures you put in place in your life and work. Progress
 is a second order effect of the leverage you create.
 
 ** TODO Learning about learning
-SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: learning-about-learning
 :EXPORT_HUGO_MENU: :parent writing
 :END:
-*** Learning about learning
+*** TODO Learning about learning
+SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
 :END:
+:LOGBOOK:
+- State "TODO"       from              [2019-07-12 Fri 08:11]
+:END:
 
-A post about learning
+A post about meta learning
 ** TODO Structure
-SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: structure
 :EXPORT_HUGO_MENU: :parent writing
 :END:
-*** Structure
+*** TODO Structure
+SCHEDULED: <2019-05-24 Fri>
 :PROPERTIES:
 :EXPORT_FILE_NAME: index
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2019-07-12 Fri 08:11]
 :END:
 
 A blog post about structure

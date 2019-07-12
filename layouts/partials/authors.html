@@ -1,16 +1,13 @@
 {{ $authors := .Site.Data.authors }}
 {{ $page := . }}
 {{ with .Params.author }}
-{{ $author_type := (printf "%T" .) }}
-{{ $author_is_slice := (eq "[]string" $author_type) }}
-
-<div class="media align-items-center g-brd-bottom g-brd-gray-light-v4 pb-5 mb-5">
-  {{ if $author_is_slice }}
-    {{- range . }}
-      {{ partial "author.html" (dict "author" (index $authors .) "page" $page)}}
+    {{ $author_type := (printf "%T" .) }}
+    {{ $author_is_slice := (eq "[]string" $author_type) }}
+    {{ if $author_is_slice }}
+        {{- range . }}
+            {{ partial "author.html" (dict "author" (index $authors .) "page" $page)}}
+        {{ end }}
+    {{ else }}
+        {{ partial "author.html" (dict "author" . "page" $page )}}
     {{ end }}
-  {{ else }}
-    {{ partial "author.html" (dict "author" . "page" $page )}}
-  {{ end }}
-</div>
 {{ end }}

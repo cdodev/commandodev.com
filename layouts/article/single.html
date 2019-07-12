@@ -22,42 +22,37 @@
                 <div class="g-mb-60">
                     <div class="u-heading-v1-1 text-center g-bg-main g-brd-primary g-mb-20">
                         <h2 class="h3 test-center u-heading-v1__title">{{ .Title }}</h2>
-                        </div>
-                    <div class="g-color-primary g-brd-primary g-mb-20">
-                        {{ partial "authors.html" . }}
                     </div>
-                    <div class="text-justify">
-                        {{ .Content }}
+
+                    <div class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-5">
+                        <div class="media align-items-center g-pb-10">
+                            {{ partial "authors.html" . }}
+                        </div>
+                        <div class="addthis_inline_share_toolbox"></div>
                     </div>
                 </div>
-
-                <div class="row">
-			              <div class="col-sm-8 col-sm-offset-2">
-
-				                <div id="share">
-                            {{ if .Site.Params.share }}
-                            {{ partial "sharethis.html" . }}
-                            {{ end }}
-				                </div>
-			              </div>
-		            </div> <!-- /row share -->
-		            <div class="clearfix"></div>
-
-		            <div class="row">
-			              <div class="col-sm-8 col-sm-offset-2">
-
-				                <div id="comments">
-                            {{ if .Site.Params.comments }}
-                            {{ partial "disqus.html" . }}
-                            {{ end }}
-				                </div>
-			              </div>
-		            </div> <!-- /row comments -->
-		            <div class="clearfix"></div>
-
+                <div class="text-justify">
+                    {{ .Content }}
+                </div>
             </div>
+
+		        <div class="clearfix"></div>
+
+		        <div class="row">
+			          <div class="col-sm-8 col-sm-offset-2">
+
+				            <div id="comments">
+                        {{ if .Site.Params.comments }}
+                        {{ partial "disqus.html" . }}
+                        {{ end }}
+				            </div>
+			          </div>
+		        </div> <!-- /row comments -->
+		        <div class="clearfix"></div>
+
         </div>
     </div>
+    </div>
 </section>
-
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{- .Site.Params.addThis -}}" async></script>
 {{ partial "footer.html" . }}

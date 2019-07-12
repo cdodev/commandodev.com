@@ -47,6 +47,7 @@ googleAnalytics = "UA-134332089-1"
 
   share = true
   comments = true
+  addThis = "ra-5d282c0d053ab333"
 
   footerEnableContact = true
   footerEnableFollowme = true

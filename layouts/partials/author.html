@@ -1,28 +1,24 @@
-    <div class="media-body">
-        <ul class="list-inline g-color-gray-dark-v3 g-mb-10 g-mb-0--lg">
-            <li class="list-inline-item g-mr-30">
-                <img class="d-flex img-fluid g-width-30 g-height-30 rounded-circle mr-3" src="{{ .image }}" alt="Author Image">
-            </li>
-            <li class="list-inline-item g-mr-30">
-                <h4 class="h6 g-color-black g-font-weight-600 mb-0">By {{ .author.name }}</h4>
-            </li>
-            <li class="list-inline-item g-mr-30">
-                <time class="entry-date published" date="{{ .page.Date }}"> {{ .page.Date.Format .page.Site.Params.DateForm }}</time>
-            </li>
-            <li class="list-inline-item g-mr-30">
-                <i class="icon-clock g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> {{ .page.ReadingTime }} minute read
-            </li>
-        </ul>
-    </div>
+<div class="media-body g-color-gray-dark-v3 g-mb-10 g-mb-0--lg">
+    <span class="g-mr-30">
+        <img class="g-width-40 g-height-40 rounded-circle mr-3" src="{{ .author.image }}" alt="Author Image">
+    </span>
+    <span class="g-mr-20 h6 g-color-black g-font-weight-600 mb-0"> By {{ .author.name }}</span>
+    <span class="g-mr-20">
+        <i class="fa fa-calendar-o g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> <time class="entry-date published" date="{{ .page.Date }}"> {{ .page.Date.Format .page.Site.Params.DateForm }}</time>
+    </span>
+    <span class="g-mr-30">
+        <i class="fa fa-clock-o g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> {{ .page.ReadingTime }} minute read
+    </span>
+</div>
 
-    <!-- Figure Social Icons -->
-    <ul class="list-inline mb-0">
-        {{- range $key, $value := .author.social }}
-        <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v2 u-icon-size--xs g-brd-gray-light-v4 g-brd-primary--hover g-color-gray-dark-v3 g-color-white--hover g-bg-primary--hover rounded-circle g-text-underline--none--hover" href="{{ $value }}">
-                <i class="fa fa-{{ $key }}"></i>
-            </a>
-        </li>
-        {{ end }}
-    </ul>
-    <!-- End Figure Social Icons -->
+<!-- Figure Social Icons -->
+<ul class="list-inline mb-0">
+    {{- range $key, $value := .author.social }}
+    <li class="list-inline-item g-mx-2">
+        <a class="u-icon-v2 u-icon-size--xs g-brd-gray-light-v4 g-brd-primary--hover g-color-gray-dark-v3 g-color-white--hover g-bg-primary--hover rounded-circle g-text-underline--none--hover" href="{{ $value }}">
+            <i class="fa fa-{{ $key }}"></i>
+        </a>
+    </li>
+    {{ end }}
+</ul>
+<!-- End Figure Social Icons -->

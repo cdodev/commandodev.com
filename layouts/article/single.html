@@ -20,14 +20,11 @@
         <div class="row justify-content-center">
             <div class="col-lg-9">
                 <div class="g-mb-60">
-                    <div class="u-heading-v2-1--bottom text-center g-color-primary  g-brd-primary">
- 						            <h3 class="h3 u-heading-v2__title g-font-secondary">{{ .Title }}</h3>
-                    </div>
+                    <div class="u-heading-v1-1 text-center g-bg-main g-brd-primary g-mb-20">
+                        <h2 class="h3 test-center u-heading-v1__title">{{ .Title }}</h2>
+                        </div>
                     <div class="g-color-primary g-brd-primary g-mb-20">
                         {{ partial "authors.html" . }}
- 						            <span class="posted-on">
-                            <time class="entry-date published" date="{{ .Date }}">{{ .Date.Format .Site.Params.DateForm }}</time>
-                        </span>
                     </div>
                     <div class="text-justify">
                         {{ .Content }}
@@ -50,7 +47,7 @@
 			              <div class="col-sm-8 col-sm-offset-2">
 
 				                <div id="comments">
-                            {{ if .Params.Comments }}
+                            {{ if .Site.Params.comments }}
                             {{ partial "disqus.html" . }}
                             {{ end }}
 				                </div>

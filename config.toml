@@ -46,11 +46,15 @@ googleAnalytics = "UA-134332089-1"
   showClients = true
 
   share = true
+  comments = true
 
   footerEnableContact = true
   footerEnableFollowme = true
   footerEnableTextWidget = true
   footerEnableFormWidget = true
+
+[params.disqus]
+  site = "commando-dev.disqus.com"
 
 [taxonomies]
   author = "authors"

@@ -1,7 +1,7 @@
 +++
 title = "Discipline equals freedom"
 author = ["benford"]
-lastmod = 2019-07-11T12:51:22+01:00
+lastmod = 2019-07-26T05:59:52+01:00
 type = "article"
 draft = false
 +++
@@ -33,7 +33,7 @@ more closely matches the intuition I had at the time:
 Some key observations drop out of this small rewording:
 
 -   Discipline is not a static thing. It's not a binary state.
--   Freedom isn't a static thing either: It's a **vector** that has a magnitude and a
+-   Freedom isn't a static thing either: It's a **vector**. It's measured with an amount (magnitude) and a direction.
     direction.
 -   Discipline doesn't equal freedom: Having more freedom is an **emergent** property
     of applying discipline.
@@ -45,7 +45,7 @@ So what are we actually talking about here?
 We're talking about applying **CONSTRAINTS** to **COMPLEX ADAPTIVE SYSTEMS** in
 order to influence their **EMERGENT BEHAVIOURS**
 
-So let's restate Jocko and Aristotle (alexa: what is hubris?) to:
+So let's restate Jocko and Aristotle to:
 
 > **CONSTRAINTS** shape **BEHAVIOUR**
 
@@ -83,7 +83,7 @@ possible.
 
 So let's restate these ideas one last time:
 
-> **STRUCTURE** enables **PROGRESS**
+> **PROGRESS** _requires_ **STRUCTURE**
 
 Pay attention to the structures you put in place in your life and work. Progress
 is a second order effect of the leverage you create.

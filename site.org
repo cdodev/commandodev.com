@@ -730,7 +730,7 @@ more closely matches the intuition I had at the time:
 Some key observations drop out of this small rewording:
 
  * Discipline is not a static thing. It's not a binary state.
- * Freedom isn't a static thing either: It's a *vector* that has a magnitude and a
+ * Freedom isn't a static thing either: It's a *vector*. It's measured with an amount (magnitude) and a direction.
    direction.
  * Discipline doesn't equal freedom: Having more freedom is an *emergent* property
    of applying discipline.
@@ -742,7 +742,7 @@ So what are we actually talking about here?
 We're talking about applying *CONSTRAINTS* to *COMPLEX ADAPTIVE SYSTEMS* in
 order to influence their *EMERGENT BEHAVIOURS*
 
-So let's restate Jocko and Aristotle (alexa: what is hubris?) to:
+So let's restate Jocko and Aristotle to:
 
 #+BEGIN_QUOTE
 *CONSTRAINTS* shape *BEHAVIOUR*
@@ -782,7 +782,7 @@ possible.
 So let's restate these ideas one last time:
 
 #+begin_quote
-*STRUCTURE* enables *PROGRESS*
+*PROGRESS* /requires/ *STRUCTURE*
 #+end_quote
 
 Pay attention to the structures you put in place in your life and work. Progress
@@ -818,6 +818,19 @@ SCHEDULED: <2019-05-24 Fri>
 :END:
 
 A blog post about structure
+** OODA is a strange loop
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: ooda-is-a-strange-loop
+:EXPORT_HUGO_MENU: :parent blog
+:END:
+*** TODO OODA is a strange loop
+SCHEDULED: <2019-07-24 Wed>
+:PROPERTIES:
+:EXPORT_FILE_NAME: index
+:END:
+**** The OODA loop
+**** Strange loops
+The key understanding uncertainty is understanding uncertainty
 * Quotes
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: quotes
@@ -1204,3 +1217,4 @@ Implementation plan and technology
 # eval: (org-hugo-auto-export-mode)
 # eval: (auto-fill-mode 1)
 # End:
+* Blog
